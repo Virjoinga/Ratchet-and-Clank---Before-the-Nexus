@@ -14,7 +14,7 @@ namespace Unibill
 	{
 		private TransactionDatabase transactionDatabase;
 
-		private ILogger logger;
+		private Uniject.ILogger logger;
 
 		private HelpCentre help;
 
@@ -82,7 +82,7 @@ namespace Unibill
 		[method: MethodImpl(32)]
 		public event Action<PurchasableItem> onPurchaseFailed;
 
-		public Biller(InventoryDatabase db, TransactionDatabase tDb, IBillingService billingSubsystem, ILogger logger, HelpCentre help, ProductIdRemapper remapper, CurrencyManager currencyManager)
+		public Biller(InventoryDatabase db, TransactionDatabase tDb, IBillingService billingSubsystem, Uniject.ILogger logger, HelpCentre help, ProductIdRemapper remapper, CurrencyManager currencyManager)
 		{
 			InventoryDatabase = db;
 			transactionDatabase = tDb;
@@ -414,7 +414,7 @@ namespace Unibill
 			return _remapper;
 		}
 
-		private static ILogger getLogger()
+		private static Uniject.ILogger getLogger()
 		{
 			return new UnityLogger();
 		}

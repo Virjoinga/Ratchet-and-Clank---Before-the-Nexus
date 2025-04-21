@@ -176,7 +176,7 @@ public class AssetManager : MonoBehaviour
 			Debug.LogError("Resource " + resourceName + " is not found in BundleID " + bundleId + "!");
 			return null;
 		}
-		return instance.loadedAssetBundleMap[bundleId].Load(resourceName);
+		return instance.loadedAssetBundleMap[bundleId].LoadAsset(resourceName);
 	}
 
 	protected IEnumerator LoadResourceInBackground(long bundleId, string resourceName, Type type)
@@ -195,7 +195,7 @@ public class AssetManager : MonoBehaviour
 		}
 		else
 		{
-			AssetBundleRequest assetBundleRequest = loadedAssetBundleMap[bundleId].LoadAsync(resourceName, type);
+			AssetBundleRequest assetBundleRequest = loadedAssetBundleMap[bundleId].LoadAssetAsync(resourceName, type);
 			yield return assetBundleRequest;
 			AssetManager.OnResourceLoaded(assetBundleRequest.asset, bundleId, resourceName, type);
 		}

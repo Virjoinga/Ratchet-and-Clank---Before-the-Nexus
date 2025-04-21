@@ -39,7 +39,7 @@ public static class NGUITools
 	{
 		get
 		{
-			return Application.platform != RuntimePlatform.WindowsWebPlayer && Application.platform != RuntimePlatform.OSXWebPlayer;
+			return Application.platform != RuntimePlatform.WebGLPlayer;
 		}
 	}
 
@@ -127,7 +127,7 @@ public static class NGUITools
 		{
 			return min;
 		}
-		return Random.Range(min, max + 1);
+		return UnityEngine.Random.Range(min, max + 1);
 	}
 
 	public static string GetHierarchy(GameObject obj)

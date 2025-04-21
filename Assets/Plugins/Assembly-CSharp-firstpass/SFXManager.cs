@@ -48,7 +48,7 @@ public class SFXManager : MonoBehaviour
 			{
 				modCurrentTime = 0f;
 				lastValue = current;
-				targetValue = Random.Range(modMin, modMax);
+				targetValue = UnityEngine.Random.Range(modMin, modMax);
 			}
 
 			public float Evaluate(float t)

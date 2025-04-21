@@ -349,9 +349,9 @@ public class WeaponsManager : MonoBehaviour
 
 	private Vector3 SpreadOffset(Vector3 targetPos)
 	{
-		targetPos.x += Random.Range(0f - spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].x, spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].x);
-		targetPos.y += Random.Range(0f - spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].y, spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].y);
-		targetPos.z += Random.Range(0f - spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].z, spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].z);
+		targetPos.x += UnityEngine.Random.Range(0f - spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].x, spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].x);
+		targetPos.y += UnityEngine.Random.Range(0f - spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].y, spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].y);
+		targetPos.z += UnityEngine.Random.Range(0f - spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].z, spreadRandOffset[WeapInventory[curWeapIndex].GetComponent<Weapon>().GetWeaponUpgradeLevel() - 1].z);
 		return targetPos;
 	}
 

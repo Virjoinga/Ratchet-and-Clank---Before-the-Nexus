@@ -83,7 +83,7 @@ public class UIPersistent : MonoBehaviour
 		}
 		if (Input.GetKeyDown(KeyCode.L))
 		{
-			if (Random.Range(0, 2) == 0)
+			if (UnityEngine.Random.Range(0, 2) == 0)
 			{
 				UIManager.instance.ShowSubtitle("RCN_MOBILE_FMV_001", 4f);
 			}

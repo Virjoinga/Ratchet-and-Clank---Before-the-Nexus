@@ -936,7 +936,7 @@ public class PlayerController : MonoBehaviour
 			case EDeathDealer.EDeath_Proj:
 			{
 				a_CurrentDeathState = "DeathProj";
-				int value = Random.Range(1, 2);
+				int value = UnityEngine.Random.Range(1, 2);
 				anim.SetInteger("DeathProj_Int", value);
 				StatsTracker.instance.UpdateStat(StatsTracker.Stats.deathByEnemy);
 				Analytics.Get().SendDesignEvent("roundEnd:killedBy:enemy", 1f);
@@ -945,7 +945,7 @@ public class PlayerController : MonoBehaviour
 			case EDeathDealer.EDeath_Obs:
 			{
 				a_CurrentDeathState = "DeathObstacle";
-				int value = Random.Range(0, 4);
+				int value = UnityEngine.Random.Range(0, 4);
 				anim.SetInteger("DeathObstacle_Int", value);
 				StatsTracker.instance.UpdateStat(StatsTracker.Stats.deathByCrash);
 				Analytics.Get().SendDesignEvent("roundEnd:killedBy:obstacle", 1f);
@@ -1459,7 +1459,7 @@ public class PlayerController : MonoBehaviour
 		{
 			if (!GadgetManager.instance.GetJetpackStatus())
 			{
-				switch (Random.Range(1, 3))
+				switch (UnityEngine.Random.Range(1, 3))
 				{
 				case 1:
 					SFXManager.instance.PlaySound("DoubleJump1");

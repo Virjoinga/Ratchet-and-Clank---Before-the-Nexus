@@ -1031,7 +1031,7 @@ public class UIVendor : UIScreen
 			case VendorItemType.ITEM_Weapon:
 				return true;
 			case VendorItemType.ITEM_Raritanium:
-				if (Random.Range(0, 10) < 5)
+				if (UnityEngine.Random.Range(0, 10) < 5)
 				{
 					SFXManager.instance.PlaySound("UI_raritanium_pickup_1");
 				}

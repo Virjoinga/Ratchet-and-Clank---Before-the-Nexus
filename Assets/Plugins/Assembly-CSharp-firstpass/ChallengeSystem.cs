@@ -312,7 +312,7 @@ public class ChallengeSystem : MonoBehaviour
 			int num = PlayerPrefs.GetInt(activeChallengeStrings[i]);
 			if (!challengeList.ContainsKey(num))
 			{
-				num = eligibleChallengeIDs[i][Random.Range(0, eligibleChallengeIDs[i].Count)];
+				num = eligibleChallengeIDs[i][UnityEngine.Random.Range(0, eligibleChallengeIDs[i].Count)];
 				PlayerPrefs.SetInt(activeChallengeStrings[i].ToString(), num);
 			}
 			eligibleChallengeIDs[i].Remove(num);
@@ -343,7 +343,7 @@ public class ChallengeSystem : MonoBehaviour
 			ChallengeInfo challengeInfo = challengeList[activeChallengeIDs[i]];
 			if (challengeInfo.CurrentComplete)
 			{
-				int num = eligibleChallengeIDs[i][Random.Range(0, eligibleChallengeIDs[i].Count)];
+				int num = eligibleChallengeIDs[i][UnityEngine.Random.Range(0, eligibleChallengeIDs[i].Count)];
 				challengeInfo.Active = false;
 				StatsTracker.instance.SetNotActive(challengeInfo.PrimaryStat);
 				eligibleChallengeIDs[i].Add(challengeInfo.UID);

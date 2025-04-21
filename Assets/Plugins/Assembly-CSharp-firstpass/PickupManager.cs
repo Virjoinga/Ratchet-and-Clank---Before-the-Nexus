@@ -124,7 +124,7 @@ public class PickupManager : MonoBehaviour
 		PickupSpawnData result = null;
 		if (spawnGroup != null)
 		{
-			int num = Random.Range(1, spawnGroup.weightTotal);
+			int num = UnityEngine.Random.Range(1, spawnGroup.weightTotal);
 			foreach (PickupSpawnData spawnData in spawnGroup.spawnDatas)
 			{
 				num -= spawnData.weight;
@@ -153,7 +153,7 @@ public class PickupManager : MonoBehaviour
 		int count = spawnData.count;
 		if (railToSpawn == -1 || count <= 16)
 		{
-			railToSpawn = Random.Range(0, 3);
+			railToSpawn = UnityEngine.Random.Range(0, 3);
 		}
 		bool flag = false;
 		if (TileSpawnManager.instance.lastRailTile != null && TileSpawnManager.instance.lastRailTile.name.Contains("TIL_TUN"))
@@ -248,7 +248,7 @@ public class PickupManager : MonoBehaviour
 				{
 					num15 += spawnModePercentages[i];
 				}
-				float num16 = Random.value * num15;
+				float num16 = UnityEngine.Random.value * num15;
 				for (int j = 0; j < spawnModeChances.Length; j++)
 				{
 					num16 -= spawnModePercentages[j];
@@ -464,7 +464,7 @@ public class PickupManager : MonoBehaviour
 			zero2 = zero;
 			if (pickupSpawnMode == PickupSpawnMode.Straight && num6 >= 12)
 			{
-				if (Random.Range(0, 100) < 75)
+				if (UnityEngine.Random.Range(0, 100) < 75)
 				{
 					if (boltsJumpDirection == 1)
 					{
@@ -596,7 +596,7 @@ public class PickupManager : MonoBehaviour
 	{
 		int numSpawnedTiles = TileSpawnManager.instance.GetNumSpawnedTiles();
 		float num = (float)(numSpawnedTiles - 1) * TileSpawnManager.instance.worldPieceSize;
-		int num2 = Random.Range(0, 100);
+		int num2 = UnityEngine.Random.Range(0, 100);
 		if (num2 >= percentageChanceToSpawnPickup && !forceSpawn)
 		{
 			return;
@@ -632,7 +632,7 @@ public class PickupManager : MonoBehaviour
 		}
 		if (spawnGroup != null)
 		{
-			int num = Random.Range(1, spawnGroup.weightTotal);
+			int num = UnityEngine.Random.Range(1, spawnGroup.weightTotal);
 			foreach (PickupSpawnData spawnData2 in spawnGroup.spawnDatas)
 			{
 				num -= spawnData2.weight;
@@ -648,7 +648,7 @@ public class PickupManager : MonoBehaviour
 
 	public void SpawnExplosionOfBolts(Vector3 Position, bool theBoss = false)
 	{
-		float num = Random.Range(0f, 1f);
+		float num = UnityEngine.Random.Range(0f, 1f);
 		if (!(num < (float)percentageChanceToSpawnPickup))
 		{
 			return;
@@ -693,8 +693,8 @@ public class PickupManager : MonoBehaviour
 		{
 			GameObject nextFree = GameObjectPool.instance.GetNextFree(spawnData.pickupName, true, true);
 			Boltz component = nextFree.GetComponent<Boltz>();
-			targetPosForArc.x = Random.Range(0, 30);
-			targetPosForArc.y = Random.Range(5, 20);
+			targetPosForArc.x = UnityEngine.Random.Range(0, 30);
+			targetPosForArc.y = UnityEngine.Random.Range(5, 20);
 			if (Position.z < z - 7f)
 			{
 				num2 = z - Position.z;
@@ -703,7 +703,7 @@ public class PickupManager : MonoBehaviour
 			{
 				num2 = z - Position.z;
 			}
-			targetPosForArc.z = Random.Range(num2 - (float)num, num2 + (float)num);
+			targetPosForArc.z = UnityEngine.Random.Range(num2 - (float)num, num2 + (float)num);
 			Position.y += 1.5f;
 			nextFree.transform.position = Position;
 			targetPosForArc += Position;

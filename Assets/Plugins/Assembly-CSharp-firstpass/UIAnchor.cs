@@ -49,7 +49,7 @@ public class UIAnchor : MonoBehaviour
 	private void Start()
 	{
 		mRoot = NGUITools.FindInParents<UIRoot>(base.gameObject);
-		mNeedsHalfPixelOffset = Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsWebPlayer || Application.platform == RuntimePlatform.WindowsEditor;
+		mNeedsHalfPixelOffset = Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WebGLPlayer || Application.platform == RuntimePlatform.WindowsEditor;
 		if (mNeedsHalfPixelOffset)
 		{
 			mNeedsHalfPixelOffset = SystemInfo.graphicsShaderLevel < 40;

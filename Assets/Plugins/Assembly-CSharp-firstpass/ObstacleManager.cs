@@ -107,7 +107,7 @@ public class ObstacleManager : MonoBehaviour
 			return;
 		}
 		string text = ChooseObstacle(ObstacleSocket);
-		if ((float)Random.Range(1, 100) >= ObstacleSocket.obstacleChance)
+		if ((float)UnityEngine.Random.Range(1, 100) >= ObstacleSocket.obstacleChance)
 		{
 			return;
 		}
@@ -158,7 +158,7 @@ public class ObstacleManager : MonoBehaviour
 		{
 			return null;
 		}
-		int num = Random.Range(0, ObstacleSocket.possibleObjectsToSpawn.Length - 1);
+		int num = UnityEngine.Random.Range(0, ObstacleSocket.possibleObjectsToSpawn.Length - 1);
 		if (ObstacleSocket.possibleObjectsToSpawn[num] != null)
 		{
 			return ObstacleSocket.possibleObjectsToSpawn[num].name;
@@ -179,7 +179,7 @@ public class ObstacleManager : MonoBehaviour
 					num += spawnData.weight;
 				}
 			}
-			int num2 = Random.Range(1, num);
+			int num2 = UnityEngine.Random.Range(1, num);
 			foreach (ObstacleSpawnData spawnData2 in spawnGroup.spawnDatas)
 			{
 				if (AllowedObstacleForThisEnvironment(spawnData2.obstacleName))
@@ -306,11 +306,11 @@ public class ObstacleManager : MonoBehaviour
 		float num = TileSpawnManager.instance.worldPieceSize / (float)spawnSegmentsByDist;
 		float lastRileTileOffset = TileSpawnManager.instance.getLastRileTileOffset();
 		lastRileTileOffset += (0f - TileSpawnManager.instance.worldPieceSize) / 2f;
-		int num2 = Random.Range(0, 10) % 3;
+		int num2 = UnityEngine.Random.Range(0, 10) % 3;
 		int num3 = 0;
 		for (int i = 0; i < spawnSegmentsByDist; i++)
 		{
-			float num4 = Random.Range(0f, 100f);
+			float num4 = UnityEngine.Random.Range(0f, 100f);
 			if (!(num4 < getPercentageChanceToSpawnObstacle()))
 			{
 				continue;

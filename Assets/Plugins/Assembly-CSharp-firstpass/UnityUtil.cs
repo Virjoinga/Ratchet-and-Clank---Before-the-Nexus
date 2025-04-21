@@ -10,13 +10,11 @@ public class UnityUtil : IUtil
 		RuntimePlatform.FlashPlayer,
 		RuntimePlatform.LinuxPlayer,
 		RuntimePlatform.NaCl,
-		RuntimePlatform.OSXDashboardPlayer,
 		RuntimePlatform.OSXEditor,
 		RuntimePlatform.OSXPlayer,
-		RuntimePlatform.OSXWebPlayer,
 		RuntimePlatform.WindowsEditor,
 		RuntimePlatform.WindowsPlayer,
-		RuntimePlatform.WindowsWebPlayer
+		RuntimePlatform.WebGLPlayer
 	};
 
 	public DateTime currentTime

@@ -200,7 +200,7 @@ public class GameController : MonoBehaviour
 			UnityEngine.Object.Destroy(base.gameObject);
 			return;
 		}
-		Random.seed = (int)DateTime.Now.Ticks;
+		UnityEngine.Random.seed = (int)DateTime.Now.Ticks;
 		Application.targetFrameRate = 30;
 		ratchet = (GameObject)UnityEngine.Object.Instantiate(Resources.Load("Characters/CHA_RatchetClank/Ratchet_PF"));
 		playerController = ratchet.GetComponent<PlayerController>();
@@ -408,7 +408,7 @@ public class GameController : MonoBehaviour
 			ChangeState(eGameState.GS_Grinding);
 		}
 		TileSpawnManager.ENVType nextEnvironmentType = TileSpawnManager.ENVType.ENV_Ter;
-		switch (Random.Range(0, 5))
+		switch (UnityEngine.Random.Range(0, 5))
 		{
 		case 0:
 			nextEnvironmentType = TileSpawnManager.ENVType.ENV_Axm;
@@ -599,7 +599,7 @@ public class GameController : MonoBehaviour
 		{
 			list2.Add(1);
 		}
-		int index = Random.Range(0, list2.Count);
+		int index = UnityEngine.Random.Range(0, list2.Count);
 		TileSpawnManager.ENVType nextEnvironmentType = (TileSpawnManager.ENVType)list2[index];
 		TileSpawnManager.instance.SetNextEnvironmentType(nextEnvironmentType);
 	}
@@ -685,7 +685,7 @@ public class GameController : MonoBehaviour
 
 	private void RandomlySpawnTestEnemy()
 	{
-		switch (Random.Range(1, 6))
+		switch (UnityEngine.Random.Range(1, 6))
 		{
 		case 1:
 			EnemyManager.instance.SpawnEnemy("Thermosplitter_PF", 1);
