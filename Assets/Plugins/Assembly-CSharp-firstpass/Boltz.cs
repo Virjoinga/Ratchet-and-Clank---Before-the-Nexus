@@ -142,7 +142,7 @@ public class Boltz : Pickup
 			PickupManager.instance.boltIntervalTime = Time.time;
 			if (boltRatchetEffectStartSize == 0f && playerController.GetBoltPickupEffect() != null)
 			{
-				boltRatchetEffectStartSize = playerController.GetBoltPickupEffect().particleSystem.startSize;
+				boltRatchetEffectStartSize = playerController.GetBoltPickupEffect().GetComponent<ParticleSystem>().startSize;
 			}
 			if (playerController.activeJumpPad == null && playerController.activeSwingShot == null && !playerController.isJumping)
 			{

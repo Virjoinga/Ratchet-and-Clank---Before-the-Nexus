@@ -83,13 +83,13 @@ public class UIStartMenu : UIScreen
 	{
 		if (Down)
 		{
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = false;
-			ShopButton.GetComponent<BoxCollider>().collider.enabled = false;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			ShopButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = true;
-			ShopButton.GetComponent<BoxCollider>().collider.enabled = true;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			ShopButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
@@ -97,13 +97,13 @@ public class UIStartMenu : UIScreen
 	{
 		if (Down)
 		{
-			PlayButton.GetComponent<BoxCollider>().collider.enabled = false;
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = false;
+			PlayButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			PlayButton.GetComponent<BoxCollider>().collider.enabled = true;
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = true;
+			PlayButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
@@ -111,13 +111,13 @@ public class UIStartMenu : UIScreen
 	{
 		if (Down)
 		{
-			PlayButton.GetComponent<BoxCollider>().collider.enabled = false;
-			ShopButton.GetComponent<BoxCollider>().collider.enabled = false;
+			PlayButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			ShopButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			PlayButton.GetComponent<BoxCollider>().collider.enabled = true;
-			ShopButton.GetComponent<BoxCollider>().collider.enabled = true;
+			PlayButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			ShopButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 

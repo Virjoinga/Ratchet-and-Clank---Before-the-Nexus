@@ -82,13 +82,13 @@ public class UIPauseMenu : UIScreen
 	{
 		if (Down)
 		{
-			ResumeButton.GetComponent<BoxCollider>().collider.enabled = false;
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = false;
+			ResumeButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			ResumeButton.GetComponent<BoxCollider>().collider.enabled = true;
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = true;
+			ResumeButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
@@ -96,13 +96,13 @@ public class UIPauseMenu : UIScreen
 	{
 		if (Down)
 		{
-			ResumeButton.GetComponent<BoxCollider>().collider.enabled = false;
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = false;
+			ResumeButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			ResumeButton.GetComponent<BoxCollider>().collider.enabled = true;
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = true;
+			ResumeButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			UpdateAmmo();
 		}
 	}
@@ -111,13 +111,13 @@ public class UIPauseMenu : UIScreen
 	{
 		if (Down)
 		{
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = false;
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = false;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			MenuButton.GetComponent<BoxCollider>().collider.enabled = true;
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = true;
+			MenuButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			UpdateAmmo();
 		}
 	}
@@ -338,13 +338,13 @@ public class UIPauseMenu : UIScreen
 		AmmoBoltCost = CurrentWeapon.ammoBoltCost[CurrentWeapon.GetWeaponUpgradeLevel() - 1] * AmmoToBuy;
 		if (num != 0 && ammo != ammoMax)
 		{
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = true;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			BuyAmmoButton.UpdateColor(true, true);
 			BuyAmmoButton.transform.Find("Label").GetComponent<UILabel>().color = color;
 		}
 		else
 		{
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = false;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 			BuyAmmoButton.UpdateColor(false, true);
 			BuyAmmoButton.transform.Find("Label").GetComponent<UILabel>().color = color2;
 		}

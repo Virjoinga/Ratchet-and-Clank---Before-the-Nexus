@@ -19,7 +19,7 @@ public class RiftInducer : Pickup
 			playerController.SetCurrentPickup(this);
 			playerController.SetCurrentPickupType(PlayerController.PickupTypes.Rift);
 			base.transform.parent.gameObject.GetComponentInChildren<ParticleSystem>().Stop(true);
-			base.renderer.enabled = false;
+			base.GetComponent<Renderer>().enabled = false;
 			PickupManager.instance.getPickups().Remove(base.transform.parent.gameObject);
 			SFXManager.instance.PlaySound("cha_ratchet_Pickup");
 			StatsTracker.instance.UpdateStat(StatsTracker.Stats.totalPickupsAcquired);

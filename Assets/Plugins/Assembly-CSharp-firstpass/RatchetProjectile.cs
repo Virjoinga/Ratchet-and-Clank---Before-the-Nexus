@@ -37,18 +37,18 @@ public class RatchetProjectile : MonoBehaviour
 			else if (weap.weaponName == "BuzzBlades" && ecTarget != null && !ecTarget.isDead && !ecTarget.shouldDespawn)
 			{
 				Vector3 zero = Vector3.zero;
-				base.rigidbody.velocity = Vector3.Normalize(ecTarget.rigidbody.position - base.transform.position) * projSpeed;
-				if (timeAlive < Vector3.Distance(ecTarget.rigidbody.position, base.transform.position) / projSpeed)
+				base.GetComponent<Rigidbody>().velocity = Vector3.Normalize(ecTarget.GetComponent<Rigidbody>().position - base.transform.position) * projSpeed;
+				if (timeAlive < Vector3.Distance(ecTarget.GetComponent<Rigidbody>().position, base.transform.position) / projSpeed)
 				{
-					base.rigidbody.position = ecTarget.transform.position;
-					base.rigidbody.velocity = Vector3.zero;
+					base.GetComponent<Rigidbody>().position = ecTarget.transform.position;
+					base.GetComponent<Rigidbody>().velocity = Vector3.zero;
 					timeAlive = 0f;
 					delayBounce = WeaponsManager.instance.delayTillBounce;
 				}
 				else
 				{
 					zero.x = GameController.instance.playerController.curVelocityX;
-					base.rigidbody.velocity = base.rigidbody.velocity + zero;
+					base.GetComponent<Rigidbody>().velocity = base.GetComponent<Rigidbody>().velocity + zero;
 				}
 			}
 		}
@@ -57,7 +57,7 @@ public class RatchetProjectile : MonoBehaviour
 			delayBounce -= Time.fixedDeltaTime;
 			if (ecTarget != null && !ecTarget.isDead && !ecTarget.shouldDespawn)
 			{
-				base.transform.position = ecTarget.rigidbody.position;
+				base.transform.position = ecTarget.GetComponent<Rigidbody>().position;
 			}
 			else if (bounces > 0)
 			{
@@ -104,9 +104,9 @@ public class RatchetProjectile : MonoBehaviour
 			timeAlive = 0.2f;
 		}
 		base.transform.position = position;
-		base.rigidbody.velocity = Vector3.Normalize(target - base.transform.position) * projSpeed;
+		base.GetComponent<Rigidbody>().velocity = Vector3.Normalize(target - base.transform.position) * projSpeed;
 		zero.x = GameController.instance.playerController.curVelocityX;
-		base.rigidbody.velocity = base.rigidbody.velocity + zero;
+		base.GetComponent<Rigidbody>().velocity = base.GetComponent<Rigidbody>().velocity + zero;
 		if (timeAlive > 15f)
 		{
 			timeAlive = 5f;
@@ -126,7 +126,7 @@ public class RatchetProjectile : MonoBehaviour
 			bounces--;
 			ecTarget.StartCoroutine("HitReact", weap.weaponName);
 			ecTarget.StartCoroutine("DealDamageIn", weap);
-			SetBounceData(ecTarget.rigidbody.position);
+			SetBounceData(ecTarget.GetComponent<Rigidbody>().position);
 		}
 		else
 		{
@@ -161,9 +161,9 @@ public class RatchetProjectile : MonoBehaviour
 			timeAlive = 0.2f;
 		}
 		base.transform.position = position;
-		base.rigidbody.velocity = Vector3.Normalize(target - base.transform.position) * projSpeed;
+		base.GetComponent<Rigidbody>().velocity = Vector3.Normalize(target - base.transform.position) * projSpeed;
 		zero.x = GameController.instance.playerController.curVelocityX;
-		base.rigidbody.velocity = base.rigidbody.velocity + zero;
+		base.GetComponent<Rigidbody>().velocity = base.GetComponent<Rigidbody>().velocity + zero;
 		if (timeAlive > 15f)
 		{
 			timeAlive = 5f;
@@ -177,8 +177,8 @@ public class RatchetProjectile : MonoBehaviour
 			buzzExplode = GameObjectPool.instance.GetNextFree("FX_Explosion", true);
 			if (buzzExplode != null)
 			{
-				buzzExplode.transform.position = base.rigidbody.position;
-				buzzExplode.particleSystem.Play(true);
+				buzzExplode.transform.position = base.GetComponent<Rigidbody>().position;
+				buzzExplode.GetComponent<ParticleSystem>().Play(true);
 			}
 		}
 		ParticleSystem componentInChildren = base.gameObject.GetComponentInChildren<ParticleSystem>();

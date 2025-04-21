@@ -156,9 +156,9 @@ public class CameraFollow : MonoBehaviour
 		SwitchCameraSettings(CameraSettings.Rails);
 		RenderSettings.fogEndDistance = fogDist;
 		RenderSettings.fogColor = fogColor;
-		if (base.animation != null)
+		if (base.GetComponent<Animation>() != null)
 		{
-			base.animation.Stop("Cam_Start");
+			base.GetComponent<Animation>().Stop("Cam_Start");
 		}
 	}
 
@@ -216,12 +216,12 @@ public class CameraFollow : MonoBehaviour
 
 	public void StartIntroCamera()
 	{
-		if (base.animation != null)
+		if (base.GetComponent<Animation>() != null)
 		{
 			if (firstCamUse)
 			{
 				firstCamUse = false;
-				base.animation.Play("Cam_Start");
+				base.GetComponent<Animation>().Play("Cam_Start");
 			}
 			else
 			{
@@ -233,15 +233,15 @@ public class CameraFollow : MonoBehaviour
 	private IEnumerator startSoon()
 	{
 		yield return new WaitForSeconds(0.2f);
-		base.animation.Play("Cam_Start");
+		base.GetComponent<Animation>().Play("Cam_Start");
 	}
 
 	public void ResetCamera()
 	{
-		Vector3 worldPosition = GameController.instance.ratchet.rigidbody.position + lookOffset;
-		Vector3 position = GameController.instance.ratchet.rigidbody.position + camOffset;
-		position.y = GameController.instance.ratchet.rigidbody.position.y + camOffset.y;
-		position.x = GameController.instance.ratchet.rigidbody.position.x + camOffset.x;
+		Vector3 worldPosition = GameController.instance.ratchet.GetComponent<Rigidbody>().position + lookOffset;
+		Vector3 position = GameController.instance.ratchet.GetComponent<Rigidbody>().position + camOffset;
+		position.y = GameController.instance.ratchet.GetComponent<Rigidbody>().position.y + camOffset.y;
+		position.x = GameController.instance.ratchet.GetComponent<Rigidbody>().position.x + camOffset.x;
 		base.transform.position = position;
 		base.transform.LookAt(worldPosition);
 		oldLook = worldPosition;
@@ -251,7 +251,7 @@ public class CameraFollow : MonoBehaviour
 	{
 		Vector3 vector = target.position + lookOffset;
 		Vector3 vector2 = target.position + camOffset;
-		if (base.animation.IsPlaying("Cam_Start"))
+		if (base.GetComponent<Animation>().IsPlaying("Cam_Start"))
 		{
 			introLook = base.transform.forward;
 			return;

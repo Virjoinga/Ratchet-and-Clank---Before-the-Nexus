@@ -59,9 +59,9 @@ public class LeviathanController : EnemyController
 		engineFireParticles3 = base.gameObject.transform.Find("Root").Find("ShipBody").Find("R_Wing")
 			.Find("FX_EngineFire3")
 			.gameObject;
-		engineFireParticles1.particleSystem.Stop();
-		engineFireParticles2.particleSystem.Stop();
-		engineFireParticles3.particleSystem.Stop();
+		engineFireParticles1.GetComponent<ParticleSystem>().Stop();
+		engineFireParticles2.GetComponent<ParticleSystem>().Stop();
+		engineFireParticles3.GetComponent<ParticleSystem>().Stop();
 	}
 
 	protected override void Awake()
@@ -88,11 +88,11 @@ public class LeviathanController : EnemyController
 
 	public void StartIntroAnim()
 	{
-		Vector3 position = GameController.instance.playerController.rigidbody.position;
+		Vector3 position = GameController.instance.playerController.GetComponent<Rigidbody>().position;
 		base.transform.rotation = Quaternion.identity;
 		anim.enabled = true;
 		anim.SetBool("Start", true);
-		base.rigidbody.MovePosition(position);
+		base.GetComponent<Rigidbody>().MovePosition(position);
 		base.gameObject.GetComponent<BoxCollider>().enabled = false;
 	}
 
@@ -165,9 +165,9 @@ public class LeviathanController : EnemyController
 		{
 			flyAway = false;
 		}
-		if (targetPos.x >= base.rigidbody.position.x || flyAway)
+		if (targetPos.x >= base.GetComponent<Rigidbody>().position.x || flyAway)
 		{
-			if (flyAway && base.rigidbody.position.y >= 69f)
+			if (flyAway && base.GetComponent<Rigidbody>().position.y >= 69f)
 			{
 				isDead = true;
 				flyAway = false;
@@ -177,15 +177,15 @@ public class LeviathanController : EnemyController
 			{
 				return;
 			}
-			Vector3 position = base.rigidbody.position;
+			Vector3 position = base.GetComponent<Rigidbody>().position;
 			float num = GameController.instance.playerController.curVelocityX;
-			if (base.rigidbody.position.x < GameController.instance.playerController.rigidbody.position.x + 15f || base.rigidbody.position.x > GameController.instance.playerController.rigidbody.position.x + 35f)
+			if (base.GetComponent<Rigidbody>().position.x < GameController.instance.playerController.GetComponent<Rigidbody>().position.x + 15f || base.GetComponent<Rigidbody>().position.x > GameController.instance.playerController.GetComponent<Rigidbody>().position.x + 35f)
 			{
 				num *= 2f;
 			}
 			if (num != 0f)
 			{
-				float num2 = (targetPos.x - base.rigidbody.position.x) / num;
+				float num2 = (targetPos.x - base.GetComponent<Rigidbody>().position.x) / num;
 				if (num2 <= Time.fixedDeltaTime)
 				{
 					position = targetPos;
@@ -198,13 +198,13 @@ public class LeviathanController : EnemyController
 				}
 				if (!shouldDespawn)
 				{
-					position.x = GameController.instance.playerController.rigidbody.position.x + (float)keepAtDistance;
+					position.x = GameController.instance.playerController.GetComponent<Rigidbody>().position.x + (float)keepAtDistance;
 				}
 				else
 				{
 					position.y += 2f;
 				}
-				base.rigidbody.MovePosition(position);
+				base.GetComponent<Rigidbody>().MovePosition(position);
 			}
 		}
 		else
@@ -303,8 +303,8 @@ public class LeviathanController : EnemyController
 	protected override void SetGroundTargetEffect()
 	{
 		Vector3 zero = Vector3.zero;
-		float num = 0f + fireBuildUpSpeed + (laserOriginObject.transform.position.x - GameController.instance.playerController.rigidbody.position.x) / projectileSpeed;
-		float xOffset = GameController.instance.playerController.rigidbody.position.x + GameController.instance.playerController.rigidbody.velocity.x * num;
+		float num = 0f + fireBuildUpSpeed + (laserOriginObject.transform.position.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x) / projectileSpeed;
+		float xOffset = GameController.instance.playerController.GetComponent<Rigidbody>().position.x + GameController.instance.playerController.GetComponent<Rigidbody>().velocity.x * num;
 		zero = TileSpawnManager.instance.getRailNodePosition(railToAttack, xOffset, TileSpawnManager.instance.railTileList[0]);
 		if (railToAttack == 2)
 		{
@@ -318,7 +318,7 @@ public class LeviathanController : EnemyController
 		{
 			curParticleGroundTarget = GameObjectPool.instance.GetNextFree(particleGroundTarget.name, true);
 			curParticleGroundTarget.transform.position = zero;
-			curParticleGroundTarget.particleSystem.Play();
+			curParticleGroundTarget.GetComponent<ParticleSystem>().Play();
 		}
 		StartCoroutine("DelayedGroundExplosionEffect", num);
 	}
@@ -332,7 +332,7 @@ public class LeviathanController : EnemyController
 			impactPos.x += 5f;
 			impactEffect = GameObjectPool.instance.GetNextFree(projectileImpactEffect.name, true);
 			impactEffect.transform.position = impactPos;
-			impactEffect.particleSystem.Play();
+			impactEffect.GetComponent<ParticleSystem>().Play();
 		}
 		yield return new WaitForSeconds(0.1f);
 		firing = false;
@@ -347,7 +347,7 @@ public class LeviathanController : EnemyController
 			zero.y = Random.Range(1, 7);
 		}
 		zero.z = Random.Range(0, 10) - 5;
-		base.transform.position = GameController.instance.playerController.rigidbody.position + zero;
+		base.transform.position = GameController.instance.playerController.GetComponent<Rigidbody>().position + zero;
 	}
 
 	public override void Death()
@@ -364,7 +364,7 @@ public class LeviathanController : EnemyController
 		if (curParticleGroundTarget != null)
 		{
 			curParticleGroundTarget.transform.position = Vector3.zero;
-			curParticleGroundTarget.particleSystem.Stop();
+			curParticleGroundTarget.GetComponent<ParticleSystem>().Stop();
 			curParticleGroundTarget = null;
 		}
 		if (hUD != null)
@@ -421,13 +421,13 @@ public class LeviathanController : EnemyController
 		SFXManager.instance.PlaySound("cha_Leviathan_Charge");
 		if (chargeUpLeftParticles != null)
 		{
-			chargeUpLeftParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpLeftParticles.particleSystem.Play();
+			chargeUpLeftParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpLeftParticles.GetComponent<ParticleSystem>().Play();
 		}
 		if (chargeUpRightParticles != null)
 		{
-			chargeUpRightParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpRightParticles.particleSystem.Play();
+			chargeUpRightParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpRightParticles.GetComponent<ParticleSystem>().Play();
 		}
 	}
 
@@ -435,21 +435,21 @@ public class LeviathanController : EnemyController
 	{
 		if ((float)HP < (float)MaxHP * 0.25f)
 		{
-			if (!engineFireParticles3.particleSystem.isPlaying)
+			if (!engineFireParticles3.GetComponent<ParticleSystem>().isPlaying)
 			{
-				engineFireParticles3.particleSystem.Play();
+				engineFireParticles3.GetComponent<ParticleSystem>().Play();
 			}
 		}
 		else if ((float)HP < (float)MaxHP * 0.5f)
 		{
-			if (!engineFireParticles2.particleSystem.isPlaying)
+			if (!engineFireParticles2.GetComponent<ParticleSystem>().isPlaying)
 			{
-				engineFireParticles2.particleSystem.Play();
+				engineFireParticles2.GetComponent<ParticleSystem>().Play();
 			}
 		}
-		else if ((float)HP < (float)MaxHP * 0.75f && !engineFireParticles1.particleSystem.isPlaying)
+		else if ((float)HP < (float)MaxHP * 0.75f && !engineFireParticles1.GetComponent<ParticleSystem>().isPlaying)
 		{
-			engineFireParticles1.particleSystem.Play();
+			engineFireParticles1.GetComponent<ParticleSystem>().Play();
 		}
 	}
 }

@@ -179,7 +179,7 @@ public class EnemyController : MonoBehaviour
 		shouldDespawn = false;
 		curLifeTime = lifeSpan;
 		atkRatchetRail = false;
-		base.rigidbody.useGravity = false;
+		base.GetComponent<Rigidbody>().useGravity = false;
 		meleeDash = false;
 		if (dots != null)
 		{
@@ -200,14 +200,14 @@ public class EnemyController : MonoBehaviour
 		curLifeTime = lifeSpan;
 		curMeleeChance = Random.Range(1, 100);
 		currentPosDelay = minPosDelay + Random.value * (maxPosDelay - minPosDelay);
-		base.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+		base.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 		dots = new List<DOTEffect>();
 		flashEffect = GetComponent<FlashingTint>();
 	}
 
 	protected bool InRangeOfPlayer()
 	{
-		if (base.rigidbody.position.x - GameController.instance.playerController.rigidbody.position.x <= (float)keepAtDistance)
+		if (base.GetComponent<Rigidbody>().position.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x <= (float)keepAtDistance)
 		{
 			return true;
 		}
@@ -224,7 +224,7 @@ public class EnemyController : MonoBehaviour
 				targetPos.y = Random.Range(minHeight, maxHeight);
 			}
 			currentPosDelay = minPosDelay + Random.value * (maxPosDelay - minPosDelay);
-			beginMovePos = base.rigidbody.position;
+			beginMovePos = base.GetComponent<Rigidbody>().position;
 			return true;
 		}
 		return false;
@@ -242,7 +242,7 @@ public class EnemyController : MonoBehaviour
 			}
 			if (((currentBaseState.nameHash == IdleState && !anim.GetBool("ChargeUp") && !anim.GetBool("Attack") && !meleeDash) || theBoss) && !anim.IsInTransition(0) && UpdateTargetPosition(etEnemyState))
 			{
-				StartCoroutine("TiltEnemy", targetPos.z - base.rigidbody.position.z);
+				StartCoroutine("TiltEnemy", targetPos.z - base.GetComponent<Rigidbody>().position.z);
 			}
 			if (curMegaWeaponState == MegaWeaponManager.eMegaWeapons.mw_NONE)
 			{
@@ -254,7 +254,7 @@ public class EnemyController : MonoBehaviour
 			if (curParticleGroundTarget != null)
 			{
 				curParticleGroundTarget.transform.position = Vector3.zero;
-				curParticleGroundTarget.particleSystem.Stop();
+				curParticleGroundTarget.GetComponent<ParticleSystem>().Stop();
 				curParticleGroundTarget = null;
 			}
 			StopLaserSight();
@@ -262,7 +262,7 @@ public class EnemyController : MonoBehaviour
 		}
 		if (curLockOnEffect != null)
 		{
-			curLockOnEffect.transform.position = base.rigidbody.position;
+			curLockOnEffect.transform.position = base.GetComponent<Rigidbody>().position;
 		}
 	}
 
@@ -289,7 +289,7 @@ public class EnemyController : MonoBehaviour
 		}
 		else
 		{
-			if (InRangeOfPlayer() && base.rigidbody.position.x - GameController.instance.playerController.rigidbody.position.x > 0f)
+			if (InRangeOfPlayer() && base.GetComponent<Rigidbody>().position.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x > 0f)
 			{
 				curFireTimer -= Time.deltaTime;
 			}
@@ -323,14 +323,14 @@ public class EnemyController : MonoBehaviour
 	protected virtual void SetGroundTargetEffect()
 	{
 		Vector3 zero = Vector3.zero;
-		float num = 0f + fireBuildUpSpeed + (base.rigidbody.position.x - GameController.instance.playerController.rigidbody.position.x) / projectileSpeed;
-		float xOffset = GameController.instance.playerController.rigidbody.position.x + GameController.instance.playerController.rigidbody.velocity.x * num;
+		float num = 0f + fireBuildUpSpeed + (base.GetComponent<Rigidbody>().position.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x) / projectileSpeed;
+		float xOffset = GameController.instance.playerController.GetComponent<Rigidbody>().position.x + GameController.instance.playerController.GetComponent<Rigidbody>().velocity.x * num;
 		zero = TileSpawnManager.instance.getRailNodePosition(railToAttack, xOffset, TileSpawnManager.instance.railTileList[0]);
 		if (particleGroundTarget != null)
 		{
 			curParticleGroundTarget = GameObjectPool.instance.GetNextFree(particleGroundTarget.name, true);
 			curParticleGroundTarget.transform.position = zero;
-			curParticleGroundTarget.particleSystem.Play();
+			curParticleGroundTarget.GetComponent<ParticleSystem>().Play();
 		}
 		StartLaserSight();
 	}
@@ -346,20 +346,20 @@ public class EnemyController : MonoBehaviour
 			StopLaserSight();
 			curLaserSight = GameObjectPool.instance.GetNextFree("FX_LaserMesh", true);
 		}
-		curLaserSight.transform.Find("Mesh").renderer.material.color = laserColor;
-		curLaserSight.transform.Find("Mesh").Find("Mesh2").renderer.material.color = laserColor;
-		curLaserSight.transform.Find("Mesh").Find("Mesh3").renderer.material.color = laserColor;
-		curLaserSight.transform.Find("Mesh").Find("Mesh4").renderer.material.color = laserColor;
+		curLaserSight.transform.Find("Mesh").GetComponent<Renderer>().material.color = laserColor;
+		curLaserSight.transform.Find("Mesh").Find("Mesh2").GetComponent<Renderer>().material.color = laserColor;
+		curLaserSight.transform.Find("Mesh").Find("Mesh3").GetComponent<Renderer>().material.color = laserColor;
+		curLaserSight.transform.Find("Mesh").Find("Mesh4").GetComponent<Renderer>().material.color = laserColor;
 		curLaserSight.transform.position = laserOriginObject.transform.position;
 		curLaserSight.transform.LookAt(curParticleGroundTarget.transform.position);
 	}
 
 	protected void UpdateLaserSight()
 	{
-		if (curParticleGroundTarget != null && GameController.instance.playerController.rigidbody.position.x > curParticleGroundTarget.transform.position.x)
+		if (curParticleGroundTarget != null && GameController.instance.playerController.GetComponent<Rigidbody>().position.x > curParticleGroundTarget.transform.position.x)
 		{
 			curParticleGroundTarget.transform.position = Vector3.zero;
-			curParticleGroundTarget.particleSystem.Stop();
+			curParticleGroundTarget.GetComponent<ParticleSystem>().Stop();
 			curParticleGroundTarget = null;
 			StopLaserSight();
 		}
@@ -418,7 +418,7 @@ public class EnemyController : MonoBehaviour
 		anim.SetBool("Attack", true);
 		Vector3 originalPos = targetPos;
 		targetPos.x = 2f;
-		targetPos.z = GameController.instance.playerController.rigidbody.position.z;
+		targetPos.z = GameController.instance.playerController.GetComponent<Rigidbody>().position.z;
 		meleeDash = true;
 		yield return new WaitForSeconds(meleeSpeed);
 		if (curMegaWeaponState != MegaWeaponManager.eMegaWeapons.mw_NONE)
@@ -428,7 +428,7 @@ public class EnemyController : MonoBehaviour
 			yield break;
 		}
 		anim.SetBool("Attack", false);
-		originalPos.z += TileSpawnManager.instance.getRailNodePosition(0, base.rigidbody.position.x, TileSpawnManager.instance.railTileList[0]).z;
+		originalPos.z += TileSpawnManager.instance.getRailNodePosition(0, base.GetComponent<Rigidbody>().position.x, TileSpawnManager.instance.railTileList[0]).z;
 		targetPos = originalPos;
 		yield return new WaitForSeconds(meleeSpeed);
 		meleeDash = false;
@@ -440,7 +440,7 @@ public class EnemyController : MonoBehaviour
 		currentBaseState = anim.GetCurrentAnimatorStateInfo(0);
 		if (isDead)
 		{
-			if (base.rigidbody.useGravity)
+			if (base.GetComponent<Rigidbody>().useGravity)
 			{
 			}
 			return;
@@ -516,7 +516,7 @@ public class EnemyController : MonoBehaviour
 
 	protected virtual void GroovitronMoveEffect()
 	{
-		Vector3 position = base.rigidbody.position;
+		Vector3 position = base.GetComponent<Rigidbody>().position;
 		Vector3 vector = targetPos;
 		float num = GameController.instance.playerController.curVelocityX * 1.1f;
 		if (num == 0f)
@@ -528,16 +528,16 @@ public class EnemyController : MonoBehaviour
 			targetPos.y = 0.5f;
 			vector.y = 0.5f;
 		}
-		vector.x += GameController.instance.playerController.rigidbody.position.x;
-		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.rigidbody.position.x, TileSpawnManager.instance.railTileList[0]);
+		vector.x += GameController.instance.playerController.GetComponent<Rigidbody>().position.x;
+		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.GetComponent<Rigidbody>().position.x, TileSpawnManager.instance.railTileList[0]);
 		vector.y += railNodePosition.y;
 		vector.z += railNodePosition.z;
-		float num2 = ((vector.y - base.rigidbody.position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.rigidbody.position.y)) / Mathf.Abs(vector.y - base.rigidbody.position.y)) : ((vector.z - base.rigidbody.position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.rigidbody.position.z)) / Mathf.Abs(vector.z - base.rigidbody.position.z)) : 1f));
+		float num2 = ((vector.y - base.GetComponent<Rigidbody>().position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) / Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) : ((vector.z - base.GetComponent<Rigidbody>().position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) / Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) : 1f));
 		if (num2 < 0f || num2 > 1f)
 		{
 			num2 = 1f;
 		}
-		float num3 = Vector3.Distance(vector, base.rigidbody.position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
+		float num3 = Vector3.Distance(vector, base.GetComponent<Rigidbody>().position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
 		if (num3 <= Time.fixedDeltaTime)
 		{
 			position = vector;
@@ -559,20 +559,20 @@ public class EnemyController : MonoBehaviour
 			}
 			position.z = Mathf.Lerp(position.z, vector.z, Time.fixedDeltaTime / num3);
 		}
-		base.rigidbody.MovePosition(position);
+		base.GetComponent<Rigidbody>().MovePosition(position);
 	}
 
 	protected virtual void TornadoMoveEffect()
 	{
 		Vector3 effectPosition = MegaWeaponManager.instance.GetEffectPosition();
-		Vector3 position = base.rigidbody.position;
+		Vector3 position = base.GetComponent<Rigidbody>().position;
 		float num = GameController.instance.playerController.curVelocityX * 1.1f;
 		if (num == 0f)
 		{
 			return;
 		}
-		effectPosition.x += GameController.instance.playerController.rigidbody.position.x;
-		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.rigidbody.position.x, TileSpawnManager.instance.railTileList[0]);
+		effectPosition.x += GameController.instance.playerController.GetComponent<Rigidbody>().position.x;
+		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.GetComponent<Rigidbody>().position.x, TileSpawnManager.instance.railTileList[0]);
 		if (effectPosition.y < railNodePosition.y)
 		{
 			effectPosition.y = railNodePosition.y + 1f;
@@ -582,12 +582,12 @@ public class EnemyController : MonoBehaviour
 			effectPosition.y += railNodePosition.y;
 		}
 		effectPosition.z += railNodePosition.z;
-		float num2 = ((effectPosition.y - base.rigidbody.position.y != 0f) ? (Mathf.Abs(Mathf.Abs(effectPosition.y - beginMovePos.y) - Mathf.Abs(effectPosition.y - base.rigidbody.position.y)) / Mathf.Abs(effectPosition.y - base.rigidbody.position.y)) : ((effectPosition.z - base.rigidbody.position.z != 0f) ? (Mathf.Abs(Mathf.Abs(effectPosition.z - beginMovePos.z) - Mathf.Abs(effectPosition.z - base.rigidbody.position.z)) / Mathf.Abs(effectPosition.z - base.rigidbody.position.z)) : 1f));
+		float num2 = ((effectPosition.y - base.GetComponent<Rigidbody>().position.y != 0f) ? (Mathf.Abs(Mathf.Abs(effectPosition.y - beginMovePos.y) - Mathf.Abs(effectPosition.y - base.GetComponent<Rigidbody>().position.y)) / Mathf.Abs(effectPosition.y - base.GetComponent<Rigidbody>().position.y)) : ((effectPosition.z - base.GetComponent<Rigidbody>().position.z != 0f) ? (Mathf.Abs(Mathf.Abs(effectPosition.z - beginMovePos.z) - Mathf.Abs(effectPosition.z - base.GetComponent<Rigidbody>().position.z)) / Mathf.Abs(effectPosition.z - base.GetComponent<Rigidbody>().position.z)) : 1f));
 		if (num2 < 0f || num2 > 1f)
 		{
 			num2 = 1f;
 		}
-		float num3 = Vector3.Distance(effectPosition, base.rigidbody.position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
+		float num3 = Vector3.Distance(effectPosition, base.GetComponent<Rigidbody>().position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
 		if (num3 <= Time.fixedDeltaTime)
 		{
 			position = effectPosition;
@@ -606,16 +606,16 @@ public class EnemyController : MonoBehaviour
 			}
 			position.z = Mathf.Lerp(position.z, effectPosition.z, Time.fixedDeltaTime / num3);
 		}
-		if (base.rigidbody.position.y < railNodePosition.y)
+		if (base.GetComponent<Rigidbody>().position.y < railNodePosition.y)
 		{
 			position.y = railNodePosition.y;
 		}
-		base.rigidbody.MovePosition(position);
+		base.GetComponent<Rigidbody>().MovePosition(position);
 	}
 
 	protected virtual void RiftInducerMoveEffect()
 	{
-		Vector3 position = base.rigidbody.position;
+		Vector3 position = base.GetComponent<Rigidbody>().position;
 		Vector3 vector = targetPos;
 		float num = GameController.instance.playerController.curVelocityX * 1.1f;
 		if (num == 0f)
@@ -624,16 +624,16 @@ public class EnemyController : MonoBehaviour
 		}
 		targetPos.y += 0.5f;
 		vector = targetPos;
-		vector.x += GameController.instance.playerController.rigidbody.position.x;
-		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.rigidbody.position.x, TileSpawnManager.instance.railTileList[0]);
+		vector.x += GameController.instance.playerController.GetComponent<Rigidbody>().position.x;
+		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.GetComponent<Rigidbody>().position.x, TileSpawnManager.instance.railTileList[0]);
 		vector.y += railNodePosition.y;
 		vector.z += railNodePosition.z;
-		float num2 = ((vector.y - base.rigidbody.position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.rigidbody.position.y)) / Mathf.Abs(vector.y - base.rigidbody.position.y)) : ((vector.z - base.rigidbody.position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.rigidbody.position.z)) / Mathf.Abs(vector.z - base.rigidbody.position.z)) : 1f));
+		float num2 = ((vector.y - base.GetComponent<Rigidbody>().position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) / Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) : ((vector.z - base.GetComponent<Rigidbody>().position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) / Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) : 1f));
 		if (num2 < 0f || num2 > 1f)
 		{
 			num2 = 1f;
 		}
-		float num3 = Vector3.Distance(vector, base.rigidbody.position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
+		float num3 = Vector3.Distance(vector, base.GetComponent<Rigidbody>().position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
 		if (num3 <= Time.fixedDeltaTime)
 		{
 			position = vector;
@@ -655,7 +655,7 @@ public class EnemyController : MonoBehaviour
 			}
 			position.z = Mathf.Lerp(position.z, vector.z, Time.fixedDeltaTime / num3);
 		}
-		base.rigidbody.MovePosition(position);
+		base.GetComponent<Rigidbody>().MovePosition(position);
 	}
 
 	protected virtual void MoveEnemy()
@@ -664,26 +664,26 @@ public class EnemyController : MonoBehaviour
 		{
 			return;
 		}
-		Vector3 position = base.rigidbody.position;
+		Vector3 position = base.GetComponent<Rigidbody>().position;
 		Vector3 vector = targetPos;
 		float num = GameController.instance.playerController.curVelocityX * 1.1f;
 		if (num == 0f)
 		{
 			return;
 		}
-		vector.x += GameController.instance.playerController.rigidbody.position.x;
-		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.rigidbody.position.x, TileSpawnManager.instance.railTileList[0]);
+		vector.x += GameController.instance.playerController.GetComponent<Rigidbody>().position.x;
+		Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.GetComponent<Rigidbody>().position.x, TileSpawnManager.instance.railTileList[0]);
 		vector.y += railNodePosition.y;
 		if (!meleeDash)
 		{
 			vector.z += railNodePosition.z;
 		}
-		float num2 = ((vector.y - base.rigidbody.position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.rigidbody.position.y)) / Mathf.Abs(vector.y - base.rigidbody.position.y)) : ((vector.z - base.rigidbody.position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.rigidbody.position.z)) / Mathf.Abs(vector.z - base.rigidbody.position.z)) : 1f));
+		float num2 = ((vector.y - base.GetComponent<Rigidbody>().position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) / Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) : ((vector.z - base.GetComponent<Rigidbody>().position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) / Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) : 1f));
 		if (num2 < 0f || num2 > 1f)
 		{
 			num2 = 1f;
 		}
-		float num3 = Vector3.Distance(vector, base.rigidbody.position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
+		float num3 = Vector3.Distance(vector, base.GetComponent<Rigidbody>().position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
 		if (num3 <= Time.fixedDeltaTime)
 		{
 			position = vector;
@@ -694,7 +694,7 @@ public class EnemyController : MonoBehaviour
 			if (meleeDash)
 			{
 				num += (float)keepAtDistance / meleeSpeed;
-				num3 = Mathf.Abs(base.rigidbody.position.x - vector.x) / num;
+				num3 = Mathf.Abs(base.GetComponent<Rigidbody>().position.x - vector.x) / num;
 				if (num3 <= Time.fixedDeltaTime)
 				{
 					position.x = vector.x;
@@ -718,12 +718,12 @@ public class EnemyController : MonoBehaviour
 			}
 			position.z = Mathf.Lerp(position.z, vector.z, Time.fixedDeltaTime / num3);
 		}
-		base.rigidbody.MovePosition(position);
+		base.GetComponent<Rigidbody>().MovePosition(position);
 	}
 
 	protected bool MeleeRangeCheck()
 	{
-		if (Vector3.Distance(base.rigidbody.position, GameController.instance.playerController.rigidbody.position) <= 5f)
+		if (Vector3.Distance(base.GetComponent<Rigidbody>().position, GameController.instance.playerController.GetComponent<Rigidbody>().position) <= 5f)
 		{
 			return true;
 		}
@@ -781,7 +781,7 @@ public class EnemyController : MonoBehaviour
 			List<GameObject> list;
 			if (weap.spreadShot)
 			{
-				list = EnemyManager.instance.WithinRadius(base.rigidbody.position, weap.AOE);
+				list = EnemyManager.instance.WithinRadius(base.GetComponent<Rigidbody>().position, weap.AOE);
 				{
 					foreach (GameObject item in list)
 					{
@@ -796,7 +796,7 @@ public class EnemyController : MonoBehaviour
 			{
 				return;
 			}
-			list = EnemyManager.instance.WithinRadius(base.rigidbody.position, weap.AOE);
+			list = EnemyManager.instance.WithinRadius(base.GetComponent<Rigidbody>().position, weap.AOE);
 			foreach (GameObject item2 in list)
 			{
 				if (item2.GetComponent<EnemyController>() != this)
@@ -810,7 +810,7 @@ public class EnemyController : MonoBehaviour
 			GameObject[] array = GameObject.FindGameObjectsWithTag("Crates");
 			foreach (GameObject gameObject in array)
 			{
-				if (Vector3.Distance(gameObject.transform.position, base.rigidbody.position) < (float)weap.AOE)
+				if (Vector3.Distance(gameObject.transform.position, base.GetComponent<Rigidbody>().position) < (float)weap.AOE)
 				{
 					float num = 0.05f;
 					num = GetBulletTime(weap.weaponName);
@@ -870,10 +870,10 @@ public class EnemyController : MonoBehaviour
 	{
 		int damage3 = 0;
 		float timeUntilHit2 = 0.05f;
-		damage3 = ((!(weap.weaponName == "ConstructoShotgun") || WeaponsManager.instance.shotgunDamageFalloffPerUnit == null || WeaponsManager.instance.shotgunDamageFalloffPerUnit.Length <= weap.GetWeaponUpgradeLevel() - 1) ? ((int)weap.damage) : ((int)((float)weap.damage - Vector3.Distance(base.rigidbody.position, GameController.instance.playerController.rightHand.position) * WeaponsManager.instance.shotgunDamageFalloffPerUnit[weap.GetWeaponUpgradeLevel() - 1])));
+		damage3 = ((!(weap.weaponName == "ConstructoShotgun") || WeaponsManager.instance.shotgunDamageFalloffPerUnit == null || WeaponsManager.instance.shotgunDamageFalloffPerUnit.Length <= weap.GetWeaponUpgradeLevel() - 1) ? ((int)weap.damage) : ((int)((float)weap.damage - Vector3.Distance(base.GetComponent<Rigidbody>().position, GameController.instance.playerController.rightHand.position) * WeaponsManager.instance.shotgunDamageFalloffPerUnit[weap.GetWeaponUpgradeLevel() - 1])));
 		damage3 = ((damage3 >= armor) ? (damage3 - (int)armor) : 0);
 		timeUntilHit2 = GetBulletTime(weap.weaponName);
-		GameController.instance.playerController.myWeap.FireProjectile(base.rigidbody.position, this);
+		GameController.instance.playerController.myWeap.FireProjectile(base.GetComponent<Rigidbody>().position, this);
 		yield return new WaitForSeconds(timeUntilHit2);
 		TakeDamage((uint)damage3);
 	}
@@ -912,7 +912,7 @@ public class EnemyController : MonoBehaviour
 		if (curParticleGroundTarget != null)
 		{
 			curParticleGroundTarget.transform.position = Vector3.zero;
-			curParticleGroundTarget.particleSystem.Stop();
+			curParticleGroundTarget.GetComponent<ParticleSystem>().Stop();
 			curParticleGroundTarget = null;
 		}
 		StopLaserSight();
@@ -925,7 +925,7 @@ public class EnemyController : MonoBehaviour
 		}
 		else
 		{
-			PickupManager.instance.SpawnExplosionOfBolts(base.rigidbody.position);
+			PickupManager.instance.SpawnExplosionOfBolts(base.GetComponent<Rigidbody>().position);
 		}
 		StatsTracker.instance.UpdateStat(StatsTracker.Stats.totalEnemiesKilled);
 		if (GadgetManager.instance.GetJetpackStatus())
@@ -968,8 +968,8 @@ public class EnemyController : MonoBehaviour
 		if (particleOnHit != null)
 		{
 			GameObject nextFree = GameObjectPool.instance.GetNextFree(particleOnHit.name, true);
-			nextFree.transform.position = base.rigidbody.position;
-			nextFree.particleSystem.Play();
+			nextFree.transform.position = base.GetComponent<Rigidbody>().position;
+			nextFree.GetComponent<ParticleSystem>().Play();
 		}
 	}
 
@@ -983,8 +983,8 @@ public class EnemyController : MonoBehaviour
 		if (particleOnDeath != null)
 		{
 			GameObject nextFree = GameObjectPool.instance.GetNextFree(particleOnDeath.name, true);
-			nextFree.transform.position = base.rigidbody.position;
-			nextFree.particleSystem.Play();
+			nextFree.transform.position = base.GetComponent<Rigidbody>().position;
+			nextFree.GetComponent<ParticleSystem>().Play();
 		}
 	}
 
@@ -1060,7 +1060,7 @@ public class EnemyController : MonoBehaviour
 	{
 		int damage3 = 0;
 		float timeUntilHit2 = 0.05f;
-		damage3 = ((!(weap.weaponName == "ConstructoShotgun") || WeaponsManager.instance.shotgunDamageFalloffPerUnit == null || WeaponsManager.instance.shotgunDamageFalloffPerUnit.Length <= weap.GetWeaponUpgradeLevel() - 1) ? ((int)weap.damage) : ((int)((float)weap.damage - Vector3.Distance(base.rigidbody.position, GameController.instance.playerController.rightHand.position) * WeaponsManager.instance.shotgunDamageFalloffPerUnit[weap.GetWeaponUpgradeLevel() - 1])));
+		damage3 = ((!(weap.weaponName == "ConstructoShotgun") || WeaponsManager.instance.shotgunDamageFalloffPerUnit == null || WeaponsManager.instance.shotgunDamageFalloffPerUnit.Length <= weap.GetWeaponUpgradeLevel() - 1) ? ((int)weap.damage) : ((int)((float)weap.damage - Vector3.Distance(base.GetComponent<Rigidbody>().position, GameController.instance.playerController.rightHand.position) * WeaponsManager.instance.shotgunDamageFalloffPerUnit[weap.GetWeaponUpgradeLevel() - 1])));
 		damage3 = ((damage3 >= armor) ? (damage3 - (int)armor) : 0);
 		timeUntilHit2 = GetBulletTime(weap.weaponName);
 		yield return new WaitForSeconds(timeUntilHit2);
@@ -1073,7 +1073,7 @@ public class EnemyController : MonoBehaviour
 		int rand = Random.Range(0, 1);
 		float timeUntilHit = 0.05f;
 		timeUntilHit = GetBulletTime(weapName);
-		Vector3 dodgeShot = base.rigidbody.position;
+		Vector3 dodgeShot = base.GetComponent<Rigidbody>().position;
 		if (rand == 1)
 		{
 			anim.SetBool("LDodge", true);
@@ -1086,7 +1086,7 @@ public class EnemyController : MonoBehaviour
 			targetPos.z -= 8f;
 			dodgeShot.z += 2f;
 		}
-		dodgeShot += (dodgeShot - GameController.instance.playerController.rigidbody.position) * 1.2f;
+		dodgeShot += (dodgeShot - GameController.instance.playerController.GetComponent<Rigidbody>().position) * 1.2f;
 		yield return new WaitForSeconds(timeUntilHit);
 		GameController.instance.playerController.myWeap.FireProjectile(dodgeShot);
 		if (rand == 1)
@@ -1105,9 +1105,9 @@ public class EnemyController : MonoBehaviour
 	{
 		Vector3 zero = Vector3.zero;
 		zero = nodePos;
-		if ((float)keepAtDistance > zero.x - GameController.instance.playerController.rigidbody.position.x)
+		if ((float)keepAtDistance > zero.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x)
 		{
-			zero.x = GameController.instance.playerController.rigidbody.position.x + (float)keepAtDistance + 2f;
+			zero.x = GameController.instance.playerController.GetComponent<Rigidbody>().position.x + (float)keepAtDistance + 2f;
 		}
 		zero.y = TileSpawnManager.instance.getRailNodePosition(0, nodePos.x, TileSpawnManager.instance.railTileList[0]).y;
 		base.transform.position = zero;
@@ -1134,8 +1134,8 @@ public class EnemyController : MonoBehaviour
 				GameObjectPool.instance.SetFree(curLockOnEffect);
 			}
 			curLockOnEffect = GameObjectPool.instance.GetNextFree(lockOnEffect.name, true);
-			curLockOnEffect.transform.position = base.rigidbody.position;
-			curLockOnEffect.particleSystem.Play();
+			curLockOnEffect.transform.position = base.GetComponent<Rigidbody>().position;
+			curLockOnEffect.GetComponent<ParticleSystem>().Play();
 		}
 	}
 

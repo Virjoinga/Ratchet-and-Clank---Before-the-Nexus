@@ -257,9 +257,9 @@ public class GameObjectPool : MonoBehaviour
 			poolMeta.poolList.AddLast(value);
 		}
 		GameObject gameObject = poolMeta.freeList.Dequeue() as GameObject;
-		if (gameObject.rigidbody != null && !gameObject.rigidbody.isKinematic)
+		if (gameObject.GetComponent<Rigidbody>() != null && !gameObject.GetComponent<Rigidbody>().isKinematic)
 		{
-			gameObject.rigidbody.velocity = Vector3.zero;
+			gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
 		}
 		if (deferred)
 		{

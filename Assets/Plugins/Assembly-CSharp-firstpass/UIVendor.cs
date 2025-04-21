@@ -393,7 +393,7 @@ public class UIVendor : UIScreen
 			component.Background.color = component.UnAffordableItemColor;
 		}
 		component.ItemIcon.SetIconSprite("icon_armor_thermaflux", IconScript.HexLevel.HEX_V3, true, true);
-		Transform transform = base.transform.FindChild("HorizScrollPanel/VendorSubMenuArmor/PreviewPane/SkinsContainer");
+		Transform transform = base.transform.Find("HorizScrollPanel/VendorSubMenuArmor/PreviewPane/SkinsContainer");
 		if (!transform)
 		{
 			return;
@@ -646,13 +646,13 @@ public class UIVendor : UIScreen
 		UILabel component = BuyButton.transform.Find("Label").GetComponent<UILabel>();
 		if (TotalBolts >= ItemCost && !ItemMaxed)
 		{
-			BuyButton.GetComponent<BoxCollider>().collider.enabled = true;
+			BuyButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			component.color = color;
 			BuyButton.UpdateColor(true, true);
 		}
 		else
 		{
-			BuyButton.GetComponent<BoxCollider>().collider.enabled = false;
+			BuyButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 			component.color = color2;
 			BuyButton.UpdateColor(false, true);
 		}
@@ -689,14 +689,14 @@ public class UIVendor : UIScreen
 		}
 		if (flag)
 		{
-			EquipButton.collider.enabled = true;
+			EquipButton.GetComponent<Collider>().enabled = true;
 			EquipButton.UpdateColor(true, true);
 			component2.color = color;
 		}
 		else
 		{
 			component2.color = color2;
-			EquipButton.collider.enabled = false;
+			EquipButton.GetComponent<Collider>().enabled = false;
 			EquipButton.UpdateColor(false, true);
 		}
 		component.Localize();

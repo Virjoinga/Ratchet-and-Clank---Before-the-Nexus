@@ -8,7 +8,7 @@ public class LightCorrection : MonoBehaviour
 
 	private void Start()
 	{
-		if (!base.renderer.useLightProbes)
+		if (!base.GetComponent<Renderer>().useLightProbes)
 		{
 			Debug.LogError("LightCorrection: Start called for an object, which doesn't use lightprobes!");
 			base.enabled = false;
@@ -17,7 +17,7 @@ public class LightCorrection : MonoBehaviour
 		levelOrigin = base.transform.root;
 		correctedProxy = new GameObject();
 		correctedProxy.name = base.name + "_LightProbeAnchor";
-		base.renderer.lightProbeAnchor = correctedProxy.transform;
+		base.GetComponent<Renderer>().probeAnchor = correctedProxy.transform;
 	}
 
 	private void OnDrawGizmosSelected()

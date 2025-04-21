@@ -365,7 +365,7 @@ public class MegaWeaponManager : MonoBehaviour
 		{
 			currentMegaEffect = GameObjectPool.instance.GetNextFree(effectName, true);
 			currentMegaEffect.transform.position = GameController.instance.mainCamera.transform.position + offset;
-			currentMegaEffect.particleSystem.Play();
+			currentMegaEffect.GetComponent<ParticleSystem>().Play();
 		}
 		if (curMegaObject != null)
 		{
@@ -441,7 +441,7 @@ public class MegaWeaponManager : MonoBehaviour
 			curMegaDuration = 0f;
 			if (destroyObject)
 			{
-				currentMegaEffect.particleSystem.Stop();
+				currentMegaEffect.GetComponent<ParticleSystem>().Stop();
 				GameObjectPool.instance.SetFree(currentMegaEffect, true);
 				currentMegaEffect = null;
 				if (curMegaObject != null)

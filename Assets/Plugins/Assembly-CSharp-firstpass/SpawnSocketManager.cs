@@ -46,7 +46,7 @@ public class SpawnSocketManager : MonoBehaviour
 			for (int i = 0; i < EnemySockets.Count; i++)
 			{
 				EnemySpawnSockets enemySpawnSockets = EnemySockets[i];
-				if (!((float)enemySpawnSockets.xSpawnLocation > enemySpawnSockets.transform.position.x - GameController.instance.playerController.rigidbody.position.x) || TileSpawnManager.instance.GetGameStateFromTile(2) != GameController.eGameState.GS_OnGround)
+				if (!((float)enemySpawnSockets.xSpawnLocation > enemySpawnSockets.transform.position.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x) || TileSpawnManager.instance.GetGameStateFromTile(2) != GameController.eGameState.GS_OnGround)
 				{
 					continue;
 				}

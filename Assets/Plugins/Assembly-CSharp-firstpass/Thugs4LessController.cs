@@ -39,7 +39,7 @@ public class Thugs4LessController : EnemyController
 			targetPos.z = Random.Range(minZ, maxZ);
 			targetPos.y = Random.Range(minHeight, maxHeight);
 			currentPosDelay = minPosDelay + Random.value * (maxPosDelay - minPosDelay);
-			beginMovePos = base.rigidbody.position;
+			beginMovePos = base.GetComponent<Rigidbody>().position;
 			return true;
 		}
 		return false;
@@ -89,14 +89,14 @@ public class Thugs4LessController : EnemyController
 	protected virtual void SetGroundFireTargetEffect()
 	{
 		Vector3 zero = Vector3.zero;
-		float num = 0f + (base.rigidbody.position.x - GameController.instance.playerController.rigidbody.position.x) / projectileSpeed;
-		float xOffset = GameController.instance.playerController.rigidbody.position.x + GameController.instance.playerController.rigidbody.velocity.x * num;
+		float num = 0f + (base.GetComponent<Rigidbody>().position.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x) / projectileSpeed;
+		float xOffset = GameController.instance.playerController.GetComponent<Rigidbody>().position.x + GameController.instance.playerController.GetComponent<Rigidbody>().velocity.x * num;
 		zero = TileSpawnManager.instance.getRailNodePosition(railToAttack, xOffset, TileSpawnManager.instance.railTileList[0]);
 		if (particleGroundTarget != null)
 		{
 			curParticleGroundTarget = GameObjectPool.instance.GetNextFree(particleGroundTarget.name, true);
 			curParticleGroundTarget.transform.position = zero;
-			curParticleGroundTarget.particleSystem.Play();
+			curParticleGroundTarget.GetComponent<ParticleSystem>().Play();
 		}
 	}
 
@@ -106,21 +106,21 @@ public class Thugs4LessController : EnemyController
 		{
 			return;
 		}
-		Vector3 position = base.rigidbody.position;
+		Vector3 position = base.GetComponent<Rigidbody>().position;
 		Vector3 vector = targetPos;
 		float num = GameController.instance.playerController.curVelocityX * 1.1f;
 		if (num != 0f)
 		{
-			vector.x += GameController.instance.playerController.rigidbody.position.x;
-			Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.rigidbody.position.x, TileSpawnManager.instance.railTileList[0]);
+			vector.x += GameController.instance.playerController.GetComponent<Rigidbody>().position.x;
+			Vector3 railNodePosition = TileSpawnManager.instance.getRailNodePosition(0, base.GetComponent<Rigidbody>().position.x, TileSpawnManager.instance.railTileList[0]);
 			vector.y += railNodePosition.y;
 			vector.z += railNodePosition.z;
-			float num2 = ((vector.y - base.rigidbody.position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.rigidbody.position.y)) / Mathf.Abs(vector.y - base.rigidbody.position.y)) : ((vector.z - base.rigidbody.position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.rigidbody.position.z)) / Mathf.Abs(vector.z - base.rigidbody.position.z)) : 1f));
+			float num2 = ((vector.y - base.GetComponent<Rigidbody>().position.y != 0f) ? (Mathf.Abs(Mathf.Abs(vector.y - beginMovePos.y) - Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) / Mathf.Abs(vector.y - base.GetComponent<Rigidbody>().position.y)) : ((vector.z - base.GetComponent<Rigidbody>().position.z != 0f) ? (Mathf.Abs(Mathf.Abs(vector.z - beginMovePos.z) - Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) / Mathf.Abs(vector.z - base.GetComponent<Rigidbody>().position.z)) : 1f));
 			if (num2 < 0f || num2 > 1f)
 			{
 				num2 = 1f;
 			}
-			float num3 = Vector3.Distance(vector, base.rigidbody.position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
+			float num3 = Vector3.Distance(vector, base.GetComponent<Rigidbody>().position) / (EnemySpeedOverDistance.Evaluate(num2) * num);
 			if (num3 <= Time.fixedDeltaTime)
 			{
 				position = vector;
@@ -132,7 +132,7 @@ public class Thugs4LessController : EnemyController
 				position.y = Mathf.Lerp(position.y, vector.y, Time.fixedDeltaTime / num3);
 				position.z = Mathf.Lerp(position.z, vector.z, Time.fixedDeltaTime / num3);
 			}
-			base.rigidbody.MovePosition(position);
+			base.GetComponent<Rigidbody>().MovePosition(position);
 		}
 	}
 
@@ -159,8 +159,8 @@ public class Thugs4LessController : EnemyController
 	{
 		if (chargeUpParticles != null)
 		{
-			chargeUpParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpParticles.particleSystem.Play();
+			chargeUpParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpParticles.GetComponent<ParticleSystem>().Play();
 		}
 	}
 }

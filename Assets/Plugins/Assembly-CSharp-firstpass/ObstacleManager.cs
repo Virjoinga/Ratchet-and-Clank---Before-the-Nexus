@@ -140,13 +140,13 @@ public class ObstacleManager : MonoBehaviour
 		if (component != null)
 		{
 			component.rail = num;
-			if (component.rigidbody == null)
+			if (component.GetComponent<Rigidbody>() == null)
 			{
 				component.transform.position = position;
 			}
 			else
 			{
-				component.rigidbody.MovePosition(position);
+				component.GetComponent<Rigidbody>().MovePosition(position);
 			}
 		}
 		Obstacles.Add(gameObject);

@@ -34,14 +34,14 @@ public class UISync : UIScreen
 
 	private void DisableButton()
 	{
-		SyncButton.GetComponent<BoxCollider>().collider.enabled = false;
+		SyncButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		SyncButton.transform.Find("Label").GetComponent<UILabel>().color = InactiveColor;
 		SyncButton.UpdateColor(false, true);
 	}
 
 	private void EnableButton()
 	{
-		SyncButton.GetComponent<BoxCollider>().collider.enabled = true;
+		SyncButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		SyncButton.transform.Find("Label").GetComponent<UILabel>().color = WhiteColor;
 		SyncButton.UpdateColor(true, true);
 	}
@@ -101,7 +101,7 @@ public class UISync : UIScreen
 
 	private void SetRaritaniumFailed(HttpWeb target, object userData = null)
 	{
-		SyncButton.GetComponent<BoxCollider>().collider.enabled = true;
+		SyncButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		SyncButton.UpdateColor(true, true);
 		ChronoVaultValueLabel.text = "---";
 		UIManager.instance.PersistentUI.ShowPopup("ConfirmationPanel", "UI_Menu_140", true);

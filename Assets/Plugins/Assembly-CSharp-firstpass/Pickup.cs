@@ -32,9 +32,9 @@ public class Pickup : MonoBehaviour
 		{
 			return;
 		}
-		if (!base.renderer.enabled)
+		if (!base.GetComponent<Renderer>().enabled)
 		{
-			base.renderer.enabled = true;
+			base.GetComponent<Renderer>().enabled = true;
 			base.transform.parent.gameObject.GetComponentInChildren<ParticleSystem>().Play(true);
 		}
 		if (base.transform.position.x < GameController.instance.playerController.transform.position.x - TileSpawnManager.instance.worldPieceSize)

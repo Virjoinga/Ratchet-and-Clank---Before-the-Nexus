@@ -287,7 +287,7 @@ public class TileSpawnManager : MonoBehaviour
 
 	public Bounds getLastRileTileBounds()
 	{
-		return lastRailTile.renderer.bounds;
+		return lastRailTile.GetComponent<Renderer>().bounds;
 	}
 
 	public int getLeftRail(int currentRail)
@@ -1313,7 +1313,7 @@ public class TileSpawnManager : MonoBehaviour
 			{
 				int num2 = getSpawnTileIndex();
 				GameObject gameObject = floorTileList[num2];
-				if (gameObject != null && gameObject.collider != null)
+				if (gameObject != null && gameObject.GetComponent<Collider>() != null)
 				{
 					int rail = 0;
 					float unoccupiedSegmentPosition = getUnoccupiedSegmentPosition(out rail);
@@ -1345,7 +1345,7 @@ public class TileSpawnManager : MonoBehaviour
 				{
 					int num2 = getSpawnTileIndex();
 					GameObject gameObject = floorTileList[num2];
-					if (gameObject != null && gameObject.collider != null)
+					if (gameObject != null && gameObject.GetComponent<Collider>() != null)
 					{
 						int rail = 0;
 						float unoccupiedSegmentPosition = getUnoccupiedSegmentPosition(out rail);
@@ -1384,7 +1384,7 @@ public class TileSpawnManager : MonoBehaviour
 		}
 		int num2 = getSpawnTileIndex();
 		GameObject gameObject = floorTileList[num2];
-		if (gameObject != null && gameObject.collider != null)
+		if (gameObject != null && gameObject.GetComponent<Collider>() != null)
 		{
 			int rail = 0;
 			float unoccupiedSegmentPosition = getUnoccupiedSegmentPosition(out rail);

@@ -112,11 +112,11 @@ public class WeaponsManager : MonoBehaviour
 		WeapInventory[2] = GameObjectPool.instance.GetNextFree("WEP_BuzzBlades");
 		WeapInventory[3] = GameObjectPool.instance.GetNextFree("WEP_PredatorLauncher");
 		WeapInventory[4] = GameObjectPool.instance.GetNextFree("WEP_RynoM");
-		WeapInventory[0].renderer.enabled = false;
-		WeapInventory[1].renderer.enabled = false;
-		WeapInventory[2].renderer.enabled = false;
-		WeapInventory[3].renderer.enabled = false;
-		WeapInventory[4].renderer.enabled = false;
+		WeapInventory[0].GetComponent<Renderer>().enabled = false;
+		WeapInventory[1].GetComponent<Renderer>().enabled = false;
+		WeapInventory[2].GetComponent<Renderer>().enabled = false;
+		WeapInventory[3].GetComponent<Renderer>().enabled = false;
+		WeapInventory[4].GetComponent<Renderer>().enabled = false;
 		WeapInventory[curWeapIndex].transform.parent = GameController.instance.playerController.rightHand;
 		WeapInventory[curWeapIndex].transform.localPosition = Vector3.zero;
 		WeapInventory[curWeapIndex].transform.localRotation = Quaternion.identity;
@@ -134,7 +134,7 @@ public class WeaponsManager : MonoBehaviour
 		{
 			WeapInventory[curWeapIndex].transform.parent = null;
 			WeapInventory[curWeapIndex].transform.localPosition = Vector3.zero;
-			WeapInventory[curWeapIndex].renderer.enabled = false;
+			WeapInventory[curWeapIndex].GetComponent<Renderer>().enabled = false;
 			if (!weapHidden)
 			{
 				WeapInventory[index].transform.parent = GameController.instance.playerController.rightHand;
@@ -143,7 +143,7 @@ public class WeaponsManager : MonoBehaviour
 			}
 			GameController.instance.playerController.myWeap = WeapInventory[index].GetComponent<Weapon>();
 			GameController.instance.playerController.myWeap.LoadWeapData(GameController.instance.playerController.myWeap.weaponName, upgradeLevel);
-			GameController.instance.playerController.myWeap.renderer.enabled = true;
+			GameController.instance.playerController.myWeap.GetComponent<Renderer>().enabled = true;
 			curWeapIndex = index;
 			if (!weaponUsedThisRun[curWeapIndex])
 			{
@@ -179,7 +179,7 @@ public class WeaponsManager : MonoBehaviour
 				WeapInventory[curWeapIndex].transform.localPosition = Vector3.zero;
 				WeapInventory[curWeapIndex].transform.localRotation = Quaternion.identity;
 			}
-			WeapInventory[curWeapIndex].renderer.enabled = !hide;
+			WeapInventory[curWeapIndex].GetComponent<Renderer>().enabled = !hide;
 			weapHidden = hide;
 		}
 	}
@@ -202,7 +202,7 @@ public class WeaponsManager : MonoBehaviour
 			{
 				EnemyManager.instance.DestroyAll(true);
 			}
-			Ray ray = Camera.mainCamera.ScreenPointToRay(target);
+			Ray ray = Camera.main.ScreenPointToRay(target);
 			RaycastHit[] array = Physics.RaycastAll(ray);
 			Array.Sort(array, new RaycastHitComparer());
 			MoveAim(target);
@@ -340,7 +340,7 @@ public class WeaponsManager : MonoBehaviour
 	{
 		for (int i = 0; i < numExtraShots; i++)
 		{
-			Ray ray = Camera.mainCamera.ScreenPointToRay(target);
+			Ray ray = Camera.main.ScreenPointToRay(target);
 			Vector3 targetPos = ray.origin + ray.direction * 200f;
 			targetPos = SpreadOffset(targetPos);
 			GameController.instance.playerController.myWeap.FireFakeProjectile(targetPos);
@@ -420,7 +420,7 @@ public class WeaponsManager : MonoBehaviour
 
 	private void MoveAim(Vector3 target)
 	{
-		Ray ray = Camera.mainCamera.ScreenPointToRay(target);
+		Ray ray = Camera.main.ScreenPointToRay(target);
 		GameController.instance.playerController.AdjustAim(ray.origin + ray.direction * 25f);
 	}
 
@@ -478,7 +478,7 @@ public class WeaponsManager : MonoBehaviour
 	{
 		if (GameController.instance.gameState == GameController.eGameState.GS_OnGround)
 		{
-			Ray ray = Camera.mainCamera.ScreenPointToRay(target);
+			Ray ray = Camera.main.ScreenPointToRay(target);
 			LayerMask layerMask = 1 << LayerMask.NameToLayer("Enemies");
 			RaycastHit[] array = Physics.RaycastAll(ray, 300f, layerMask);
 			Array.Sort(array, new RaycastHitComparer());
@@ -567,7 +567,7 @@ public class WeaponsManager : MonoBehaviour
 		for (int i = 0; i < enemies.Count; i++)
 		{
 			GameObject gameObject = enemies[i];
-			Vector3 vector = gameObject.rigidbody.position - GameController.instance.playerController.rightHand.position;
+			Vector3 vector = gameObject.GetComponent<Rigidbody>().position - GameController.instance.playerController.rightHand.position;
 			Vector3 vector2 = ((!(hitPoint == Vector3.zero)) ? (hitPoint - GameController.instance.playerController.rightHand.position) : (ray.direction * shotgunWallDistance));
 			float num2 = Vector3.Dot(vector, vector2);
 			float num3 = Mathf.Acos(num2 / (Vector3.Magnitude(vector) * Vector3.Magnitude(vector2)));

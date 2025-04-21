@@ -25,31 +25,31 @@ public class CerulleanSwarmersController : EnemyController
 		base.Start();
 		bCanAttack = false;
 		chargeUpParticles = base.gameObject.transform.Find("FX_SwarmerCharge").gameObject;
-		base.rigidbody.useGravity = false;
+		base.GetComponent<Rigidbody>().useGravity = false;
 	}
 
 	private IEnumerator SpawnSwarmer()
 	{
 		GameObject particleObject = GameObjectPool.instance.GetNextFree(spawnParticles.name, true);
-		Vector3 spawnPos = base.rigidbody.position;
-		particleObject.transform.position = base.rigidbody.position;
-		particleObject.particleSystem.Play();
+		Vector3 spawnPos = base.GetComponent<Rigidbody>().position;
+		particleObject.transform.position = base.GetComponent<Rigidbody>().position;
+		particleObject.GetComponent<ParticleSystem>().Play();
 		spawnPos.y -= 10f;
-		base.rigidbody.position = spawnPos;
+		base.GetComponent<Rigidbody>().position = spawnPos;
 		yield return new WaitForSeconds(1f);
 		if (!InRangeOfPlayer())
 		{
 			spawnPos.y += 10f;
-			base.rigidbody.MovePosition(spawnPos);
+			base.GetComponent<Rigidbody>().MovePosition(spawnPos);
 			bCanAttack = true;
 		}
 	}
 
 	protected override bool UpdateTargetPosition(EnemyType type)
 	{
-		if (InRangeOfPlayer() && bCanAttack && base.rigidbody.position.z - 7f < GameController.instance.playerController.rigidbody.position.z && base.rigidbody.position.z + 7f > GameController.instance.playerController.rigidbody.position.z && base.rigidbody.position.x - 3f > GameController.instance.playerController.rigidbody.position.x)
+		if (InRangeOfPlayer() && bCanAttack && base.GetComponent<Rigidbody>().position.z - 7f < GameController.instance.playerController.GetComponent<Rigidbody>().position.z && base.GetComponent<Rigidbody>().position.z + 7f > GameController.instance.playerController.GetComponent<Rigidbody>().position.z && base.GetComponent<Rigidbody>().position.x - 3f > GameController.instance.playerController.GetComponent<Rigidbody>().position.x)
 		{
-			targetPos = GameController.instance.playerController.rigidbody.position;
+			targetPos = GameController.instance.playerController.GetComponent<Rigidbody>().position;
 			StartCoroutine("BiteRatchet");
 			return true;
 		}
@@ -64,11 +64,11 @@ public class CerulleanSwarmersController : EnemyController
 	{
 		if (InRangeOfPlayer())
 		{
-			Vector3 position = base.rigidbody.position;
+			Vector3 position = base.GetComponent<Rigidbody>().position;
 			position.z = Mathf.Lerp(position.z, targetPos.z, Time.fixedDeltaTime * lerpSpeed);
 			position.y = Mathf.Lerp(position.y, targetPos.y, Time.fixedDeltaTime * lerpSpeed);
-			base.rigidbody.MovePosition(position);
-			base.rigidbody.MoveRotation(Quaternion.Euler(Vector3.zero));
+			base.GetComponent<Rigidbody>().MovePosition(position);
+			base.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(Vector3.zero));
 		}
 	}
 
@@ -98,14 +98,14 @@ public class CerulleanSwarmersController : EnemyController
 				currentRail = 1;
 			}
 			Vector3 zero = Vector3.zero;
-			zero = TileSpawnManager.instance.getSpawnPosition(currentRail, nodePos.x - GameController.instance.playerController.rigidbody.position.x);
-			base.rigidbody.MovePosition(zero);
+			zero = TileSpawnManager.instance.getSpawnPosition(currentRail, nodePos.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x);
+			base.GetComponent<Rigidbody>().MovePosition(zero);
 		}
 	}
 
 	public override void SpawnMovement()
 	{
-		targetPos = base.rigidbody.position;
+		targetPos = base.GetComponent<Rigidbody>().position;
 		targetPos.x = keepAtDistance;
 	}
 
@@ -120,8 +120,8 @@ public class CerulleanSwarmersController : EnemyController
 	{
 		if (chargeUpParticles != null)
 		{
-			chargeUpParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpParticles.particleSystem.Play();
+			chargeUpParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpParticles.GetComponent<ParticleSystem>().Play();
 		}
 	}
 

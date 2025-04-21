@@ -49,9 +49,9 @@ public class AllPlatformMovieTexture : MonoBehaviour
 			Debug.Log("media player controller found");
 			if (component.GetCurrentState() == MediaPlayerCtrl.MEDIAPLAYER_STATE.READY)
 			{
-				Debug.Log("Texture before: " + base.renderer.material.mainTexture.ToString());
-				base.renderer.material.mainTexture = component.GetVideoTexture();
-				Debug.Log("Texture after: " + base.renderer.material.mainTexture.ToString());
+				Debug.Log("Texture before: " + base.GetComponent<Renderer>().material.mainTexture.ToString());
+				base.GetComponent<Renderer>().material.mainTexture = component.GetVideoTexture();
+				Debug.Log("Texture after: " + base.GetComponent<Renderer>().material.mainTexture.ToString());
 				component.Play();
 				flag = true;
 			}

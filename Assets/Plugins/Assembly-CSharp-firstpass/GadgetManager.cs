@@ -207,9 +207,9 @@ public class GadgetManager : MonoBehaviour
 		for (int i = 0; i < bolts.Count; i++)
 		{
 			Boltz boltz = bolts[i];
-			if (Time.timeScale != 0f && boltz.gameObject.activeSelf && (GetMagnetizerRadius() >= Vector3.Distance(boltz.transform.position, GameController.instance.playerController.rigidbody.position) || MegaWeaponManager.instance.GetTornadoPickupRange() >= Vector3.Distance(boltz.transform.position, MegaWeaponManager.instance.GetMegaWeaponPosition())))
+			if (Time.timeScale != 0f && boltz.gameObject.activeSelf && (GetMagnetizerRadius() >= Vector3.Distance(boltz.transform.position, GameController.instance.playerController.GetComponent<Rigidbody>().position) || MegaWeaponManager.instance.GetTornadoPickupRange() >= Vector3.Distance(boltz.transform.position, MegaWeaponManager.instance.GetMegaWeaponPosition())))
 			{
-				boltz.transform.position -= Vector3.Normalize(boltz.transform.position - GameController.instance.playerController.rigidbody.position) * MagnetizerStrength;
+				boltz.transform.position -= Vector3.Normalize(boltz.transform.position - GameController.instance.playerController.GetComponent<Rigidbody>().position) * MagnetizerStrength;
 			}
 		}
 	}
@@ -496,7 +496,7 @@ public class GadgetManager : MonoBehaviour
 					nextFree.transform.position = zero;
 					ObstacleManager.instance.segmentOccupied[num4, num5] = true;
 					flag = true;
-					nextFree.GetComponentInChildren<Pickup>().renderer.enabled = true;
+					nextFree.GetComponentInChildren<Pickup>().GetComponent<Renderer>().enabled = true;
 					nextFree.GetComponentInChildren<Pickup>().enabled = true;
 				}
 				else
@@ -545,8 +545,8 @@ public class GadgetManager : MonoBehaviour
 		if (magnetizerParticles != null)
 		{
 			curMagnetizerObject = GameObjectPool.instance.GetNextFree(magnetizerParticles.name, true);
-			curMagnetizerObject.transform.position = GameController.instance.playerController.rigidbody.position + magnetizerOffset;
-			curMagnetizerObject.particleSystem.Play();
+			curMagnetizerObject.transform.position = GameController.instance.playerController.GetComponent<Rigidbody>().position + magnetizerOffset;
+			curMagnetizerObject.GetComponent<ParticleSystem>().Play();
 		}
 	}
 
@@ -593,8 +593,8 @@ public class GadgetManager : MonoBehaviour
 		if (boltMultiplierParticles != null)
 		{
 			curMultiplierObject = GameObjectPool.instance.GetNextFree(boltMultiplierParticles.name, true);
-			curMultiplierObject.transform.position = GameController.instance.playerController.rigidbody.position + boltMultiplierOffset;
-			curMultiplierObject.particleSystem.Play();
+			curMultiplierObject.transform.position = GameController.instance.playerController.GetComponent<Rigidbody>().position + boltMultiplierOffset;
+			curMultiplierObject.GetComponent<ParticleSystem>().Play();
 		}
 	}
 
@@ -650,8 +650,8 @@ public class GadgetManager : MonoBehaviour
 		if (reflectorParticles != null)
 		{
 			curReflectorObject = GameObjectPool.instance.GetNextFree(reflectorParticles.name, true);
-			curReflectorObject.transform.position = GameController.instance.playerController.rigidbody.position + reflectorOffset;
-			curReflectorObject.particleSystem.Play();
+			curReflectorObject.transform.position = GameController.instance.playerController.GetComponent<Rigidbody>().position + reflectorOffset;
+			curReflectorObject.GetComponent<ParticleSystem>().Play();
 		}
 	}
 

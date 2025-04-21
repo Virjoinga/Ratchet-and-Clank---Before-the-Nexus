@@ -22,7 +22,7 @@ public class Crate : Obstacle
 			{
 				GameObject nextFree = GameObjectPool.instance.GetNextFree(breakParticles.name, true);
 				nextFree.transform.position = base.transform.position;
-				nextFree.particleSystem.Play();
+				nextFree.GetComponent<ParticleSystem>().Play();
 			}
 			StatsTracker.instance.UpdateStat(StatsTracker.Stats.cratesBroken);
 			StatsTracker.instance.SetStat(StatsTracker.Stats.noCratesDistanceTraveled, GameController.instance.playerController.travelDist);
@@ -38,7 +38,7 @@ public class Crate : Obstacle
 		{
 			GameObject crateBreak = GameObjectPool.instance.GetNextFree(breakParticles.name, true);
 			crateBreak.transform.position = base.transform.position;
-			crateBreak.particleSystem.Play();
+			crateBreak.GetComponent<ParticleSystem>().Play();
 		}
 		StatsTracker.instance.UpdateStat(StatsTracker.Stats.cratesBroken);
 		StatsTracker.instance.SetStat(StatsTracker.Stats.noCratesDistanceTraveled, GameController.instance.playerController.travelDist);

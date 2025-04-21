@@ -94,8 +94,8 @@ public class AnimationEvents : MonoBehaviour
 			.gameObject;
 		GameObject gameObject3 = gameObject.transform.Find("Root").Find("ShipBody").Find("FX_WeaponChargeR")
 			.gameObject;
-		gameObject2.particleSystem.Play();
-		gameObject3.particleSystem.Play();
+		gameObject2.GetComponent<ParticleSystem>().Play();
+		gameObject3.GetComponent<ParticleSystem>().Play();
 		if (gameObject != null && GameController.instance.playerController.IsDoingIntro())
 		{
 			StartCoroutine("FireIntroProjectile");
@@ -133,7 +133,7 @@ public class AnimationEvents : MonoBehaviour
 			EMPDestination = GameController.instance.mainCamera.GetComponent<Camera>().ViewportToWorldPoint(GadgetButtonLoc);
 		}
 		GameObject projectile = GameObjectPool.instance.GetNextFree("BulletThing");
-		projectile.GetComponent<EnemyProjectiles>().particles = GameObjectPool.instance.GetNextFree("FX_LeviathanProjectileEMP").particleSystem;
+		projectile.GetComponent<EnemyProjectiles>().particles = GameObjectPool.instance.GetNextFree("FX_LeviathanProjectileEMP").GetComponent<ParticleSystem>();
 		projectile.GetComponent<EnemyProjectiles>().SetProjectileData(0u, 5f, RWeaponEffect.transform.position, 0, EMPDestination);
 	}
 
@@ -144,10 +144,10 @@ public class AnimationEvents : MonoBehaviour
 			GameObject nextFree = GameObjectPool.instance.GetNextFree(impactExplosionParticles, true);
 			if (nextFree != null)
 			{
-				Vector3 position = GameController.instance.playerController.rigidbody.position;
+				Vector3 position = GameController.instance.playerController.GetComponent<Rigidbody>().position;
 				position.y += 1.5f;
 				nextFree.transform.position = position;
-				nextFree.particleSystem.Play();
+				nextFree.GetComponent<ParticleSystem>().Play();
 			}
 		}
 	}

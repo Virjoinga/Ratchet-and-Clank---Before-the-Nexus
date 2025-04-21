@@ -20,7 +20,7 @@ public class TornadoLauncher : Pickup
 			playerController.SetCurrentPickupType(PlayerController.PickupTypes.Tornado);
 			base.transform.parent.gameObject.GetComponentInChildren<ParticleSystem>().Stop(true);
 			SFXManager.instance.PlaySound("cha_ratchet_Pickup");
-			base.renderer.enabled = false;
+			base.GetComponent<Renderer>().enabled = false;
 			PickupManager.instance.getPickups().Remove(base.transform.parent.gameObject);
 			StatsTracker.instance.UpdateStat(StatsTracker.Stats.totalPickupsAcquired);
 			StatsTracker.instance.UpdateStat(StatsTracker.Stats.gadgetsCollected);

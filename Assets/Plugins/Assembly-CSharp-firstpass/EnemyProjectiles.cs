@@ -17,7 +17,7 @@ public class EnemyProjectiles : MonoBehaviour
 		timeAlive -= Time.fixedDeltaTime;
 		if (projParticle != null)
 		{
-			projParticle.transform.position = base.rigidbody.position;
+			projParticle.transform.position = base.GetComponent<Rigidbody>().position;
 		}
 		if (timeAlive <= 0f)
 		{
@@ -57,17 +57,17 @@ public class EnemyProjectiles : MonoBehaviour
 	{
 		Vector3 zero = Vector3.zero;
 		speed = projSpeed;
-		base.rigidbody.MovePosition(enemyPos);
+		base.GetComponent<Rigidbody>().MovePosition(enemyPos);
 		zero = target;
-		float num = GameController.instance.playerController.rigidbody.velocity.x;
+		float num = GameController.instance.playerController.GetComponent<Rigidbody>().velocity.x;
 		if (num <= 1f)
 		{
 			num = 0.4f;
 		}
-		float f = (zero.x - GameController.instance.playerController.rigidbody.position.x) / num;
+		float f = (zero.x - GameController.instance.playerController.GetComponent<Rigidbody>().position.x) / num;
 		f = Mathf.Abs(f);
 		speed = Vector3.Distance(enemyPos, zero) / f;
-		base.rigidbody.velocity = Vector3.Normalize(zero - enemyPos) * speed;
+		base.GetComponent<Rigidbody>().velocity = Vector3.Normalize(zero - enemyPos) * speed;
 		timeAlive = 0.5f + Vector3.Distance(enemyPos, zero) / speed;
 		if (timeAlive > 5f)
 		{
@@ -76,8 +76,8 @@ public class EnemyProjectiles : MonoBehaviour
 		if (particles != null)
 		{
 			projParticle = GameObjectPool.instance.GetNextFree(particles.name, true);
-			projParticle.transform.position = base.rigidbody.position;
-			projParticle.particleSystem.Play();
+			projParticle.transform.position = base.GetComponent<Rigidbody>().position;
+			projParticle.GetComponent<ParticleSystem>().Play();
 		}
 	}
 

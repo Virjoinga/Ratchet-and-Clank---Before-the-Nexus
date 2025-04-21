@@ -34,14 +34,14 @@ public class AnimatedTint : MonoBehaviour
 		{
 			objectToTint = base.gameObject;
 		}
-		oldColor = objectToTint.renderer.material.color;
+		oldColor = objectToTint.GetComponent<Renderer>().material.color;
 		isPlaying = false;
 	}
 
 	private void PlayTintAnimation()
 	{
 		endTime = Time.realtimeSinceStartup + duration;
-		oldColor = objectToTint.renderer.material.color;
+		oldColor = objectToTint.GetComponent<Renderer>().material.color;
 		isPlaying = true;
 	}
 
@@ -52,12 +52,12 @@ public class AnimatedTint : MonoBehaviour
 		{
 			float time = Mathf.Clamp01(num / duration);
 			Color color = new Color((!animateRed) ? oldColor.r : Red.Evaluate(time), (!animateGreen) ? oldColor.g : Green.Evaluate(time), (!animateBlue) ? oldColor.b : Blue.Evaluate(time), (!animateAlpha) ? oldColor.a : Alpha.Evaluate(time));
-			objectToTint.renderer.material.color = color;
+			objectToTint.GetComponent<Renderer>().material.color = color;
 		}
 		else if (isPlaying)
 		{
 			isPlaying = false;
-			objectToTint.renderer.material.color = oldColor;
+			objectToTint.GetComponent<Renderer>().material.color = oldColor;
 		}
 	}
 }

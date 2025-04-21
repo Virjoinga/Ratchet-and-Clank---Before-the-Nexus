@@ -40,7 +40,7 @@ public class Swing : MonoBehaviour
 	{
 		lineRenderer = GetComponent<LineRenderer>();
 		lineRenderer.enabled = false;
-		cameraFollowCache = Camera.mainCamera.GetComponent<CameraFollow>();
+		cameraFollowCache = Camera.main.GetComponent<CameraFollow>();
 		SpawnInit();
 	}
 
@@ -54,10 +54,10 @@ public class Swing : MonoBehaviour
 		SwingShotFXGreen = base.gameObject.transform.Find("FX_SwingShotGreen").gameObject;
 		GodrayL = base.gameObject.transform.Find("GodrayL").gameObject;
 		GodrayR = base.gameObject.transform.Find("GodrayR").gameObject;
-		SwingShotFX.particleSystem.Play();
-		SwingShotFXGreen.particleSystem.Stop();
-		GodrayL.particleSystem.Stop();
-		GodrayR.particleSystem.Stop();
+		SwingShotFX.GetComponent<ParticleSystem>().Play();
+		SwingShotFXGreen.GetComponent<ParticleSystem>().Stop();
+		GodrayL.GetComponent<ParticleSystem>().Stop();
+		GodrayR.GetComponent<ParticleSystem>().Stop();
 	}
 
 	private void SwingOn()
@@ -92,10 +92,10 @@ public class Swing : MonoBehaviour
 		SFXManager.instance.PlaySound("cha_Ratchet_swingshot_deactivate");
 		lineRenderer.enabled = false;
 		isSwinging = false;
-		SwingShotFX.particleSystem.Stop();
-		SwingShotFXGreen.particleSystem.Play();
-		GodrayL.particleSystem.Stop();
-		GodrayR.particleSystem.Stop();
+		SwingShotFX.GetComponent<ParticleSystem>().Stop();
+		SwingShotFXGreen.GetComponent<ParticleSystem>().Play();
+		GodrayL.GetComponent<ParticleSystem>().Stop();
+		GodrayR.GetComponent<ParticleSystem>().Stop();
 	}
 
 	public bool CanSwing()
@@ -147,10 +147,10 @@ public class Swing : MonoBehaviour
 				sfxActivated = false;
 			}
 			RotateGrapple();
-			SwingShotFX.particleSystem.Stop();
-			SwingShotFXGreen.particleSystem.Play();
-			GodrayL.particleSystem.Play();
-			GodrayR.particleSystem.Play();
+			SwingShotFX.GetComponent<ParticleSystem>().Stop();
+			SwingShotFXGreen.GetComponent<ParticleSystem>().Play();
+			GodrayL.GetComponent<ParticleSystem>().Play();
+			GodrayR.GetComponent<ParticleSystem>().Play();
 		}
 		else
 		{

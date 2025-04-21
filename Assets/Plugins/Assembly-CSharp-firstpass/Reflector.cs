@@ -19,7 +19,7 @@ public class Reflector : Pickup
 			playerController.SetCurrentPickupType(PlayerController.PickupTypes.Reflector);
 			base.transform.parent.gameObject.GetComponentInChildren<ParticleSystem>().Stop(true);
 			SFXManager.instance.PlaySound("cha_ratchet_Pickup");
-			base.renderer.enabled = false;
+			base.GetComponent<Renderer>().enabled = false;
 			base.enabled = false;
 			PickupManager.instance.getPickups().Remove(base.transform.parent.gameObject);
 			StatsTracker.instance.UpdateStat(StatsTracker.Stats.totalPickupsAcquired);

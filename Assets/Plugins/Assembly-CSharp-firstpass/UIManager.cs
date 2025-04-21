@@ -444,7 +444,7 @@ public class UIManager : MonoBehaviour
 			GetEndRoundScreen().UpdateStats((int)StatsTracker.instance.GetStat(StatsTracker.Stats.boltzCollected), (int)StatsTracker.instance.GetStat(StatsTracker.Stats.distanceTraveled));
 			StatsTracker.instance.SaveStatsAndReset();
 		}
-		GameController.instance.playerController.rigidbody.position = Vector3.zero;
+		GameController.instance.playerController.GetComponent<Rigidbody>().position = Vector3.zero;
 	}
 
 	public int GetAffordableVendorItems()

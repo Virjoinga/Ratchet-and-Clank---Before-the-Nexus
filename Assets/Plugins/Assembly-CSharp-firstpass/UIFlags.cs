@@ -73,8 +73,8 @@ public class UIFlags : MonoBehaviour
 		{
 			TermsOfUseButton.GetComponentInChildren<UILabel>().color = color2;
 			PrivacyPolicyButton.GetComponentInChildren<UILabel>().color = color2;
-			TermsOfUseButton.GetComponent<BoxCollider>().collider.enabled = false;
-			PrivacyPolicyButton.GetComponent<BoxCollider>().collider.enabled = false;
+			TermsOfUseButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			PrivacyPolicyButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 			TermsOfUseButton.GetComponent<UIButton>().UpdateColor(false, true);
 			PrivacyPolicyButton.GetComponent<UIButton>().UpdateColor(false, true);
 		}
@@ -82,8 +82,8 @@ public class UIFlags : MonoBehaviour
 		{
 			TermsOfUseButton.GetComponentInChildren<UILabel>().color = color;
 			PrivacyPolicyButton.GetComponentInChildren<UILabel>().color = color;
-			TermsOfUseButton.GetComponent<BoxCollider>().collider.enabled = true;
-			PrivacyPolicyButton.GetComponent<BoxCollider>().collider.enabled = true;
+			TermsOfUseButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			PrivacyPolicyButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			TermsOfUseButton.GetComponent<UIButton>().UpdateColor(true, true);
 			PrivacyPolicyButton.GetComponent<UIButton>().UpdateColor(true, true);
 		}

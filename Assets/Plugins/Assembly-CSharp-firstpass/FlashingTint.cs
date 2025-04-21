@@ -29,7 +29,7 @@ public class FlashingTint : MonoBehaviour
 			{
 				objectToTint = base.gameObject;
 			}
-			oldColor = objectToTint.renderer.material.color;
+			oldColor = objectToTint.GetComponent<Renderer>().material.color;
 			endTime = Time.realtimeSinceStartup + duration;
 			isPlaying = true;
 		}
@@ -44,19 +44,19 @@ public class FlashingTint : MonoBehaviour
 			{
 				float num2 = Mathf.Clamp01(num / duration);
 				float t = Mathf.PingPong((1f - num2) * 2f * frequency, 1f);
-				objectToTint.renderer.material.color = Color.Lerp(oldColor, targetColor, t);
+				objectToTint.GetComponent<Renderer>().material.color = Color.Lerp(oldColor, targetColor, t);
 			}
 			else if (isPlaying)
 			{
 				isPlaying = false;
-				objectToTint.renderer.material.color = oldColor;
+				objectToTint.GetComponent<Renderer>().material.color = oldColor;
 			}
 		}
 	}
 
 	private void ResetTint()
 	{
-		objectToTint.renderer.material.color = oldColor;
+		objectToTint.GetComponent<Renderer>().material.color = oldColor;
 		endTime = Time.time - 1f;
 		isPlaying = false;
 	}

@@ -40,11 +40,11 @@ public class UIMainMenu : UIScreen
 	{
 		if (Down)
 		{
-			BackButton.GetComponent<BoxCollider>().collider.enabled = false;
+			BackButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			BackButton.GetComponent<BoxCollider>().collider.enabled = true;
+			BackButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
@@ -52,11 +52,11 @@ public class UIMainMenu : UIScreen
 	{
 		if (Down)
 		{
-			BackButton.GetComponent<BoxCollider>().collider.enabled = false;
+			BackButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			BackButton.GetComponent<BoxCollider>().collider.enabled = true;
+			BackButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
@@ -64,13 +64,13 @@ public class UIMainMenu : UIScreen
 	{
 		if (Down)
 		{
-			SyncButton.GetComponent<BoxCollider>().collider.enabled = false;
-			PSNLoginButton.GetComponent<BoxCollider>().collider.enabled = false;
+			SyncButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+			PSNLoginButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			SyncButton.GetComponent<BoxCollider>().collider.enabled = true;
-			PSNLoginButton.GetComponent<BoxCollider>().collider.enabled = true;
+			SyncButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+			PSNLoginButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 

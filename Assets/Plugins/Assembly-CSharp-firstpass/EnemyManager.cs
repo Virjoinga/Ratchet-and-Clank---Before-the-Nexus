@@ -94,7 +94,7 @@ public class EnemyManager : MonoBehaviour
 			}
 			else
 			{
-				nextFree.rigidbody.MovePosition(startPos);
+				nextFree.GetComponent<Rigidbody>().MovePosition(startPos);
 				nextFree.transform.localPosition = startPos;
 			}
 			num += 10f;
@@ -204,7 +204,7 @@ public class EnemyManager : MonoBehaviour
 		List<GameObject> list = new List<GameObject>();
 		foreach (GameObject enemy in Enemies)
 		{
-			if ((float)radius >= Vector3.Distance(enemy.rigidbody.position, target))
+			if ((float)radius >= Vector3.Distance(enemy.GetComponent<Rigidbody>().position, target))
 			{
 				list.Add(enemy);
 			}
@@ -222,7 +222,7 @@ public class EnemyManager : MonoBehaviour
 				{
 					enemy.GetComponent<EnemyController>().shouldDespawn = true;
 				}
-				if ((enemy.GetComponent<EnemyController>().isDead || enemy.rigidbody.position.x < GameController.instance.playerController.rigidbody.position.x - 50f) && (!enemy.GetComponent<EnemyController>().theBoss || enemy.GetComponent<EnemyController>().isDead || !(enemy.rigidbody.position.x > GameController.instance.playerController.rigidbody.position.x - 150f)))
+				if ((enemy.GetComponent<EnemyController>().isDead || enemy.GetComponent<Rigidbody>().position.x < GameController.instance.playerController.GetComponent<Rigidbody>().position.x - 50f) && (!enemy.GetComponent<EnemyController>().theBoss || enemy.GetComponent<EnemyController>().isDead || !(enemy.GetComponent<Rigidbody>().position.x > GameController.instance.playerController.GetComponent<Rigidbody>().position.x - 150f)))
 				{
 					if (enemy.GetComponent<EnemyController>().atkRatchetRail)
 					{
@@ -250,9 +250,9 @@ public class EnemyManager : MonoBehaviour
 		localScale.x = EC.enemyScale;
 		localScale.y = EC.enemyScale;
 		localScale.z = EC.enemyScale;
-		Vector3 position = Enemy.rigidbody.position;
+		Vector3 position = Enemy.GetComponent<Rigidbody>().position;
 		Enemy.transform.localScale = localScale;
-		Enemy.rigidbody.position = position;
+		Enemy.GetComponent<Rigidbody>().position = position;
 	}
 
 	private void SetSafeZone(EnemyController EC)

@@ -628,7 +628,7 @@ public class PlayerController : MonoBehaviour
 			.Find("Head")
 			.Find("ArmorHead")
 			.gameObject;
-		RatchetRenderer = base.gameObject.transform.Find("Ratchet").renderer;
+		RatchetRenderer = base.gameObject.transform.Find("Ratchet").GetComponent<Renderer>();
 		SetArmorLevel(HP);
 		rightHand = base.gameObject.transform.Find("Root").Find("Hips").Find("Spine")
 			.Find("RightArm")
@@ -867,7 +867,7 @@ public class PlayerController : MonoBehaviour
 		bool result = false;
 		if (tapCount > 0)
 		{
-			Ray ray = Camera.mainCamera.ScreenPointToRay(pos);
+			Ray ray = Camera.main.ScreenPointToRay(pos);
 			RaycastHit[] array = Physics.RaycastAll(ray.origin, ray.direction);
 			for (int i = 0; i < array.Length; i++)
 			{
@@ -916,9 +916,9 @@ public class PlayerController : MonoBehaviour
 		RatchetHeliStop();
 		GadgetManager.instance.DeactivateAllOnDeath();
 		MegaWeaponManager.instance.DeactivateMegaWeapon(true);
-		grindEffect.particleSystem.Stop();
-		hoverEffectLeft.particleSystem.Stop();
-		hoverEffectRight.particleSystem.Stop();
+		grindEffect.GetComponent<ParticleSystem>().Stop();
+		hoverEffectLeft.GetComponent<ParticleSystem>().Stop();
+		hoverEffectRight.GetComponent<ParticleSystem>().Stop();
 		if (myWeap.ammo == 0)
 		{
 			UIManager.instance.GetHUD().OutOfAmmoContainer.SetActive(false);
@@ -982,7 +982,7 @@ public class PlayerController : MonoBehaviour
 				StatsTracker.instance.UpdateStat(StatsTracker.Stats.deathTotal);
 			}
 			StatsTracker.instance.SetStat(StatsTracker.Stats.deathDistance, travelDist);
-			deathPos = base.rigidbody.transform.position;
+			deathPos = base.GetComponent<Rigidbody>().transform.position;
 			if (cause == EDeathDealer.EDeath_Fall)
 			{
 				deathPos.x += 15f;
@@ -991,8 +991,8 @@ public class PlayerController : MonoBehaviour
 			anim.SetBool("Start", false);
 			isDead = true;
 			deathDelay = 0f;
-			base.rigidbody.MovePosition(deathBoxPos);
-			base.rigidbody.MoveRotation(Quaternion.identity);
+			base.GetComponent<Rigidbody>().MovePosition(deathBoxPos);
+			base.GetComponent<Rigidbody>().MoveRotation(Quaternion.identity);
 			base.transform.position = deathBoxPos;
 			base.transform.rotation = Quaternion.identity;
 			GameController.instance.gameCamera.SwitchCameraSettings(CameraFollow.CameraSettings.Death);
@@ -1025,12 +1025,12 @@ public class PlayerController : MonoBehaviour
 		DestroyObstacles();
 		currentRail = resultingRailNum;
 		GameController.instance.inMenu = false;
-		base.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
-		base.rigidbody.MovePosition(targetPos);
-		base.rigidbody.MoveRotation(Quaternion.identity);
+		base.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+		base.GetComponent<Rigidbody>().MovePosition(targetPos);
+		base.GetComponent<Rigidbody>().MoveRotation(Quaternion.identity);
 		base.transform.position = targetPos;
 		base.transform.rotation = Quaternion.identity;
-		lastPos = base.rigidbody.position;
+		lastPos = base.GetComponent<Rigidbody>().position;
 		anim.SetBool(a_CurrentDeathState, false);
 		if (GameController.instance.gameState == GameController.eGameState.GS_OnGround)
 		{
@@ -1118,18 +1118,18 @@ public class PlayerController : MonoBehaviour
 		WeaponsManager.instance.HideWeapon(true);
 		int resultingRailNum;
 		targetPos = getRailNodePosition(Vector3.zero, Vector3.right, 0, out resultingRailNum, true);
-		base.rigidbody.position = Vector3.zero;
-		base.rigidbody.MoveRotation(Quaternion.identity);
+		base.GetComponent<Rigidbody>().position = Vector3.zero;
+		base.GetComponent<Rigidbody>().MoveRotation(Quaternion.identity);
 		base.transform.position = targetPos;
 		base.transform.rotation = Quaternion.identity;
-		base.rigidbody.angularVelocity = Vector3.zero;
-		base.rigidbody.velocity = Vector3.zero;
+		base.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+		base.GetComponent<Rigidbody>().velocity = Vector3.zero;
 		isJumping = false;
 		activeSwingShot = null;
 		activeJumpPad = null;
 		isDead = false;
 		landingTarget = null;
-		lastPos = base.rigidbody.position;
+		lastPos = base.GetComponent<Rigidbody>().position;
 		currentRail = 0;
 		anim.SetBool(a_CurrentDeathState, false);
 		anim.SetBool("Ground", false);
@@ -1141,16 +1141,16 @@ public class PlayerController : MonoBehaviour
 			isPlayingIntro = true;
 			introNeftin = EnemyManager.instance.SpawnIntroLeviathon();
 			introNeftin.StartIntroAnim();
-			introNeftin.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+			introNeftin.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 			GameController.instance.gameCamera.StartIntroCamera();
 			playIntroAnim = false;
-			base.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+			base.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 		}
 		else
 		{
 			GameController.instance.gameCamera.ResetCamera();
 			isPlayingIntro = false;
-			base.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+			base.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 			if (TileSpawnManager.instance.overwriteStartTile)
 			{
 				GameController.instance.ChangeState(GameController.eGameState.GS_OnGround);
@@ -1281,15 +1281,15 @@ public class PlayerController : MonoBehaviour
 		if (!anim.GetBool("Start"))
 		{
 			isPlayingIntro = false;
-			if (!grindEffect.particleSystem.isPlaying)
+			if (!grindEffect.GetComponent<ParticleSystem>().isPlaying)
 			{
-				grindEffect.particleSystem.Play();
+				grindEffect.GetComponent<ParticleSystem>().Play();
 			}
 			hUD.EnableGadgets();
 			hUD.NotifyIntroOver();
 			introNeftin.IntroOver();
 			curVelocityX = startVelocityX;
-			base.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+			base.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 		}
 	}
 
@@ -1297,14 +1297,14 @@ public class PlayerController : MonoBehaviour
 	{
 		UIHUD hUD = UIManager.instance.GetHUD();
 		isPlayingIntro = false;
-		if (!grindEffect.particleSystem.isPlaying)
+		if (!grindEffect.GetComponent<ParticleSystem>().isPlaying)
 		{
-			grindEffect.particleSystem.Play();
+			grindEffect.GetComponent<ParticleSystem>().Play();
 		}
 		hUD.NotifyIntroOver();
 		introNeftin.IntroOver();
 		curVelocityX = startVelocityX;
-		base.rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
+		base.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 	}
 
 	private void Update()
@@ -1472,9 +1472,9 @@ public class PlayerController : MonoBehaviour
 					break;
 				}
 			}
-			if (grindEffect.particleSystem.isPlaying)
+			if (grindEffect.GetComponent<ParticleSystem>().isPlaying)
 			{
-				grindEffect.particleSystem.Pause();
+				grindEffect.GetComponent<ParticleSystem>().Pause();
 			}
 			if (GameController.instance.gameState == GameController.eGameState.GS_Grinding)
 			{
@@ -1500,11 +1500,11 @@ public class PlayerController : MonoBehaviour
 			}
 			if (isSwitchingRails)
 			{
-				Vector3 velocity = base.rigidbody.velocity;
-				float xOffset = base.rigidbody.position.x + curVelocityX * curLaneSwitchTime;
-				float num = TileSpawnManager.instance.getRailNodePosition(targetRail, xOffset, TileSpawnManager.instance.railTileList[0]).z - base.rigidbody.position.z;
+				Vector3 velocity = base.GetComponent<Rigidbody>().velocity;
+				float xOffset = base.GetComponent<Rigidbody>().position.x + curVelocityX * curLaneSwitchTime;
+				float num = TileSpawnManager.instance.getRailNodePosition(targetRail, xOffset, TileSpawnManager.instance.railTileList[0]).z - base.GetComponent<Rigidbody>().position.z;
 				velocity.z = num / curLaneSwitchTime;
-				base.rigidbody.velocity = velocity;
+				base.GetComponent<Rigidbody>().velocity = velocity;
 				jumpTimer = curLaneSwitchTime;
 			}
 			else
@@ -1528,16 +1528,16 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (airSideJump && isSwitchingRails)
 		{
-			Vector3 velocity2 = base.rigidbody.velocity;
-			float xOffset2 = base.rigidbody.position.x + curVelocityX * curLaneSwitchTime;
-			float num2 = TileSpawnManager.instance.getRailNodePosition(targetRail, xOffset2, TileSpawnManager.instance.railTileList[0]).z - base.rigidbody.position.z;
+			Vector3 velocity2 = base.GetComponent<Rigidbody>().velocity;
+			float xOffset2 = base.GetComponent<Rigidbody>().position.x + curVelocityX * curLaneSwitchTime;
+			float num2 = TileSpawnManager.instance.getRailNodePosition(targetRail, xOffset2, TileSpawnManager.instance.railTileList[0]).z - base.GetComponent<Rigidbody>().position.z;
 			velocity2.z = num2 / curLaneSwitchTime;
 			ZVelocity = velocity2.z;
 			if (isHeliActive)
 			{
 				velocity2.z = ZVelocity * (1f - curHeliSlowModifier);
 			}
-			base.rigidbody.velocity = velocity2;
+			base.GetComponent<Rigidbody>().velocity = velocity2;
 			jumpTimer = curLaneSwitchTime;
 		}
 	}
@@ -1610,7 +1610,7 @@ public class PlayerController : MonoBehaviour
 			Vector3 zero = Vector3.zero;
 			float num = 0f;
 			num = ((!isHeliActive) ? (curVelocityX * jumpTimer) : (curVelocityX * (jumpTimer + jumpTimer * curHeliSlowModifier)));
-			num += base.rigidbody.position.x;
+			num += base.GetComponent<Rigidbody>().position.x;
 			zero = ((!IsSideJumping()) ? TileSpawnManager.instance.getRailNodePosition(currentRail, num, TileSpawnManager.instance.railTileList[0]) : TileSpawnManager.instance.getRailNodePosition(targetRail, num, TileSpawnManager.instance.railTileList[0]));
 			if (landingTarget != null)
 			{
@@ -1620,7 +1620,7 @@ public class PlayerController : MonoBehaviour
 			{
 				landingTarget = GameObjectPool.instance.GetNextFree(landingTargetParticles.name, true);
 				landingTarget.transform.position = zero;
-				landingTarget.particleSystem.Play();
+				landingTarget.GetComponent<ParticleSystem>().Play();
 			}
 		}
 	}
@@ -1629,8 +1629,8 @@ public class PlayerController : MonoBehaviour
 	{
 		if (boltPickupEffect != null)
 		{
-			boltPickupEffect.transform.position = base.rigidbody.position;
-			boltPickupEffect.transform.parent = base.rigidbody.transform;
+			boltPickupEffect.transform.position = base.GetComponent<Rigidbody>().position;
+			boltPickupEffect.transform.parent = base.GetComponent<Rigidbody>().transform;
 		}
 	}
 
@@ -1646,14 +1646,14 @@ public class PlayerController : MonoBehaviour
 			boltPickupEffect = GameObjectPool.instance.GetNextFree(boltPickupEffectParticles.name, true);
 			if (Size != 0f)
 			{
-				boltPickupEffect.particleSystem.startSize = Size;
+				boltPickupEffect.GetComponent<ParticleSystem>().startSize = Size;
 			}
 			if (isJumping)
 			{
-				return boltPickupEffect.particleSystem.startSize;
+				return boltPickupEffect.GetComponent<ParticleSystem>().startSize;
 			}
-			boltPickupEffect.particleSystem.Play(true);
-			return boltPickupEffect.particleSystem.startSize;
+			boltPickupEffect.GetComponent<ParticleSystem>().Play(true);
+			return boltPickupEffect.GetComponent<ParticleSystem>().startSize;
 		}
 		return 0f;
 	}
@@ -1664,7 +1664,7 @@ public class PlayerController : MonoBehaviour
 		{
 			GameObject nextFree = GameObjectPool.instance.GetNextFree(onHitJumpPadEffect.name, true);
 			nextFree.transform.position = base.transform.position + jumpPadEffectOffset;
-			nextFree.particleSystem.Play(true);
+			nextFree.GetComponent<ParticleSystem>().Play(true);
 		}
 	}
 
@@ -1726,7 +1726,7 @@ public class PlayerController : MonoBehaviour
 		{
 			anyPoint = true;
 		}
-		Transform transform = base.rigidbody.transform;
+		Transform transform = base.GetComponent<Rigidbody>().transform;
 		float num = Mathf.Abs(transform.position.x - lastPos.x);
 		if (!isDead)
 		{
@@ -1739,7 +1739,7 @@ public class PlayerController : MonoBehaviour
 		else
 		{
 			bool flag2 = currentBaseState.tagHash == a_DeathTag;
-			base.rigidbody.MovePosition(deathBoxPos);
+			base.GetComponent<Rigidbody>().MovePosition(deathBoxPos);
 			if (wasInTransition && !anim.IsInTransition(0))
 			{
 				Debug.Log("start death anim");
@@ -1772,10 +1772,10 @@ public class PlayerController : MonoBehaviour
 		{
 			Kill(EDeathDealer.EDeath_Fall);
 		}
-		futurePos = base.rigidbody.position + base.rigidbody.velocity.normalized * 2f;
+		futurePos = base.GetComponent<Rigidbody>().position + base.GetComponent<Rigidbody>().velocity.normalized * 2f;
 		debugDrawPos[0] = futurePos;
 		int resultingRailNum;
-		targetPos = getRailNodePosition(futurePos, base.rigidbody.velocity.normalized, currentRail, out resultingRailNum, anyPoint);
+		targetPos = getRailNodePosition(futurePos, base.GetComponent<Rigidbody>().velocity.normalized, currentRail, out resultingRailNum, anyPoint);
 		currentRailListIndex = railNodeListIndex;
 		if (!GadgetManager.instance.GetJetpackStatus())
 		{
@@ -1783,7 +1783,7 @@ public class PlayerController : MonoBehaviour
 		}
 		else
 		{
-			cameraYLook = base.rigidbody.position.y;
+			cameraYLook = base.GetComponent<Rigidbody>().position.y;
 		}
 		if (targetPos == Vector3.zero && resultingRailNum == -1)
 		{
@@ -1807,10 +1807,10 @@ public class PlayerController : MonoBehaviour
 		}
 		if (GadgetManager.instance.GetJetpackStatus())
 		{
-			Vector3 position = base.rigidbody.position;
+			Vector3 position = base.GetComponent<Rigidbody>().position;
 			position.y = targetPos.y + GadgetManager.instance.GetJetpackAltitude();
-			base.rigidbody.position = Vector3.Lerp(base.rigidbody.position, position, 6f * Time.fixedDeltaTime);
-			targetPos.y = base.rigidbody.position.y;
+			base.GetComponent<Rigidbody>().position = Vector3.Lerp(base.GetComponent<Rigidbody>().position, position, 6f * Time.fixedDeltaTime);
+			targetPos.y = base.GetComponent<Rigidbody>().position.y;
 		}
 		float num2 = curVelocityX;
 		if (flag)
@@ -1830,7 +1830,7 @@ public class PlayerController : MonoBehaviour
 			{
 				RatchetHeliStop();
 			}
-			if (base.rigidbody.useGravity)
+			if (base.GetComponent<Rigidbody>().useGravity)
 			{
 				isJumping = false;
 			}
@@ -1842,24 +1842,24 @@ public class PlayerController : MonoBehaviour
 				}
 				else
 				{
-					targetPos.x = base.rigidbody.position.x + 4f;
-					targetPos.z = base.rigidbody.position.z;
+					targetPos.x = base.GetComponent<Rigidbody>().position.x + 4f;
+					targetPos.z = base.GetComponent<Rigidbody>().position.z;
 				}
 			}
 			else if (!flag)
 			{
 			}
-			targetDir = targetPos - base.rigidbody.position;
+			targetDir = targetPos - base.GetComponent<Rigidbody>().position;
 			Vector3 normalized = targetDir.normalized;
 			normalized.x = 1f;
 			normalized *= num2;
-			base.rigidbody.velocity = normalized;
-			base.rigidbody.useGravity = false;
+			base.GetComponent<Rigidbody>().velocity = normalized;
+			base.GetComponent<Rigidbody>().useGravity = false;
 		}
 		else if (!isDead)
 		{
-			targetPos.y = base.rigidbody.position.y;
-			targetDir = targetPos - base.rigidbody.position;
+			targetPos.y = base.GetComponent<Rigidbody>().position.y;
+			targetDir = targetPos - base.GetComponent<Rigidbody>().position;
 			if (jumpDirection != 0f && Mathf.Abs(targetDir.z) < 2f)
 			{
 				jumpDirection = 0f;
@@ -1868,9 +1868,9 @@ public class PlayerController : MonoBehaviour
 			Vector3 normalized2 = targetDir.normalized;
 			normalized2.x = 1f;
 			Vector3 velocity = normalized2 * num2;
-			if (jumpDirection != 0f && base.rigidbody.velocity.z != 0f)
+			if (jumpDirection != 0f && base.GetComponent<Rigidbody>().velocity.z != 0f)
 			{
-				velocity.z = base.rigidbody.velocity.z;
+				velocity.z = base.GetComponent<Rigidbody>().velocity.z;
 				if (isHeliActive)
 				{
 					velocity.z = ZVelocity * (1f - curHeliSlowModifier);
@@ -1879,7 +1879,7 @@ public class PlayerController : MonoBehaviour
 			velocity.y = 0f;
 			if (jumpTimer > 0f)
 			{
-				float y = TileSpawnManager.instance.getRailNodePosition(targetRail, base.rigidbody.position.x, TileSpawnManager.instance.railTileList[0]).y;
+				float y = TileSpawnManager.instance.getRailNodePosition(targetRail, base.GetComponent<Rigidbody>().position.x, TileSpawnManager.instance.railTileList[0]).y;
 				float num3 = (airSideJump ? curRatchetSideJumpCurve.Evaluate(curLaneSwitchTime - jumpTimer) : ((jumpDirection == 0f) ? curRatchetJumpCurve.Evaluate(curJumpTime - jumpTimer) : curRatchetLaneSwitchCurve.Evaluate(curLaneSwitchTime - jumpTimer)));
 				if (isHeliActive && isHeliBoost)
 				{
@@ -1914,13 +1914,13 @@ public class PlayerController : MonoBehaviour
 				}
 				if (!GadgetManager.instance.GetJetpackStatus())
 				{
-					Vector3 position2 = base.rigidbody.position;
+					Vector3 position2 = base.GetComponent<Rigidbody>().position;
 					position2.y = y + num3;
 					cameraYLook = y;
-					base.rigidbody.position = position2;
+					base.GetComponent<Rigidbody>().position = position2;
 				}
 			}
-			base.rigidbody.velocity = velocity;
+			base.GetComponent<Rigidbody>().velocity = velocity;
 		}
 		if (isJumping)
 		{
@@ -1932,9 +1932,9 @@ public class PlayerController : MonoBehaviour
 			{
 				StopJump();
 				jumpDirection = 0f;
-				if (grindEffect.particleSystem.isPaused)
+				if (grindEffect.GetComponent<ParticleSystem>().isPaused)
 				{
-					grindEffect.particleSystem.Play();
+					grindEffect.GetComponent<ParticleSystem>().Play();
 					if (!GadgetManager.instance.GetJetpackStatus())
 					{
 						SFXManager.instance.PlaySound("grind_connect");
@@ -1949,9 +1949,9 @@ public class PlayerController : MonoBehaviour
 		}
 		if (!isDead)
 		{
-			float angle = -90f + 57.29578f * Mathf.Atan2(base.rigidbody.velocity.x, base.rigidbody.velocity.z);
+			float angle = -90f + 57.29578f * Mathf.Atan2(base.GetComponent<Rigidbody>().velocity.x, base.GetComponent<Rigidbody>().velocity.z);
 			Quaternion to = Quaternion.AngleAxis(angle, Vector3.up);
-			base.rigidbody.rotation = Quaternion.Lerp(base.rigidbody.rotation, to, Time.fixedDeltaTime * 8f);
+			base.GetComponent<Rigidbody>().rotation = Quaternion.Lerp(base.GetComponent<Rigidbody>().rotation, to, Time.fixedDeltaTime * 8f);
 			float num5 = maxVelocityX;
 			float num6 = 4f;
 			if (GadgetManager.instance.GetReflectorHealth() > 0)
@@ -1987,7 +1987,7 @@ public class PlayerController : MonoBehaviour
 		}
 		if (isDead && !lastDead)
 		{
-			base.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+			base.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 		}
 		lastDead = isDead;
 	}
@@ -2027,8 +2027,8 @@ public class PlayerController : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = Color.magenta;
-		Gizmos.DrawLine(base.rigidbody.position + Vector3.up, base.rigidbody.position + Vector3.up + base.rigidbody.velocity);
-		Gizmos.DrawLine(base.rigidbody.position + Vector3.up, targetPos + Vector3.up);
+		Gizmos.DrawLine(base.GetComponent<Rigidbody>().position + Vector3.up, base.GetComponent<Rigidbody>().position + Vector3.up + base.GetComponent<Rigidbody>().velocity);
+		Gizmos.DrawLine(base.GetComponent<Rigidbody>().position + Vector3.up, targetPos + Vector3.up);
 		Gizmos.DrawCube(targetPos, Vector3.one);
 		float num = 2f;
 		int num2 = ((debugDrawCount >= debugDrawPos.Length) ? debugDrawPos.Length : debugDrawCount);
@@ -2172,7 +2172,7 @@ public class PlayerController : MonoBehaviour
 	{
 		GameObject nextFree = GameObjectPool.instance.GetNextFree(loseShoulderArmor.name, true);
 		nextFree.transform.position = LeftArmor.transform.position;
-		nextFree.particleSystem.Play();
+		nextFree.GetComponent<ParticleSystem>().Play();
 	}
 
 	public void SetArmorLevel(int level)
@@ -2447,7 +2447,7 @@ public class PlayerController : MonoBehaviour
 		if (isHeliActive && !isDead)
 		{
 			anim.SetBool("HeliCenter", true);
-			HeliTop.renderer.enabled = true;
+			HeliTop.GetComponent<Renderer>().enabled = true;
 			HeliTop.SetActive(true);
 			HeliTop.transform.Rotate(Vector3.up * Time.deltaTime * 1750f);
 		}
@@ -2461,7 +2461,7 @@ public class PlayerController : MonoBehaviour
 	private void RatchetHeliStop()
 	{
 		anim.SetBool("HeliCenter", false);
-		HeliTop.renderer.enabled = false;
+		HeliTop.GetComponent<Renderer>().enabled = false;
 		HeliTop.SetActive(false);
 		isHeliActive = false;
 		SFXManager.instance.StopSound("cha_Ratchet_Helipack_Loop");
@@ -2475,17 +2475,17 @@ public class PlayerController : MonoBehaviour
 		}
 		if (!isPlayingIntro)
 		{
-			if (!grindEffect.particleSystem.isPlaying)
+			if (!grindEffect.GetComponent<ParticleSystem>().isPlaying)
 			{
-				grindEffect.particleSystem.Play();
+				grindEffect.GetComponent<ParticleSystem>().Play();
 			}
 		}
-		else if (grindEffect.particleSystem.isPlaying)
+		else if (grindEffect.GetComponent<ParticleSystem>().isPlaying)
 		{
-			grindEffect.particleSystem.Stop();
+			grindEffect.GetComponent<ParticleSystem>().Stop();
 		}
-		hoverEffectLeft.particleSystem.Stop();
-		hoverEffectRight.particleSystem.Stop();
+		hoverEffectLeft.GetComponent<ParticleSystem>().Stop();
+		hoverEffectRight.GetComponent<ParticleSystem>().Stop();
 		anim.SetBool("Rail", true);
 		anim.SetBool("Ground", false);
 		a_CurrentIdleState = "Rail";
@@ -2495,9 +2495,9 @@ public class PlayerController : MonoBehaviour
 	{
 		if (!isDead)
 		{
-			grindEffect.particleSystem.Stop();
-			hoverEffectLeft.particleSystem.Play();
-			hoverEffectRight.particleSystem.Play();
+			grindEffect.GetComponent<ParticleSystem>().Stop();
+			hoverEffectLeft.GetComponent<ParticleSystem>().Play();
+			hoverEffectRight.GetComponent<ParticleSystem>().Play();
 			anim.SetBool("Rail", false);
 			anim.SetBool("Ground", true);
 			a_CurrentIdleState = "Ground";
@@ -2524,9 +2524,9 @@ public class PlayerController : MonoBehaviour
 
 	public void RatchetSwingStart()
 	{
-		if (grindEffect.particleSystem.isPlaying)
+		if (grindEffect.GetComponent<ParticleSystem>().isPlaying)
 		{
-			grindEffect.particleSystem.Pause();
+			grindEffect.GetComponent<ParticleSystem>().Pause();
 		}
 		anim.SetBool("Swingshot", true);
 		anim.SetBool(a_CurrentIdleState, false);
@@ -2534,9 +2534,9 @@ public class PlayerController : MonoBehaviour
 
 	public void RatchetSwingStop()
 	{
-		if (grindEffect.particleSystem.isPaused)
+		if (grindEffect.GetComponent<ParticleSystem>().isPaused)
 		{
-			grindEffect.particleSystem.Play();
+			grindEffect.GetComponent<ParticleSystem>().Play();
 		}
 		anim.SetBool("Swingshot", false);
 		anim.SetBool(a_CurrentIdleState, true);
@@ -2581,14 +2581,14 @@ public class PlayerController : MonoBehaviour
 
 	private void RatchetEyeLidsOn()
 	{
-		RatchetLeftEye.renderer.enabled = true;
-		RatchetRightEye.renderer.enabled = true;
+		RatchetLeftEye.GetComponent<Renderer>().enabled = true;
+		RatchetRightEye.GetComponent<Renderer>().enabled = true;
 	}
 
 	private void RatchetEyeLidsOff()
 	{
-		RatchetLeftEye.renderer.enabled = false;
-		RatchetRightEye.renderer.enabled = false;
+		RatchetLeftEye.GetComponent<Renderer>().enabled = false;
+		RatchetRightEye.GetComponent<Renderer>().enabled = false;
 	}
 
 	public void RatchetBlink(float time = 0.1f)
@@ -2607,7 +2607,7 @@ public class PlayerController : MonoBehaviour
 	{
 		for (int i = 0; i < 4; i++)
 		{
-			clankEyeLid[i].renderer.enabled = true;
+			clankEyeLid[i].GetComponent<Renderer>().enabled = true;
 		}
 	}
 
@@ -2615,7 +2615,7 @@ public class PlayerController : MonoBehaviour
 	{
 		for (int i = 0; i < 4; i++)
 		{
-			clankEyeLid[i].renderer.enabled = false;
+			clankEyeLid[i].GetComponent<Renderer>().enabled = false;
 		}
 	}
 
@@ -2703,8 +2703,8 @@ public class PlayerController : MonoBehaviour
 		if (onHitEffect != null)
 		{
 			GameObject nextFree = GameObjectPool.instance.GetNextFree(onHitEffect.name, true);
-			nextFree.transform.position = base.rigidbody.position + offsetEffect;
-			nextFree.particleSystem.Play();
+			nextFree.transform.position = base.GetComponent<Rigidbody>().position + offsetEffect;
+			nextFree.GetComponent<ParticleSystem>().Play();
 		}
 	}
 

@@ -598,7 +598,7 @@ public class UIHUD : UIScreen
 		IconScript component = GadgetButton.GetComponent<IconScript>();
 		GadgetEMP.SetActive(true);
 		component.SetIconSprite(string.Empty, IconScript.HexLevel.HEX_V0, false);
-		GadgetButton.GetComponent<BoxCollider>().collider.enabled = false;
+		GadgetButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 	}
 
 	public void EnableGadgets()
@@ -608,7 +608,7 @@ public class UIHUD : UIScreen
 			UpdateHeldGadget();
 			GadgetEMP.SetActive(false);
 			GadgetButton.SetActive(true);
-			GadgetButton.GetComponent<BoxCollider>().collider.enabled = true;
+			GadgetButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
@@ -844,14 +844,14 @@ public class UIHUD : UIScreen
 		AmmoCostLabel.text = AmmoBoltCost.ToString();
 		if (num != 0)
 		{
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = true;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			BuyAmmoButton.UpdateColor(true, true);
 			BuyAmmoButton.transform.Find("Label").GetComponent<UILabel>().color = color;
 		}
 		else
 		{
 			AmmoCostLabel.text = myWeap.ammoBoltCost[myWeap.GetWeaponUpgradeLevel() - 1].ToString();
-			BuyAmmoButton.GetComponent<BoxCollider>().collider.enabled = false;
+			BuyAmmoButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 			BuyAmmoButton.UpdateColor(false, true);
 			BuyAmmoButton.transform.Find("Label").GetComponent<UILabel>().color = color2;
 		}

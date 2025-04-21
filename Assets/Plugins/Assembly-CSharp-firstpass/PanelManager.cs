@@ -159,13 +159,13 @@ public class PanelManager : MonoBehaviour
 		{
 			foreach (PanelButtonScript leftButton in LeftButtons)
 			{
-				leftButton.GetComponent<BoxCollider>().collider.enabled = false;
+				leftButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 				leftButton.GetComponentInChildren<UISprite>().alpha = 0f;
 			}
 			{
 				foreach (PanelButtonScript rightButton in RightButtons)
 				{
-					rightButton.GetComponent<BoxCollider>().collider.enabled = true;
+					rightButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 					rightButton.GetComponentInChildren<UISprite>().alpha = 1f;
 				}
 				return;
@@ -175,13 +175,13 @@ public class PanelManager : MonoBehaviour
 		{
 			foreach (PanelButtonScript leftButton2 in LeftButtons)
 			{
-				leftButton2.GetComponent<BoxCollider>().collider.enabled = true;
+				leftButton2.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 				leftButton2.GetComponentInChildren<UISprite>().alpha = 1f;
 			}
 			{
 				foreach (PanelButtonScript rightButton2 in RightButtons)
 				{
-					rightButton2.GetComponent<BoxCollider>().collider.enabled = false;
+					rightButton2.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 					rightButton2.GetComponentInChildren<UISprite>().alpha = 0f;
 				}
 				return;
@@ -189,12 +189,12 @@ public class PanelManager : MonoBehaviour
 		}
 		foreach (PanelButtonScript leftButton3 in LeftButtons)
 		{
-			leftButton3.GetComponent<BoxCollider>().collider.enabled = true;
+			leftButton3.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			leftButton3.GetComponentInChildren<UISprite>().alpha = 1f;
 		}
 		foreach (PanelButtonScript rightButton3 in RightButtons)
 		{
-			rightButton3.GetComponent<BoxCollider>().collider.enabled = true;
+			rightButton3.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 			rightButton3.GetComponentInChildren<UISprite>().alpha = 1f;
 		}
 	}

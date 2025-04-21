@@ -214,7 +214,7 @@ public class GameController : MonoBehaviour
 		SetLanguage();
 		PathNodes = new List<LeviathanNodes>();
 		mainCamera = base.gameObject.transform.parent.gameObject;
-		gameCamera = Camera.mainCamera.GetComponent<CameraFollow>();
+		gameCamera = Camera.main.GetComponent<CameraFollow>();
 		TextAsset textAsset = (TextAsset)Resources.Load("Data/latestChangelist_" + Application.platform, typeof(TextAsset));
 		if (textAsset == null)
 		{
@@ -438,7 +438,7 @@ public class GameController : MonoBehaviour
 		playerController.Revive();
 		playerController.Restart();
 		roundStartTime = Time.time;
-		CameraFollow component = Camera.mainCamera.GetComponent<CameraFollow>();
+		CameraFollow component = Camera.main.GetComponent<CameraFollow>();
 		component.ResetCamera();
 		UIManager.instance.OpenMenu(UIManager.MenuPanels.HUD);
 		UIManager.instance.GetHUD().UpdateAll();
@@ -575,8 +575,8 @@ public class GameController : MonoBehaviour
 		RenderSettings.fogColor = color;
 		RenderSettings.fogStartDistance = fogStartDistance;
 		RenderSettings.fogEndDistance = fogEndDistance;
-		Camera.mainCamera.farClipPlane = farClipPlane;
-		Camera.mainCamera.backgroundColor = color;
+		Camera.main.farClipPlane = farClipPlane;
+		Camera.main.backgroundColor = color;
 		Material skybox = null;
 		if (currentSkybox != null)
 		{

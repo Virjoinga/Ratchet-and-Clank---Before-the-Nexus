@@ -59,11 +59,11 @@ public class UIPSNLogin : UIScreen
 	{
 		if (Down)
 		{
-			BackButton.GetComponent<BoxCollider>().collider.enabled = false;
+			BackButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			BackButton.GetComponent<BoxCollider>().collider.enabled = true;
+			BackButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
@@ -71,23 +71,23 @@ public class UIPSNLogin : UIScreen
 	{
 		if (Down)
 		{
-			LoginButton.GetComponent<BoxCollider>().collider.enabled = false;
+			LoginButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		}
 		else
 		{
-			LoginButton.GetComponent<BoxCollider>().collider.enabled = true;
+			LoginButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		}
 	}
 
 	public void DisableButton()
 	{
-		LoginButton.GetComponent<BoxCollider>().collider.enabled = false;
+		LoginButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 		LoginButton.UpdateColor(false, true);
 	}
 
 	public void EnableButton()
 	{
-		LoginButton.GetComponent<BoxCollider>().collider.enabled = true;
+		LoginButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		LoginButton.UpdateColor(true, true);
 	}
 
@@ -101,8 +101,8 @@ public class UIPSNLogin : UIScreen
 			}
 			else if (UsernameInput.text.Length != 0 && PasswordInput.text.Length != 0)
 			{
-				UsernameInput.GetComponent<BoxCollider>().collider.enabled = false;
-				PasswordInput.GetComponent<BoxCollider>().collider.enabled = false;
+				UsernameInput.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
+				PasswordInput.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = false;
 				DisableButton();
 				ServerConnection.LoginWithCredentials(UsernameInput.text, PasswordInput.text);
 				UIManager.instance.PersistentUI.ShowPopup("PopupLoggingIn", "UI_Menu_161", false);
@@ -126,8 +126,8 @@ public class UIPSNLogin : UIScreen
 
 	public void OnLoginFlowSuccess()
 	{
-		UsernameInput.GetComponent<BoxCollider>().collider.enabled = true;
-		PasswordInput.GetComponent<BoxCollider>().collider.enabled = true;
+		UsernameInput.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+		PasswordInput.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		EnableButton();
 		UIManager.instance.PersistentUI.HidePopup();
 		UIManager.instance.PersistentUI.ShowPopup("ConfirmationPanel", "UI_Menu_157", true);
@@ -137,9 +137,9 @@ public class UIPSNLogin : UIScreen
 
 	public void OnLoginFlowFail()
 	{
-		UsernameInput.GetComponent<BoxCollider>().collider.enabled = true;
-		PasswordInput.GetComponent<BoxCollider>().collider.enabled = true;
-		LoginButton.GetComponent<BoxCollider>().collider.enabled = true;
+		UsernameInput.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+		PasswordInput.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
+		LoginButton.GetComponent<BoxCollider>().GetComponent<Collider>().enabled = true;
 		LoginButton.UpdateColor(true, true);
 		UIManager.instance.PersistentUI.HidePopup();
 		UIManager.instance.PersistentUI.ShowPopup("ConfirmationPanel", "UI_Menu_158", true);

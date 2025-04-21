@@ -25,9 +25,9 @@ public class Tinter : MonoBehaviour
 	{
 		if ((bool)currentZone)
 		{
-			float value = (currentZone.collider.transform.position - base.transform.position).magnitude / (currentZone.collider.bounds.size.x * 0.5f);
+			float value = (currentZone.GetComponent<Collider>().transform.position - base.transform.position).magnitude / (currentZone.GetComponent<Collider>().bounds.size.x * 0.5f);
 			value = Mathf.Clamp01(value);
-			objectToTint.renderer.material.color = Color.Lerp(currentZone.outerColor, currentZone.innerColor, currentZone.tintCurve.Evaluate(value));
+			objectToTint.GetComponent<Renderer>().material.color = Color.Lerp(currentZone.outerColor, currentZone.innerColor, currentZone.tintCurve.Evaluate(value));
 		}
 	}
 }

@@ -42,7 +42,7 @@ public class UIAnchor : MonoBehaviour
 	private void Awake()
 	{
 		mTrans = base.transform;
-		mAnim = base.animation;
+		mAnim = base.GetComponent<Animation>();
 		mRect = default(Rect);
 	}
 

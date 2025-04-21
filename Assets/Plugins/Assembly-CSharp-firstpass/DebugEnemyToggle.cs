@@ -25,7 +25,7 @@ public class DebugEnemyToggle : MonoBehaviour
 	{
 		if (label == null)
 		{
-			Transform transform = base.transform.FindChild("Label");
+			Transform transform = base.transform.Find("Label");
 			if (transform != null)
 			{
 				label = transform.gameObject.GetComponent<UILabel>();

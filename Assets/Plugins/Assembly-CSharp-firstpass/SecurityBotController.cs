@@ -18,7 +18,7 @@ public class SecurityBotController : EnemyController
 		{
 			targetPos.z = Random.Range(minZ, maxZ);
 			currentPosDelay = minPosDelay + Random.value * (maxPosDelay - minPosDelay);
-			beginMovePos = base.rigidbody.position;
+			beginMovePos = base.GetComponent<Rigidbody>().position;
 			return true;
 		}
 		return false;
@@ -36,8 +36,8 @@ public class SecurityBotController : EnemyController
 	{
 		if (chargeUpParticles != null)
 		{
-			chargeUpParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpParticles.particleSystem.Play();
+			chargeUpParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpParticles.GetComponent<ParticleSystem>().Play();
 		}
 	}
 

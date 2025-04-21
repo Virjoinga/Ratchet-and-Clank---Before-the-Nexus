@@ -8,7 +8,7 @@ public class ThermosplitterController : EnemyController
 		{
 			targetPos.z = Random.Range(minZ, maxZ);
 			currentPosDelay = minPosDelay + Random.value * (maxPosDelay - minPosDelay);
-			beginMovePos = base.rigidbody.position;
+			beginMovePos = base.GetComponent<Rigidbody>().position;
 			return true;
 		}
 		return false;

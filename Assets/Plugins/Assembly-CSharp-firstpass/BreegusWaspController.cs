@@ -21,7 +21,7 @@ public class BreegusWaspController : EnemyController
 			targetPos.z = Random.Range(minZ, maxZ);
 			targetPos.y = Random.Range(minHeight, maxHeight);
 			currentPosDelay = minPosDelay + Random.value * (maxPosDelay - minPosDelay);
-			beginMovePos = base.rigidbody.position;
+			beginMovePos = base.GetComponent<Rigidbody>().position;
 			return true;
 		}
 		return false;
@@ -38,8 +38,8 @@ public class BreegusWaspController : EnemyController
 	{
 		if (chargeUpParticles != null)
 		{
-			chargeUpParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpParticles.particleSystem.Play();
+			chargeUpParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpParticles.GetComponent<ParticleSystem>().Play();
 		}
 	}
 }

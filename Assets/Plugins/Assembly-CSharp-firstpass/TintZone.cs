@@ -17,7 +17,7 @@ public class TintZone : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = new Color(innerColor.r, innerColor.g, innerColor.b, 0.3f);
-		Gizmos.DrawSphere(base.collider.transform.position, base.collider.bounds.size.x / 2f);
+		Gizmos.DrawSphere(base.GetComponent<Collider>().transform.position, base.GetComponent<Collider>().bounds.size.x / 2f);
 	}
 
 	private void OnTriggerExit(Collider other)

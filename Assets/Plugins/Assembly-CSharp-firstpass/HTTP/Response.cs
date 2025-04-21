@@ -50,7 +50,7 @@ namespace HTTP
 
 		public AssetBundleCreateRequest AssetBundleCreateRequest()
 		{
-			return AssetBundle.CreateFromMemory(Bytes);
+			return AssetBundle.LoadFromMemoryAsync(Bytes);
 		}
 
 		public void ReadFromStream(Stream inputStream)

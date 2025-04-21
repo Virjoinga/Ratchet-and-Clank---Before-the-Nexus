@@ -32,7 +32,7 @@ public class ProtoguardController : EnemyController
 			targetPos.z = Random.Range(minZ, maxZ);
 			targetPos.y = Random.Range(minHeight, maxHeight);
 			currentPosDelay = minPosDelay + Random.value * (maxPosDelay - minPosDelay);
-			beginMovePos = base.rigidbody.position;
+			beginMovePos = base.GetComponent<Rigidbody>().position;
 			return true;
 		}
 		return false;
@@ -50,13 +50,13 @@ public class ProtoguardController : EnemyController
 	{
 		if (chargeUpLeftParticles != null)
 		{
-			chargeUpLeftParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpLeftParticles.particleSystem.Play();
+			chargeUpLeftParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpLeftParticles.GetComponent<ParticleSystem>().Play();
 		}
 		if (chargeUpRightParticles != null)
 		{
-			chargeUpRightParticles.particleSystem.playbackSpeed = chargeupPlaybackSpeed;
-			chargeUpRightParticles.particleSystem.Play();
+			chargeUpRightParticles.GetComponent<ParticleSystem>().playbackSpeed = chargeupPlaybackSpeed;
+			chargeUpRightParticles.GetComponent<ParticleSystem>().Play();
 		}
 	}
 }

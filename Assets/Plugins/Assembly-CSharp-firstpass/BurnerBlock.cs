@@ -45,10 +45,10 @@ public class BurnerBlock : Block
 		}
 		if (fireChargeTell)
 		{
-			oldLifetime = fireEffect.particleSystem.startLifetime;
-			fireEffect.particleSystem.startLifetime = burnerTellLifetime;
-			fireEffect.particleSystem.Play();
-			fireEffect.particleSystem.Clear();
+			oldLifetime = fireEffect.GetComponent<ParticleSystem>().startLifetime;
+			fireEffect.GetComponent<ParticleSystem>().startLifetime = burnerTellLifetime;
+			fireEffect.GetComponent<ParticleSystem>().Play();
+			fireEffect.GetComponent<ParticleSystem>().Clear();
 			fireChargeTell = false;
 			fireTimer = fireChargeTime;
 			return;
@@ -56,17 +56,17 @@ public class BurnerBlock : Block
 		fireState = !fireState;
 		if (fireState)
 		{
-			fireEffect.particleSystem.startLifetime = oldLifetime;
+			fireEffect.GetComponent<ParticleSystem>().startLifetime = oldLifetime;
 			fireTimer = onPeriod;
-			base.gameObject.collider.isTrigger = false;
+			base.gameObject.GetComponent<Collider>().isTrigger = false;
 		}
 		else
 		{
-			fireEffect.particleSystem.Stop();
-			fireEffect.particleSystem.Clear();
+			fireEffect.GetComponent<ParticleSystem>().Stop();
+			fireEffect.GetComponent<ParticleSystem>().Clear();
 			fireTimer = offPeriod;
 			fireChargeTell = true;
-			base.gameObject.collider.isTrigger = true;
+			base.gameObject.GetComponent<Collider>().isTrigger = true;
 		}
 	}
 

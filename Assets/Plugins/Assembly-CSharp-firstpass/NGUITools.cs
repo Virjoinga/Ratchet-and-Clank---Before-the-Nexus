@@ -76,7 +76,7 @@ public static class NGUITools
 			}
 			if (mListener != null)
 			{
-				AudioSource audioSource = mListener.audio;
+				AudioSource audioSource = mListener.GetComponent<AudioSource>();
 				if (audioSource == null)
 				{
 					audioSource = mListener.gameObject.AddComponent<AudioSource>();

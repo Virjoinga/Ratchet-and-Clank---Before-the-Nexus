@@ -206,7 +206,7 @@ public class Weapon : MonoBehaviour
 			nextFree.transform.position = GameController.instance.playerController.rightHand.position;
 			nextFree.transform.parent = GameController.instance.playerController.transform;
 			nextFree.transform.rotation = GameController.instance.playerController.rightHand.rotation;
-			nextFree.particleSystem.Play();
+			nextFree.GetComponent<ParticleSystem>().Play();
 		}
 	}
 
@@ -269,7 +269,7 @@ public class Weapon : MonoBehaviour
 		}
 		projectile.GetComponent<RatchetProjectile>().weap = this;
 		projectile.GetComponent<RatchetProjectile>().ecTarget = targetEnemy;
-		projectile.GetComponent<RatchetProjectile>().SetProjectileData(targetEnemy.rigidbody.position);
+		projectile.GetComponent<RatchetProjectile>().SetProjectileData(targetEnemy.GetComponent<Rigidbody>().position);
 		projectile.GetComponent<RatchetProjectile>().bounces = WeaponsManager.instance.maxBuzzBounces;
 		DecrementAmmo();
 		UIManager.instance.GetHUD().UpdateAmmo();
@@ -288,7 +288,7 @@ public class Weapon : MonoBehaviour
 		}
 		projectile.GetComponent<RatchetProjectile>().weap = this;
 		projectile.GetComponent<RatchetProjectile>().ecTarget = targetEnemy;
-		projectile.GetComponent<RatchetProjectile>().SetProjectileData(targetEnemy.rigidbody.position);
+		projectile.GetComponent<RatchetProjectile>().SetProjectileData(targetEnemy.GetComponent<Rigidbody>().position);
 		projectile.GetComponent<RatchetProjectile>().bounces = WeaponsManager.instance.maxBuzzBounces;
 		DecrementAmmo();
 		UIManager.instance.GetHUD().UpdateAmmo();
