@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1463331246322861}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1463331246322861
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4256709419957894}
+  - 114: {fileID: 114396985168151762}
+  m_Layer: 0
+  m_Name: TileSpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4256709419957894
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463331246322861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114396985168151762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1463331246322861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1b07c28006ad365320f4eaa0677e40, type: 3}
+  m_Name:
+  StraightRailsOnly: 0
+  overwriteStartTile: 0
+  grappleTestTiles: 0
+  jumpPadTestTiles: 0
+  noGrappleTiles: 0
+  maxPieces: 6
+  spawnTileIndex: 4
+  minSpawnTileIndex: 3
+  spawnTilePosX: 0
+  numHeroTiles: 0
+  NumAxmHeroTiles: 18
+  NumPolHeroTiles: 16
+  NumTerHeroTiles: 15
+  worldPieceSize: 48
+  currentRampCount: 0
+  axmBuildingCountMax: 4
+  maxNumTilesUntilTransition: 20
+  maxNumTilesUntilTransitionR: 11
+  railOffset: 0
+  maxSpawnNodeDistance: 4
+  needBoltsForHeroTiles: 0
+  terachnoidsMax: 10
+  terachnoidSpawnDistance: 500
+  terachnoidSpawnPercentage: 0.1
+  terachnoidDistanceUntilSpawn: 0
+  heroBoltSpawnDistance: 500
+  heroBoltSpawnPercentage: 0.1
+  heroBoltDistanceUntilSpawn: 0
+  raritaniumSpawnDistance: 500
+  raritaniumSpawnPercentage: 0.1
+  raritaniumDistanceUntilSpawn: 0
+  startTile: {fileID: 1226753702023345, guid: eb8fecb5e80235441a0dc691306c7bd2, type: 2}
+  nextTile: {fileID: 0}
+  maxTransitTileCount: 4
+  transitTilesUntilBiomeChange: 2
+  transitTileCount: 0
+  prepareForTransition: 0
+  specialRailTileCount: 0
+  floorTileList: []
+  railTileList: []
+  lastFloorTile: {fileID: 0}
+  lastRailTile: {fileID: 0}
+  startingEnvironmentType: 0
+  nextEnvironmentType: 0
+  currentEnvironmentType: 0
+  tileSpawnState: 0
+  previousSpawnState: 0
+  tileSpawnStateSequence: 0
+  DebugLabel: {fileID: 0}

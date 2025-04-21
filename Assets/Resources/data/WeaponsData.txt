@@ -1,0 +1,257 @@
+<WeaponsDataFile>
+<Weapon>
+	[Name]					ConstructoPistol
+	[LocKeyName]		UI_Menu_72
+	[LocKeyDesc]	UI_Menu_150
+	[SpriteName]			icon_weapon_pistol
+	[BoltCost0]	0
+	[BoltCost1]	875
+	[BoltCost2]	2625
+	<Upgrades>
+		[UpgradeLevel]		0
+		[damage]				2
+		[fireRate]				0.2
+		[boltConversion]		1
+		[AOE]					0
+		[AOEDamage]				0
+		[spreadShot]			false
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	1
+		[LocDescShellType] UI_Menu_73
+		[LocDescExtra]	BLANK
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		1
+		[damage]				3
+		[fireRate]				0.2
+		[boltConversion]		2
+		[AOE]					0
+		[AOEDamage]				0
+		[spreadShot]			false
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	1
+		[LocDescShellType] UI_Menu_74
+		[LocDescExtra]	BLANK
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		2
+		[damage]				4
+		[fireRate]				0.22
+		[boltConversion]		3
+		[AOE]					5
+		[AOEDamage]				3
+		[spreadShot]			false
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	2
+		[LocDescShellType] UI_Menu_75
+		[LocDescExtra]	UI_Menu_76
+	</Upgrades>
+</Weapon>
+<Weapon>
+	[Name]					ConstructoShotgun
+	[LocKeyName]		UI_Menu_77
+	[LocKeyDesc]	UI_Menu_149
+	[SpriteName]			icon_weapon_shotgun
+	[BoltCost0]	800
+	[BoltCost1]	2000
+	[BoltCost2]	4000
+	<Upgrades>
+		[UpgradeLevel]		0
+		[damage]				7
+		[fireRate]				0.4
+		[boltConversion]		2
+		[AOE]					5
+		[AOEDamage]				3
+		[spreadShot]			true
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	1
+		[LocDescShellType] UI_Menu_73
+		[LocDescExtra]	BLANK
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		1
+		[damage]				9
+		[fireRate]				0.4
+		[boltConversion]		4
+		[AOE]					10
+		[AOEDamage]				5
+		[spreadShot]			true
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	2
+		[LocDescShellType] UI_Menu_74
+		[LocDescExtra]	BLANK
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		2
+		[damage]				11
+		[fireRate]				0.4
+		[boltConversion]		3
+		[AOE]					10
+		[AOEDamage]				6
+		[spreadShot]			true
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	3
+		[LocDescShellType] UI_Menu_78
+		[LocDescExtra]	BLANK
+	</Upgrades>
+</Weapon>
+<Weapon>
+	[Name]					BuzzBlades
+	[LocKeyName]		UI_Menu_80
+	[LocKeyDesc]	UI_Menu_148
+	[SpriteName]			icon_weapon_buzzblades
+	[BoltCost0]	1125
+	[BoltCost1]	2250
+	[BoltCost2]	4500	
+	<Upgrades>
+		[UpgradeLevel]		0
+		[damage]				1
+		[fireRate]				0.12
+		[boltConversion]		1
+		[AOE]					0
+		[AOEDamage]				0
+		[spreadShot]			false
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	1
+		[LocDescShellType] UI_Menu_73
+		[LocDescExtra]	BLANK
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		1
+		[damage]				1
+		[fireRate]				0.12
+		[boltConversion]		2
+		[AOE]					0
+		[AOEDamage]				0
+		[spreadShot]			false
+		[dotDamagePerSecond]	1
+		[dotDuration]			2
+		[AmmoCost]	1
+		[LocDescShellType] UI_Menu_81
+		[LocDescExtra]	BLANK
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		2
+		[damage]				1
+		[fireRate]				0.12
+		[boltConversion]		3
+		[AOE]					8
+		[AOEDamage]				1
+		[spreadShot]			false
+		[dotDamagePerSecond]	1
+		[dotDuration]			2
+		[AmmoCost]	2
+		[LocDescShellType] UI_Menu_82
+		[LocDescExtra]	UI_Menu_83
+	</Upgrades>
+</Weapon>
+<Weapon>
+	[Name]					PredatorLauncher
+	[LocKeyName]		UI_Menu_84
+	[LocKeyDesc]	UI_Menu_147
+	[SpriteName]			icon_weapon_predator
+	[BoltCost0]	2000
+	[BoltCost1]	4375
+	[BoltCost2]	6875
+	<Upgrades>
+		[UpgradeLevel]		0
+		[damage]				7
+		[fireRate]				0.45
+		[boltConversion]		3
+		[AOE]					10
+		[AOEDamage]				4
+		[spreadShot]			false
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	2
+		[LocDescShellType] UI_Menu_73
+		[LocDescExtra]	BLANK		
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		1
+		[damage]				10
+		[fireRate]				0.45
+		[boltConversion]		8
+		[AOE]					12
+		[AOEDamage]				7
+		[spreadShot]			false
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	2
+		[LocDescShellType] UI_Menu_74
+		[LocDescExtra]	BLANK				
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		2
+		[damage]				12
+		[fireRate]				0.45
+		[boltConversion]		9
+		[AOE]					12
+		[AOEDamage]				8
+		[spreadShot]			false
+		[dotDamagePerSecond]	3
+		[dotDuration]			3
+		[AmmoCost]	3
+		[LocDescShellType] UI_Menu_85
+		[LocDescExtra]	UI_Menu_86		
+	</Upgrades>
+</Weapon>
+<Weapon>
+	[Name]					RynoM
+	[LocKeyName]		UI_Menu_87
+	[LocKeyDesc]	UI_Menu_88
+	[SpriteName]			icon_weapon_ryno
+	[BoltCost0]	0
+	[BoltCost1]	0
+	[BoltCost2]	0	
+	<Upgrades>
+		[UpgradeLevel]		0
+		[damage]				20
+		[fireRate]				0.4
+		[boltConversion]		10
+		[AOE]					15
+		[AOEDamage]				14
+		[spreadShot]			true
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	3
+		[LocDescShellType] UI_Menu_73
+		[LocDescExtra]	BLANK		
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		0
+		[damage]				20
+		[fireRate]				0.4
+		[boltConversion]		10
+		[AOE]					15
+		[AOEDamage]				14
+		[spreadShot]			true
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	3
+		[LocDescShellType] UI_Menu_73
+		[LocDescExtra]	BLANK		
+	</Upgrades>
+	<Upgrades>
+		[UpgradeLevel]		0
+		[damage]				20
+		[fireRate]				0.4
+		[boltConversion]		10
+		[AOE]					15
+		[AOEDamage]				14
+		[spreadShot]			true
+		[dotDamagePerSecond]	0
+		[dotDuration]			0
+		[AmmoCost]	3
+		[LocDescShellType] UI_Menu_73
+		[LocDescExtra]	BLANK		
+	</Upgrades>
+</Weapon>
+</WeaponsDataFile>

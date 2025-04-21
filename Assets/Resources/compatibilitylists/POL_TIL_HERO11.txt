@@ -1,0 +1,7 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=POL_TIL_HERO12
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

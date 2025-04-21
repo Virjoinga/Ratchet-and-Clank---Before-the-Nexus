@@ -1,0 +1,1709 @@
+<GameObjectPool>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSU00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC10
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC11
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSDU00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS10
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PYU53
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PYU54
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PGO01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Orange
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base03
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base06
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Rocket_Red
+		[numberOfInstances] 32
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TCD000
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSO01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base05
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TCD000
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSO00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_Computer_Stack
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_TUN_PC01
+		[numberOfInstances] 6
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_PSOTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_TUN_PC07
+		[numberOfInstances] 6
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_SecurityBot/SecurityBot_PF
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSD00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSD02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TC05
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_GenericDeath
+		[numberOfInstances] 6
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/BulletThing
+		[numberOfInstances] 40
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Bolt_Bronze
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_Thugs4Less/Thugs4Less_PF
+		[numberOfInstances] 6
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Frame_Magnetizer
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_CerulleanSwarmer/CerulleanSwarmer_PF
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PD56
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PD57
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_PTSTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_Protoguard/Protoguard_PF
+		[numberOfInstances] 10
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_RynoM
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_CrateStacked
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_PSOTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Blue
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/BulletThingR
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TS04
+		[numberOfInstances] 8
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_ArmorImpact
+		[numberOfInstances] 3
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TSUD00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSUD00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_ElectricBaracade
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS52
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_Tornado
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_RiftInducer
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Rocket_Yellow
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_BuzzBlades
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/Rails/TIL_PU50
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Bolt_Hero
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_Burners
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PU57
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PU58
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TCU000
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PTSTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TCU000
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSY00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSY01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Crate
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TCD00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TCD01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Rocket_Orange
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TC11
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TPSTr00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_Planter
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Frame_TornadoLauncher
+		[numberOfInstances] 6
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Jetpack
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSU01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO01
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO02
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO03
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO04
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO05
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO06
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO07
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO08
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO09
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_ElectroRing
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base03
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base04
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base05
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSU00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSU02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO11
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO12
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO13
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO14
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO15
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO10
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/FakeHeroTiles/TIL_TS1_Axiom1
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/FakeHeroTiles/TIL_TS1_Axiom2
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TSO01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TCU000
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_PTSTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TCD000
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_Explosion
+		[numberOfInstances] 16
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_RynoHit0
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_RynoHit1
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_RynoHit2
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_ReticleLanding
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Frame_RiftInducer
+		[numberOfInstances] 6
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TIL_P_Base
+		[numberOfInstances] 8
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Disc_Yellow
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSO00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSO01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSD00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSY01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSD02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSD03
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Frame_Multiplier
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TS04
+		[numberOfInstances] 8
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_Leviathan/Leviathan_PF
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PD50
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS04
+		[numberOfInstances] 8
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS07
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS08
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS09
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_PSOTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Red
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_LeviathanProjectile
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_LeviathanProjectileEMP
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_BreegusProjectile
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_RiftInducer/RiftInducer_PF
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS11
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS12
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS13
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS14
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Raritanium
+		[numberOfInstances] 5
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TSO00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Bolt_Gold
+		[numberOfInstances] 350
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_Aura_01
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSO00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSO01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Frame_Groovitron
+		[numberOfInstances] 6
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_ConstructoShotgun
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSD00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_CerulleanSpawn
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TCU00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TCU01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_Groovitron
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TC05
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TC11
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSDU00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TPSTr00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Frame_Reflector
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Disc_Blue
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TSY00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TSY01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PYD52
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PYD53
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_Wall
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_ConstructoPistol
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSY01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSY02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_ProtoGaurdProjectile
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_Reticle 
+		[numberOfInstances] 6
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_LockOn
+		[numberOfInstances] 5
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_ReticleBoss
+		[numberOfInstances] 3
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSY00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO03
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Disc_White
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO01
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO02
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO04
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO05
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO06
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO07
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO08
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO09
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO10
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO11
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO12
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO13
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO14
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO15
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Gadgets/GAD_Swingshot
+		[numberOfInstances] 5
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_Reflector
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_JumpPad
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base04
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_PredatorLauncher
+		[numberOfInstances] 1
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base07
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_TER/TER_ART_TIL_Base08
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_CrateBreak
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_GenericProjectile
+		[numberOfInstances] 18
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_Thermosplitter/Thermosplitter_PF
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PU56
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_MineHazard
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS53
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS54
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS55
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSU00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS57
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PSU02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base06
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base07
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_TIL_Base08
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_BreegusWasp/BreegusWasp_PF
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_BreegusDeath
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER/Tiles/TER_TIL_TPSTr00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_PSOTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_GenericImpact
+		[numberOfInstances] 12
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_ShotgunImpact0
+		[numberOfInstances] 12
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_ShotgunImpact1
+		[numberOfInstances] 12
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_ShotgunImpact2
+		[numberOfInstances] 12
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_BuzzbladesImpact
+		[numberOfInstances] 12
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/TER_TIL_P_Base
+		[numberOfInstances] 8
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM_TIL_P_Base
+		[numberOfInstances] 2
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TSY00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS60
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS61
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS62
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS63
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PS64
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TS04
+		[numberOfInstances] 8
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_PSOTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_PTSTr00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Obstacle/OBS_Fummeral
+		[numberOfInstances] 20
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/AXM/Tiles/AXM_TIL_TC05
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Characters/CHA_Terachnoid/Terachnoid_PF
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Pickups/PIK_Bolt_Silver
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PD51
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC04
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC05
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC07
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC08
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PC09
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PD58
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PD59
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_GenericMuzzle
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Yellow
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+		<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Pistol0
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+		<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Pistol1
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+		<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Pistol2
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+		<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Shotgun0
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+		<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Shotgun1
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+		<PoolItem>
+		[objectPath] Weapons/WEP_Bullet_Shotgun2
+		[numberOfInstances] 32
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_MuzzlePistol0
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_MuzzlePistol1
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_MuzzlePistol2
+		[numberOfInstances] 4
+		[canUse] True
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/POL/Tiles/POL_TIL_TSUD00
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_03
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_04
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_05
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_06
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/ENV_AXM_Buildings/AXM_BLD_07
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PGO02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PGO03
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_01
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_02
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_03
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_04
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_05
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_06
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_07
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_08
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_09
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_10
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_11
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_12
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PCA
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PCB
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PCC
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO16
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/AXM_HERO/AXM_TIL_HERO17
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_BoltMultiplier
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+		<PoolItem>
+		[objectPath] Effects/FX_BoltPickup
+		[numberOfInstances] 10
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_GenericCodeHookupLooping
+		[numberOfInstances] 5
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_LaserMesh
+		[numberOfInstances] 10
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/POL_HERO/POL_TIL_HERO00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Pol_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_00
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_13
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Effects/FX_MineExplosion
+		[numberOfInstances] 5
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/HERO/TER_HERO/TER_TIL_HERO_14
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/AXM_Skybox
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/AXM_Skybox_Ground
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/AXM_Skybox_Hero
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Axm_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/TER_Skybox
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Rails
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/TER_Skybox_Ground
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Ground
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Environment/TER_Skybox_Hero
+		[numberOfInstances] 1
+		[canUse] True
+		[delayLoadingTag] ENV_Ter_Hero
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PJO01
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PJO02
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+	<PoolItem>
+		[objectPath] Tiles/RAILS/TIL_PJO03
+		[numberOfInstances] 4
+		[canUse] True
+		[delayLoadingTag] InitialLoad
+	</PoolItem>
+</GameObjectPool>

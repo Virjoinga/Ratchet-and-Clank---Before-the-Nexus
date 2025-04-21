@@ -1,0 +1,7 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=TIL_PCC
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

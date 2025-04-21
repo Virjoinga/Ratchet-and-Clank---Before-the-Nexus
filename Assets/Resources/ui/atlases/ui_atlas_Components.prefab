@@ -1,0 +1,578 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1303149460219225}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1303149460219225
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4058787310912765}
+  - 114: {fileID: 114126691284349996}
+  m_Layer: 0
+  m_Name: ui_atlas_Components
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4058787310912765
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1303149460219225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114126691284349996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1303149460219225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9f040b2b6bd4bf069e31e0ace12f73, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 131e1fcc3e6483b4a864416c864f5960, type: 2}
+  sprites:
+  - name: RibbonLarge
+    outer:
+      serializedVersion: 2
+      x: 379
+      y: 933
+      width: 484
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 379
+      y: 933
+      width: 484
+      height: 91
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Ribbon
+    outer:
+      serializedVersion: 2
+      x: 379
+      y: 730
+      width: 462
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 379
+      y: 730
+      width: 462
+      height: 69
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: chk_Xmark_Checkmark
+    outer:
+      serializedVersion: 2
+      x: 331
+      y: 175
+      width: 43
+      height: 39
+    inner:
+      serializedVersion: 2
+      x: 331
+      y: 175
+      width: 43
+      height: 39
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: chk_Xmark_Background
+    outer:
+      serializedVersion: 2
+      x: 284
+      y: 162
+      width: 46
+      height: 52
+    inner:
+      serializedVersion: 2
+      x: 284
+      y: 162
+      width: 46
+      height: 52
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TitleHeader
+    outer:
+      serializedVersion: 2
+      x: 379
+      y: 800
+      width: 511
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 379
+      y: 800
+      width: 511
+      height: 64
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ScrollingListBG
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 407
+      width: 378
+      height: 617
+    inner:
+      serializedVersion: 2
+      x: 100
+      y: 407
+      width: 178
+      height: 617
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Achievements_SCROLLBAR
+    outer:
+      serializedVersion: 2
+      x: 379
+      y: 66
+      width: 29
+      height: 593
+    inner:
+      serializedVersion: 2
+      x: 379
+      y: 66
+      width: 29
+      height: 593
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Achievements_ScrollBarThumb
+    outer:
+      serializedVersion: 2
+      x: 348
+      y: 229
+      width: 23
+      height: 50
+    inner:
+      serializedVersion: 2
+      x: 348
+      y: 239
+      width: 23
+      height: 30
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ArrowButtonLargeSprite
+    outer:
+      serializedVersion: 2
+      x: 116
+      y: 24
+      width: 68
+      height: 190
+    inner:
+      serializedVersion: 2
+      x: 116
+      y: 24
+      width: 68
+      height: 190
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ArrowSmallSprite
+    outer:
+      serializedVersion: 2
+      x: 86
+      y: 70
+      width: 16
+      height: 29
+    inner:
+      serializedVersion: 2
+      x: 86
+      y: 70
+      width: 16
+      height: 29
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonGreenLargeSprite
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 215
+      width: 205
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 20
+      y: 235
+      width: 165
+      height: 24
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BoltSmallSprite
+    outer:
+      serializedVersion: 2
+      x: 317
+      y: 130
+      width: 30
+      height: 31
+    inner:
+      serializedVersion: 2
+      x: 317
+      y: 130
+      width: 30
+      height: 31
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonGreenSprite
+    outer:
+      serializedVersion: 2
+      x: 267
+      y: 237
+      width: 80
+      height: 42
+    inner:
+      serializedVersion: 2
+      x: 267
+      y: 237
+      width: 80
+      height: 42
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Line
+    outer:
+      serializedVersion: 2
+      x: 441
+      y: 539
+      width: 503
+      height: 5
+    inner:
+      serializedVersion: 2
+      x: 501
+      y: 539
+      width: 383
+      height: 5
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ListBackgroundSprite
+    outer:
+      serializedVersion: 2
+      x: 379
+      y: 865
+      width: 548
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 379
+      y: 865
+      width: 548
+      height: 67
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_widget_close
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 100
+      width: 115
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 100
+      width: 115
+      height: 114
+    rotated: 0
+    paddingLeft: 0.060869563
+    paddingRight: 0.052173913
+    paddingTop: 0.06140351
+    paddingBottom: 0.06140351
+  - name: icon_widget_check
+    outer:
+      serializedVersion: 2
+      x: 123
+      y: 282
+      width: 107
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 123
+      y: 282
+      width: 107
+      height: 124
+    rotated: 0
+    paddingLeft: 0.10280374
+    paddingRight: 0.093457945
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: RibbonInset
+    outer:
+      serializedVersion: 2
+      x: 379
+      y: 660
+      width: 462
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 379
+      y: 660
+      width: 462
+      height: 69
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: white_block
+    outer:
+      serializedVersion: 2
+      x: 284
+      y: 129
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 284
+      y: 129
+      width: 32
+      height: 32
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_ammo
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 280
+      width: 122
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 280
+      width: 122
+      height: 126
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: x_mark
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 31
+      width: 85
+      height: 68
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 31
+      width: 85
+      height: 68
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonHighlight
+    outer:
+      serializedVersion: 2
+      x: 206
+      y: 215
+      width: 60
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 224
+      y: 233
+      width: 24
+      height: 28
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: shotgun_spread
+    outer:
+      serializedVersion: 2
+      x: 339
+      y: 289
+      width: 33
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 339
+      y: 289
+      width: 33
+      height: 117
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: shotgun_spread_2
+    outer:
+      serializedVersion: 2
+      x: 409
+      y: 429
+      width: 31
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 409
+      y: 444
+      width: 31
+      height: 85
+    rotated: 0
+    paddingLeft: 0.032258064
+    paddingRight: 0.032258064
+    paddingTop: 0.008695652
+    paddingBottom: 0.008695652
+  - name: plumber
+    outer:
+      serializedVersion: 2
+      x: 185
+      y: 100
+      width: 98
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 185
+      y: 100
+      width: 98
+      height: 114
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: tal
+    outer:
+      serializedVersion: 2
+      x: 409
+      y: 545
+      width: 98
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 409
+      y: 545
+      width: 98
+      height: 114
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: qwark
+    outer:
+      serializedVersion: 2
+      x: 508
+      y: 545
+      width: 98
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 508
+      y: 545
+      width: 98
+      height: 114
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: smuggler
+    outer:
+      serializedVersion: 2
+      x: 607
+      y: 545
+      width: 98
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 607
+      y: 545
+      width: 98
+      height: 114
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_hex
+    outer:
+      serializedVersion: 2
+      x: 231
+      y: 283
+      width: 107
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 231
+      y: 283
+      width: 107
+      height: 123
+    rotated: 0
+    paddingLeft: 0.10280374
+    paddingRight: 0.093457945
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

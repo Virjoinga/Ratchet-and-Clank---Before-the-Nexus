@@ -1,0 +1,67 @@
+<ChallengeFile>
+<Group>
+	<Challenge>
+		[UID]			1
+		[Title] 		Collect Boltz
+		[Description]	Collect _PS_ Boltz
+		[LocKeyDesc]	CH_06_Name
+		[Duration]		0
+		[MaxLevel]		3
+		[PrimaryStat]	boltzCollected
+		[PrimaryInit]	50
+		[PrimaryScale]	0
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			2
+		[Title] 		Collect a Gold Bolt
+		[Description]	Collect a Gold Bolt
+		[LocKeyDesc] 	CH_17_Name
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	heroBoltsCollected
+		[PrimaryInit]	1
+		[PrimaryScale]	0
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			3
+		[Title] 		Free a Terachnoid
+		[Description]	Free a Terachnoid
+		[LocKeyDesc] 	CH_18_Name
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	terachnoidsCollected
+		[PrimaryInit]	1
+		[PrimaryScale]	0
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			4
+		[Title] 		Run
+		[Description]	Travel _PS_ meters
+		[LocKeyDesc] 	CH_05_Name
+		[Duration]		-1
+		[MaxLevel]		2
+		[PrimaryStat]	distanceTraveled
+		[PrimaryInit]	200
+		[PrimaryScale]	0
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			5
+		[Title] 		Test
+		[Description]	Travel _PS_ meters
+		[LocKeyDesc] 	CH_05_Name
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	distanceTraveled
+		[PrimaryInit]	200
+		[PrimaryScale]	0
+	</Challenge>
+</Group>
+</ChallengeFile>

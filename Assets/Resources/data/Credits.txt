@@ -1,0 +1,302 @@
+<CreditsFile>
+<Group>
+[Name]	Animation
+[SpriteName]	icon_menu_play
+[SpriteOffset]	250
+	<Credit></Credit>
+	<Credit>
+		[Name]	[5fade5]Animation Director[-]
+	</Credit>
+	<Credit>
+		[Name]	Devon Browne
+	</Credit>
+	<Credit></Credit>
+	<Credit>
+		[Name]	[5fade5]Senior Technical Animator[-]
+	</Credit>	
+	<Credit>
+		[Name]	Neal Sukkert
+	</Credit>	
+	<Credit></Credit>
+	<Credit>
+		[Name]	[5fade5]Animators[-]
+	</Credit>
+	<Credit>
+		[Name]	Luis Batista
+	</Credit>
+	<Credit></Credit>	
+	<Credit></Credit>	
+</Group>
+<Group>
+[Name]	Art
+[SpriteName]	icon_menu_profile
+[SpriteOffset]	-250
+	<Credit></Credit>
+	<Credit>
+		[Name]	[5fade5]Lead Texture Artist[-]
+	</Credit>
+	<Credit>
+		[Name]	Karen Sanok
+	</Credit>	
+	<Credit></Credit>
+	<Credit>
+		[Name]	[5fade5]Senior Character Artist[-]
+	</Credit>
+	<Credit>
+		[Name]	Adam Glueckert
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Senior Technical Artist[-]
+	</Credit>
+	<Credit>
+		[Name]	Ken Mayfield
+	</Credit>	
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Artists[-]
+	</Credit>
+	<Credit>
+		[Name]	Marisa Ainsworth
+	</Credit>
+	<Credit>
+		[Name]	Jeremiah Bigley
+	</Credit>
+	<Credit>
+		[Name]	Steve Buchholz
+	</Credit>
+	<Credit>
+		[Name]	Sean Couture
+	</Credit>
+	<Credit>
+		[Name]	Josh Dampman
+	</Credit>
+	<Credit>
+		[Name]	Michael DelValle
+	</Credit>
+	<Credit>
+		[Name]	Udell Infante
+	</Credit>	
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Lighting Artist[-]
+	</Credit>
+	<Credit>
+		[Name]	Craig Schiller
+	</Credit>	
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]UI Artist[-]
+	</Credit>
+	<Credit>
+		[Name]	Kale Menges
+	</Credit>	
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Art Direction[-]
+	</Credit>
+	<Credit>
+		[Name]	Rodney Walden
+	</Credit>	
+	<Credit></Credit>
+	<Credit></Credit>		
+</Group>
+<Group>
+[Name]	Design
+[SpriteName]	icon_weapon_pistol
+[SpriteOffset]	250
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Creative Director[-]
+	</Credit>
+	<Credit>
+		[Name]	Nick Schreiber
+	</Credit>
+	<Credit></Credit>		
+	<Credit>
+		[Name]	[5fade5]Lead Designer[-]
+	</Credit>
+	<Credit>
+		[Name]	Jon Cooper
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Designers[-]
+	</Credit>
+	<Credit>
+		[Name]	Anthony Alvarez
+	</Credit>
+	<Credit>
+		[Name]	Damien Bull
+	</Credit>
+	<Credit>
+		[Name]	Jeff Scott
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]UI Design[-]
+	</Credit>
+	<Credit>
+		[Name]	Jason Fleischman
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Audio Design[-]
+	</Credit>
+	<Credit>
+		[Name]	Brian Gluckman
+	</Credit>
+	<Credit></Credit>	
+	<Credit></Credit>	
+</Group>
+<Group>
+[Name]	Programming
+[SpriteName]	icon_achv_tech
+[SpriteOffset]	-250
+<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Lead Programmer[-]
+	</Credit>
+	<Credit>
+		[Name]	Alejandro García-Tuñón
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Programmers[-]
+	</Credit>
+	<Credit>
+		[Name]	Les Bird
+	</Credit>
+	<Credit>
+		[Name]	Joe Cortese
+	</Credit>
+	<Credit>
+		[Name]	Nathan Karpinski
+	</Credit>
+	<Credit>
+		[Name]	Pavel Nakaznenko
+	</Credit>
+	<Credit>
+		[Name]	James Thompson
+	</Credit>
+	<Credit>
+		[Name]	Derrick Levy
+	</Credit>
+	<Credit></Credit>	
+	<Credit></Credit>	
+</Group>
+<Group>
+[Name]	Production
+[SpriteName]	icon_achv_moneybags
+[SpriteOffset]	250
+<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Executive Producer[-]
+	</Credit>
+	<Credit>
+		[Name]	Hugh Falk
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Producer
+	</Credit>
+	<Credit>
+		[Name]	Bryan Jury
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]Associate Producer[-]
+	</Credit>
+	<Credit>
+		[Name]	Nelson Izquierdo
+	</Credit>
+	<Credit></Credit>	
+	<Credit></Credit>	
+</Group>
+<Group>
+[Name]	Quality Assurance
+[SpriteName]	icon_weapon_ryno
+[SpriteOffset]	-250
+<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]QA Lead[-]
+	</Credit>
+	<Credit>
+		[Name]	Ryan Kane
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]QA Analysts[-]
+	</Credit>
+	<Credit>
+		[Name]	Jonny Finn
+	</Credit>
+	<Credit>
+		[Name]	Sean Samuels
+	</Credit>
+	<Credit>
+		[Name]	Nick Stearns
+	</Credit>
+	<Credit>
+		[Name]	Sam Casper
+	</Credit>
+	<Credit></Credit>	
+	<Credit></Credit>	
+</Group>
+<Group>
+[Name]	Studio Management
+[SpriteName]	icon_terachnoid
+[SpriteOffset]	250
+<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]CEO[-]
+	</Credit>
+	<Credit>
+		[Name]	Rick Daniels
+	</Credit>
+	<Credit></Credit>	
+	<Credit>
+		[Name]	[5fade5]IT Manager[-]
+	</Credit>
+	<Credit>
+		[Name]	Nelson Abreu
+	</Credit>
+	<Credit></Credit>	
+	<Credit></Credit>	
+</Group>
+<Group>
+[Name]	Music
+[SpriteName]	icon_audio_music
+[SpriteOffset] -250
+<Credit></Credit>
+	<Credit>
+		[Name]	[5fade5]Game Music[-]
+	</Credit>
+	<Credit>
+		[Name]	David Bergeaud
+	</Credit>
+	<Credit></Credit>
+	<Credit>
+		[Name]	[5fade5]Groovitron Music[-]
+	</Credit>
+	<Credit>
+		[Name]	Brian DiLucente
+	</Credit>
+<Credit></Credit>
+<Credit></Credit>
+</Group>
+<Group>
+[Name]	Special Thanks
+[SpriteName]	icon_menu_credits
+[SpriteOffset]	0
+<Credit></Credit>
+<Credit></Credit>
+	<Credit>
+		[Name]	Insomniac Games, Inc.
+	</Credit>
+<Credit></Credit>
+	<Credit>
+		[Name]	Sony Computer Entertainment
+	</Credit>
+</Group>
+</CreditsFile>

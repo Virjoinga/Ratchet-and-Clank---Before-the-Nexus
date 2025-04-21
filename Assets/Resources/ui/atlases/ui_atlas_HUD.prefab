@@ -1,0 +1,1208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1022861001906652}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1022861001906652
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4489761240722181}
+  - 114: {fileID: 114740676272282046}
+  m_Layer: 0
+  m_Name: ui_atlas_HUD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4489761240722181
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022861001906652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114740676272282046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022861001906652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9f040b2b6bd4bf069e31e0ace12f73, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 712a0ef674ec4d746a0ce71ffeb927bf, type: 2}
+  sprites:
+  - name: HUD_BOLT COUNTER
+    outer:
+      serializedVersion: 2
+      x: 276
+      y: 869
+      width: 271
+      height: 85
+    inner:
+      serializedVersion: 2
+      x: 276
+      y: 869
+      width: 271
+      height: 85
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD
+    outer:
+      serializedVersion: 2
+      x: 986
+      y: 699
+      width: 32
+      height: 37
+    inner:
+      serializedVersion: 2
+      x: 986
+      y: 699
+      width: 32
+      height: 37
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_SCORE COUNTER
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 860
+      width: 275
+      height: 94
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 860
+      width: 275
+      height: 94
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_Group 1
+    outer:
+      serializedVersion: 2
+      x: 712
+      y: 307
+      width: 170
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 712
+      y: 307
+      width: 170
+      height: 67
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_CHALLENGE POP-UP
+    outer:
+      serializedVersion: 2
+      x: 548
+      y: 875
+      width: 281
+      height: 79
+    inner:
+      serializedVersion: 2
+      x: 548
+      y: 896
+      width: 258
+      height: 37
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_RARITANIUM COUNTER
+    outer:
+      serializedVersion: 2
+      x: 675
+      y: 957
+      width: 191
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 675
+      y: 957
+      width: 191
+      height: 67
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_ODOMETER
+    outer:
+      serializedVersion: 2
+      x: 463
+      y: 957
+      width: 211
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 463
+      y: 957
+      width: 211
+      height: 67
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_BUTTON [Pause]
+    outer:
+      serializedVersion: 2
+      x: 609
+      y: 84
+      width: 60
+      height: 68
+    inner:
+      serializedVersion: 2
+      x: 609
+      y: 84
+      width: 60
+      height: 68
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_ammo
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 220
+      width: 122
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 220
+      width: 122
+      height: 126
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: icon_weapon_ryno
+    outer:
+      serializedVersion: 2
+      x: 372
+      y: 490
+      width: 121
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 372
+      y: 490
+      width: 121
+      height: 123
+    rotated: 0
+    paddingLeft: 0.024793388
+    paddingRight: 0.03305785
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  - name: icon_armor_thermaflux
+    outer:
+      serializedVersion: 2
+      x: 874
+      y: 737
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 874
+      y: 737
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_weapon_rift
+    outer:
+      serializedVersion: 2
+      x: 372
+      y: 365
+      width: 120
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 372
+      y: 365
+      width: 120
+      height: 124
+    rotated: 0
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: icon_weapon_wrench
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 236
+      width: 119
+      height: 119
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 236
+      width: 119
+      height: 119
+    rotated: 0
+    paddingLeft: 0.042016808
+    paddingRight: 0.033613447
+    paddingTop: 0.033613447
+    paddingBottom: 0.042016808
+  - name: icon_terachnoid
+    outer:
+      serializedVersion: 2
+      x: 934
+      y: 378
+      width: 75
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 934
+      y: 378
+      width: 75
+      height: 120
+    rotated: 0
+    paddingLeft: 0.4
+    paddingRight: 0.30666667
+    paddingTop: 0.033333335
+    paddingBottom: 0.033333335
+  - name: icon_weapon_pistol
+    outer:
+      serializedVersion: 2
+      x: 742
+      y: 621
+      width: 125
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 742
+      y: 621
+      width: 125
+      height: 115
+    rotated: 0
+    paddingLeft: 0.016
+    paddingRight: 0.008
+    paddingTop: 0.060869563
+    paddingBottom: 0.052173913
+  - name: icon_weapon_buzzblades
+    outer:
+      serializedVersion: 2
+      x: 372
+      y: 121
+      width: 114
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 372
+      y: 121
+      width: 114
+      height: 122
+    rotated: 0
+    paddingLeft: 0.06140351
+    paddingRight: 0.06140351
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_weapon_predator
+    outer:
+      serializedVersion: 2
+      x: 825
+      y: 379
+      width: 108
+      height: 119
+    inner:
+      serializedVersion: 2
+      x: 825
+      y: 379
+      width: 108
+      height: 119
+    rotated: 0
+    paddingLeft: 0.09259259
+    paddingRight: 0.09259259
+    paddingTop: 0.042016808
+    paddingBottom: 0.033613447
+  - name: icon_armor_terraflux
+    outer:
+      serializedVersion: 2
+      x: 249
+      y: 121
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 249
+      y: 121
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: ICONBACK
+    outer:
+      serializedVersion: 2
+      x: 957
+      y: 878
+      width: 66
+      height: 76
+    inner:
+      serializedVersion: 2
+      x: 957
+      y: 878
+      width: 66
+      height: 76
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_armor_ectoflux
+    outer:
+      serializedVersion: 2
+      x: 249
+      y: 244
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 249
+      y: 244
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_raritanium_crate
+    outer:
+      serializedVersion: 2
+      x: 494
+      y: 127
+      width: 109
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 494
+      y: 127
+      width: 109
+      height: 123
+    rotated: 0
+    paddingLeft: 0.09174312
+    paddingRight: 0.08256881
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  - name: icon_weapon_shotgun
+    outer:
+      serializedVersion: 2
+      x: 621
+      y: 615
+      width: 120
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 621
+      y: 615
+      width: 120
+      height: 121
+    rotated: 0
+    paddingLeft: 0.033333335
+    paddingRight: 0.033333335
+    paddingTop: 0.024793388
+    paddingBottom: 0.03305785
+  - name: icon_gadget_magnetizer
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 606
+      width: 118
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 606
+      width: 118
+      height: 124
+    rotated: 0
+    paddingLeft: 0.042372882
+    paddingRight: 0.042372882
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: icon_gadget_reflector
+    outer:
+      serializedVersion: 2
+      x: 495
+      y: 618
+      width: 125
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 495
+      y: 618
+      width: 125
+      height: 118
+    rotated: 0
+    paddingLeft: 0.024
+    paddingRight: 0
+    paddingTop: 0.042372882
+    paddingBottom: 0.042372882
+  - name: icon_weapon_groovitron
+    outer:
+      serializedVersion: 2
+      x: 249
+      y: 490
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 249
+      y: 490
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_gadget_jetpack
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 356
+      width: 118
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 356
+      width: 118
+      height: 122
+    rotated: 0
+    paddingLeft: 0.042372882
+    paddingRight: 0.042372882
+    paddingTop: 0.032786883
+    paddingBottom: 0.016393442
+  - name: icon_weapon_tornado
+    outer:
+      serializedVersion: 2
+      x: 249
+      y: 613
+      width: 122
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 249
+      y: 613
+      width: 122
+      height: 123
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  - name: icon_armor_holoflux
+    outer:
+      serializedVersion: 2
+      x: 372
+      y: 614
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 372
+      y: 614
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_hex
+    outer:
+      serializedVersion: 2
+      x: 609
+      y: 375
+      width: 107
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 609
+      y: 375
+      width: 107
+      height: 123
+    rotated: 0
+    paddingLeft: 0.10280374
+    paddingRight: 0.093457945
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  - name: icon_menu_profile
+    outer:
+      serializedVersion: 2
+      x: 623
+      y: 741
+      width: 127
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 623
+      y: 741
+      width: 127
+      height: 118
+    rotated: 0
+    paddingLeft: 0.007874016
+    paddingRight: 0
+    paddingTop: 0.033898305
+    paddingBottom: 0.050847456
+  - name: icon_bolt_generic
+    outer:
+      serializedVersion: 2
+      x: 868
+      y: 615
+      width: 117
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 868
+      y: 615
+      width: 117
+      height: 121
+    rotated: 0
+    paddingLeft: 0.14529915
+    paddingRight: 0.042735044
+    paddingTop: 0.03305785
+    paddingBottom: 0.024793388
+  - name: icon_menu_play
+    outer:
+      serializedVersion: 2
+      x: 830
+      y: 860
+      width: 126
+      height: 94
+    inner:
+      serializedVersion: 2
+      x: 830
+      y: 860
+      width: 126
+      height: 94
+    rotated: 0
+    paddingLeft: 0.007936508
+    paddingRight: 0.007936508
+    paddingTop: 0.13829787
+    paddingBottom: 0.22340426
+  - name: icon_raritanium
+    outer:
+      serializedVersion: 2
+      x: 746
+      y: 501
+      width: 122
+      height: 112
+    inner:
+      serializedVersion: 2
+      x: 746
+      y: 501
+      width: 122
+      height: 112
+    rotated: 0
+    paddingLeft: 0.032786883
+    paddingRight: 0.016393442
+    paddingTop: 0.08035714
+    paddingBottom: 0.0625
+  - name: Ribbon
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 955
+      width: 462
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 955
+      width: 462
+      height: 69
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_achv_moneybags
+    outer:
+      serializedVersion: 2
+      x: 498
+      y: 738
+      width: 124
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 498
+      y: 738
+      width: 124
+      height: 121
+    rotated: 0
+    paddingLeft: 0.016129032
+    paddingRight: 0.016129032
+    paddingTop: 0.03305785
+    paddingBottom: 0.024793388
+  - name: icon_achv_protected
+    outer:
+      serializedVersion: 2
+      x: 249
+      y: 367
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 249
+      y: 367
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_achv_soboss
+    outer:
+      serializedVersion: 2
+      x: 618
+      y: 504
+      width: 127
+      height: 109
+    inner:
+      serializedVersion: 2
+      x: 618
+      y: 504
+      width: 127
+      height: 109
+    rotated: 0
+    paddingLeft: 0.007874016
+    paddingRight: 0
+    paddingTop: 0.09174312
+    paddingBottom: 0.08256881
+  - name: icon_menu_rarsync
+    outer:
+      serializedVersion: 2
+      x: 869
+      y: 510
+      width: 124
+      height: 103
+    inner:
+      serializedVersion: 2
+      x: 869
+      y: 510
+      width: 124
+      height: 103
+    rotated: 0
+    paddingLeft: 0.016129032
+    paddingRight: 0.016129032
+    paddingTop: 0.13592233
+    paddingBottom: 0.106796116
+  - name: icon_achv_tech
+    outer:
+      serializedVersion: 2
+      x: 609
+      y: 252
+      width: 102
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 609
+      y: 252
+      width: 102
+      height: 122
+    rotated: 0
+    paddingLeft: 0.12745099
+    paddingRight: 0.12745099
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_menu_credits
+    outer:
+      serializedVersion: 2
+      x: 372
+      y: 3
+      width: 117
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 372
+      y: 3
+      width: 117
+      height: 117
+    rotated: 0
+    paddingLeft: 0.051282052
+    paddingRight: 0.042735044
+    paddingTop: 0.051282052
+    paddingBottom: 0.042735044
+  - name: icon_achv_bulldozer
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 3
+      width: 125
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 3
+      width: 125
+      height: 91
+    rotated: 0
+    paddingLeft: 0.008
+    paddingRight: 0.016
+    paddingTop: 0.20879121
+    paddingBottom: 0.1978022
+  - name: icon_achv_rainyday
+    outer:
+      serializedVersion: 2
+      x: 249
+      y: 737
+      width: 124
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 249
+      y: 737
+      width: 124
+      height: 122
+    rotated: 0
+    paddingLeft: 0.016129032
+    paddingRight: 0.016129032
+    paddingTop: 0.032786883
+    paddingBottom: 0.016393442
+  - name: icon_achv_wellarmed
+    outer:
+      serializedVersion: 2
+      x: 712
+      y: 224
+      width: 122
+      height: 82
+    inner:
+      serializedVersion: 2
+      x: 712
+      y: 224
+      width: 122
+      height: 82
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.2682927
+    paddingBottom: 0.29268292
+  - name: icon_hex3
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 473
+      width: 126
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 473
+      width: 126
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.015873017
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_hex2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 602
+      width: 126
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 602
+      width: 126
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.015873017
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_bolt_hero
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 114
+      width: 117
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 114
+      width: 117
+      height: 121
+    rotated: 0
+    paddingLeft: 0.15384616
+    paddingRight: 0.042735044
+    paddingTop: 0.03305785
+    paddingBottom: 0.024793388
+  - name: icon_audio_sfx
+    outer:
+      serializedVersion: 2
+      x: 609
+      y: 153
+      width: 85
+      height: 98
+    inner:
+      serializedVersion: 2
+      x: 609
+      y: 153
+      width: 85
+      height: 98
+    rotated: 0
+    paddingLeft: 0.24705882
+    paddingRight: 0.25882354
+    paddingTop: 0.15306123
+    paddingBottom: 0.15306123
+  - name: icon_audio_musicmute
+    outer:
+      serializedVersion: 2
+      x: 374
+      y: 737
+      width: 123
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 374
+      y: 737
+      width: 123
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024390243
+    paddingRight: 0.016260162
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_audio_sfxmute
+    outer:
+      serializedVersion: 2
+      x: 751
+      y: 737
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 751
+      y: 737
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.024590164
+    paddingRight: 0.024590164
+    paddingTop: 0.024590164
+    paddingBottom: 0.024590164
+  - name: icon_audio_music
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 5
+      width: 119
+      height: 108
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 5
+      width: 119
+      height: 108
+    rotated: 0
+    paddingLeft: 0.05882353
+    paddingRight: 0.016806724
+    paddingTop: 0.074074075
+    paddingBottom: 0.11111111
+  - name: icon_bolt_crate
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 731
+      width: 119
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 731
+      width: 119
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.075630255
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_achv_airdefense
+    outer:
+      serializedVersion: 2
+      x: 129
+      y: 479
+      width: 116
+      height: 126
+    inner:
+      serializedVersion: 2
+      x: 129
+      y: 479
+      width: 116
+      height: 126
+    rotated: 0
+    paddingLeft: 0.05172414
+    paddingRight: 0.05172414
+    paddingTop: 0.007936508
+    paddingBottom: 0.007936508
+  - name: icon_achv_grounddefense
+    outer:
+      serializedVersion: 2
+      x: 249
+      y: 2
+      width: 121
+      height: 118
+    inner:
+      serializedVersion: 2
+      x: 249
+      y: 2
+      width: 121
+      height: 118
+    rotated: 0
+    paddingLeft: 0.03305785
+    paddingRight: 0.024793388
+    paddingTop: 0.042372882
+    paddingBottom: 0.042372882
+  - name: icon_bolt_multiplier
+    outer:
+      serializedVersion: 2
+      x: 372
+      y: 244
+      width: 117
+      height: 120
+    inner:
+      serializedVersion: 2
+      x: 372
+      y: 244
+      width: 117
+      height: 120
+    rotated: 0
+    paddingLeft: 0.042735044
+    paddingRight: 0.051282052
+    paddingTop: 0.033333335
+    paddingBottom: 0.033333335
+  - name: icon_leaderboards
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 95
+      width: 123
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 95
+      width: 123
+      height: 124
+    rotated: 0
+    paddingLeft: 0.024390243
+    paddingRight: 0.016260162
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: icon_gear
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 731
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 731
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_menu
+    outer:
+      serializedVersion: 2
+      x: 494
+      y: 2
+      width: 108
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 494
+      y: 2
+      width: 108
+      height: 124
+    rotated: 0
+    paddingLeft: 0.09259259
+    paddingRight: 0.09259259
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: icon_PSN
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 347
+      width: 127
+      height: 125
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 347
+      width: 127
+      height: 125
+    rotated: 0
+    paddingLeft: 0.007874016
+    paddingRight: 0
+    paddingTop: 0.016
+    paddingBottom: 0.008
+  - name: icon_tutorial
+    outer:
+      serializedVersion: 2
+      x: 494
+      y: 379
+      width: 114
+      height: 119
+    inner:
+      serializedVersion: 2
+      x: 494
+      y: 379
+      width: 114
+      height: 119
+    rotated: 0
+    paddingLeft: 0.07017544
+    paddingRight: 0.05263158
+    paddingTop: 0.042016808
+    paddingBottom: 0.033613447
+  - name: icon_achievements
+    outer:
+      serializedVersion: 2
+      x: 494
+      y: 499
+      width: 123
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 494
+      y: 499
+      width: 123
+      height: 114
+    rotated: 0
+    paddingLeft: 0.024390243
+    paddingRight: 0.016260162
+    paddingTop: 0.06140351
+    paddingBottom: 0.06140351
+  - name: icon_challenges
+    outer:
+      serializedVersion: 2
+      x: 494
+      y: 251
+      width: 106
+      height: 127
+    inner:
+      serializedVersion: 2
+      x: 494
+      y: 251
+      width: 106
+      height: 127
+    rotated: 0
+    paddingLeft: 0.10377359
+    paddingRight: 0.10377359
+    paddingTop: 0
+    paddingBottom: 0.007874016
+  - name: icon_widget_healthtick
+    outer:
+      serializedVersion: 2
+      x: 867
+      y: 981
+      width: 124
+      height: 43
+    inner:
+      serializedVersion: 2
+      x: 867
+      y: 981
+      width: 124
+      height: 43
+    rotated: 0
+    paddingLeft: 0.016129032
+    paddingRight: 0.016129032
+    paddingTop: 1
+    paddingBottom: 0.9767442
+  - name: white_block
+    outer:
+      serializedVersion: 2
+      x: 986
+      y: 666
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 986
+      y: 666
+      width: 32
+      height: 32
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_hex_bevel
+    outer:
+      serializedVersion: 2
+      x: 717
+      y: 375
+      width: 107
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 717
+      y: 375
+      width: 107
+      height: 123
+    rotated: 0
+    paddingLeft: 0.10280374
+    paddingRight: 0.093457945
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

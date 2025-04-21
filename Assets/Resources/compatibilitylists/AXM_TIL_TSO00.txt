@@ -1,0 +1,39 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=AXM_TIL_TS04
+		<Tile>name=AXM_TIL_TC05
+		<Tile>name=AXM_TIL_TSO00
+		<Tile>name=AXM_TIL_TSO01
+		<Tile>name=AXM_TIL_TCD000
+		<Tile>name=AXM_TIL_TCU000
+		<Tile>name=AXM_TIL_TSD00
+		<Tile>name=AXM_TIL_TSU00
+		<Tile>name=AXM_TIL_TPSTr00
+		<Tile>name=AXM_TIL_TSDU00
+		<Tile>name=AXM_TIL_TSUD00
+		<Tile>name=AXM_TIL_TSY00
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	<Building>
+			[name] AXM_BLD_01
+		</Building>
+		<Building>
+			[name] AXM_BLD_02
+		</Building>
+		<Building>
+			[name] AXM_BLD_03
+		</Building>
+				<Building>
+			[name] AXM_BLD_04
+		</Building>
+		<Building>
+			[name] AXM_BLD_05
+		</Building>
+				<Building>
+			[name] AXM_BLD_06
+		</Building>
+		<Building>
+			[name] AXM_BLD_07
+		</Building>
+	</CompatibleBuildings>
+</Compatibility

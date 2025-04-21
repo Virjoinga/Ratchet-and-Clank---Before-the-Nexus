@@ -1,0 +1,111 @@
+
+<Pickups>
+	<PickupSpawnGroup>
+		[distance] 0
+		<PickupSpawnData>
+			[name] PIK_Bolt_Bronze
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Silver
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Gold
+			[weight] 100
+			[count] 4
+		</PickupSpawnData>
+	</PickupSpawnGroup>
+		<PickupSpawnGroup>
+		[distance] 200
+		<PickupSpawnData>
+			[name] PIK_Bolt_Bronze
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Silver
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Gold
+			[weight] 100
+			[count] 8
+		</PickupSpawnData>
+	</PickupSpawnGroup>
+	<PickupSpawnGroup>
+		[distance] 1300
+		<PickupSpawnData>
+			[name] PIK_Bolt_Bronze
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Silver
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Gold
+			[weight] 100
+			[count] 8
+		</PickupSpawnData>
+	</PickupSpawnGroup>
+	<PickupSpawnGroup>
+		[distance] 2500
+		<PickupSpawnData>
+			[name] PIK_Bolt_Bronze
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Silver
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Gold
+			[weight] 50
+			[count] 16
+		</PickupSpawnData>
+	</PickupSpawnGroup>
+	<PickupSpawnGroup>
+		[distance] 5500
+		<PickupSpawnData>
+			[name] PIK_Bolt_Bronze
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Silver
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Gold
+			[weight] 90
+			[count] 16
+		</PickupSpawnData>
+	</PickupSpawnGroup>
+	<PickupSpawnGroup>
+		[distance] 7500
+		<PickupSpawnData>
+			[name] PIK_Bolt_Bronze
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Silver
+			[weight] 0
+			[count] 0
+		</PickupSpawnData>
+		<PickupSpawnData>
+			[name] PIK_Bolt_Gold
+			[weight] 90
+			[count] 16
+		</PickupSpawnData>
+	</PickupSpawnGroup>
+</Pickups>

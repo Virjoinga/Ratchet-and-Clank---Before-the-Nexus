@@ -1,0 +1,16 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=TER_TIL_TSO01
+		<Tile>name=TER_TIL_TSO00
+		<Tile>name=TER_TIL_TC05
+		<Tile>name=TER_TIL_TSY01
+		<Tile>name=TER_TIL_TSY00
+		<Tile>name=TER_TIL_TC11
+		<Tile>name=TER_TIL_TS04
+		<Tile>name=TER_TIL_TCU000
+		<Tile>name=TER_TIL_TSUD00
+		<Tile>name=TER_TIL_TCD000
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

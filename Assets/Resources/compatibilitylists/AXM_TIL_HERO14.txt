@@ -1,0 +1,7 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=AXM_TIL_HERO15
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

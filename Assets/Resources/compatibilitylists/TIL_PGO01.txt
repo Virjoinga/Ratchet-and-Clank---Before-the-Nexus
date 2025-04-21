@@ -1,0 +1,8 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=TIL_PGO03
+
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

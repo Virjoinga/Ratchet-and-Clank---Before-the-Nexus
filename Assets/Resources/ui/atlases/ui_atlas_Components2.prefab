@@ -1,0 +1,560 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1326789052995369}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1326789052995369
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4549072671289521}
+  - 114: {fileID: 114344675812730872}
+  m_Layer: 0
+  m_Name: ui_atlas_Components2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4549072671289521
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1326789052995369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114344675812730872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1326789052995369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9f040b2b6bd4bf069e31e0ace12f73, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 9a45695bfdf52ef46b660d0b362f7052, type: 2}
+  sprites:
+  - name: PreviewPaneSprite
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 206
+      width: 314
+      height: 433
+    inner:
+      serializedVersion: 2
+      x: 40
+      y: 206
+      width: 234
+      height: 433
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ListBackgroundSprite
+    outer:
+      serializedVersion: 2
+      x: 315
+      y: 410
+      width: 548
+      height: 67
+    inner:
+      serializedVersion: 2
+      x: 315
+      y: 410
+      width: 548
+      height: 67
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonGreenLargeSprite
+    outer:
+      serializedVersion: 2
+      x: 629
+      y: 652
+      width: 205
+      height: 64
+    inner:
+      serializedVersion: 2
+      x: 648
+      y: 671
+      width: 167
+      height: 26
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonGreenSprite
+    outer:
+      serializedVersion: 2
+      x: 937
+      y: 680
+      width: 80
+      height: 42
+    inner:
+      serializedVersion: 2
+      x: 937
+      y: 680
+      width: 80
+      height: 42
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_bolt_generic
+    outer:
+      serializedVersion: 2
+      x: 633
+      y: 218
+      width: 117
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 633
+      y: 218
+      width: 117
+      height: 121
+    rotated: 0
+    paddingLeft: 0.051282052
+    paddingRight: 0.042735044
+    paddingTop: 0.03305785
+    paddingBottom: 0.024793388
+  - name: icon_raritanium_crate
+    outer:
+      serializedVersion: 2
+      x: 514
+      y: 657
+      width: 109
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 514
+      y: 657
+      width: 109
+      height: 123
+    rotated: 0
+    paddingLeft: 0.09174312
+    paddingRight: 0.08256881
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  - name: widget_popup
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 640
+      width: 384
+      height: 384
+    inner:
+      serializedVersion: 2
+      x: 128
+      y: 704
+      width: 128
+      height: 256
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_widget_close
+    outer:
+      serializedVersion: 2
+      x: 751
+      y: 225
+      width: 115
+      height: 114
+    inner:
+      serializedVersion: 2
+      x: 751
+      y: 225
+      width: 115
+      height: 114
+    rotated: 0
+    paddingLeft: 0.060869563
+    paddingRight: 0.052173913
+    paddingTop: 0.06140351
+    paddingBottom: 0.06140351
+  - name: icon_bolt_crate
+    outer:
+      serializedVersion: 2
+      x: 506
+      y: 82
+      width: 119
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 506
+      y: 82
+      width: 119
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.075630255
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ConstructoShotgun
+    outer:
+      serializedVersion: 2
+      x: 629
+      y: 717
+      width: 246
+      height: 134
+    inner:
+      serializedVersion: 2
+      x: 629
+      y: 717
+      width: 246
+      height: 134
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.040650405
+    paddingTop: 0.08955224
+    paddingBottom: 0
+  - name: ConstructoPistol
+    outer:
+      serializedVersion: 2
+      x: 629
+      y: 852
+      width: 230
+      height: 172
+    inner:
+      serializedVersion: 2
+      x: 629
+      y: 852
+      width: 230
+      height: 172
+    rotated: 0
+    paddingLeft: 0.05652174
+    paddingRight: 0.05652174
+    paddingTop: 0
+    paddingBottom: 0.034883723
+  - name: PredatorLauncher
+    outer:
+      serializedVersion: 2
+      x: 315
+      y: 193
+      width: 190
+      height: 146
+    inner:
+      serializedVersion: 2
+      x: 315
+      y: 193
+      width: 190
+      height: 146
+    rotated: 0
+    paddingLeft: 0.036842104
+    paddingRight: 0.036842104
+    paddingTop: 0.11643836
+    paddingBottom: 0.11643836
+  - name: RynoM
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 82
+      width: 256
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 82
+      width: 256
+      height: 123
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BuzzBlades
+    outer:
+      serializedVersion: 2
+      x: 860
+      y: 859
+      width: 134
+      height: 165
+    inner:
+      serializedVersion: 2
+      x: 860
+      y: 859
+      width: 134
+      height: 165
+    rotated: 0
+    paddingLeft: 0.02238806
+    paddingRight: 0.07462686
+    paddingTop: 0.036363635
+    paddingBottom: 0.042424243
+  - name: RadialShadow
+    outer:
+      serializedVersion: 2
+      x: 385
+      y: 781
+      width: 243
+      height: 243
+    inner:
+      serializedVersion: 2
+      x: 385
+      y: 781
+      width: 243
+      height: 243
+    rotated: 0
+    paddingLeft: 0.028806584
+    paddingRight: 0.024691358
+    paddingTop: 0.028806584
+    paddingBottom: 0.024691358
+  - name: icon_hex2
+    outer:
+      serializedVersion: 2
+      x: 315
+      y: 64
+      width: 126
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 315
+      y: 64
+      width: 126
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.015873017
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_hex3
+    outer:
+      serializedVersion: 2
+      x: 506
+      y: 211
+      width: 126
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 506
+      y: 211
+      width: 126
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0.015873017
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_hex
+    outer:
+      serializedVersion: 2
+      x: 633
+      y: 94
+      width: 107
+      height: 123
+    inner:
+      serializedVersion: 2
+      x: 633
+      y: 94
+      width: 107
+      height: 123
+    rotated: 0
+    paddingLeft: 0.10280374
+    paddingRight: 0.093457945
+    paddingTop: 0.024390243
+    paddingBottom: 0.016260162
+  - name: icon_gear
+    outer:
+      serializedVersion: 2
+      x: 385
+      y: 652
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 385
+      y: 652
+      width: 128
+      height: 128
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: white_block
+    outer:
+      serializedVersion: 2
+      x: 835
+      y: 684
+      width: 32
+      height: 32
+    inner:
+      serializedVersion: 2
+      x: 835
+      y: 684
+      width: 32
+      height: 32
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: HUD_BUTTON [Pause]
+    outer:
+      serializedVersion: 2
+      x: 876
+      y: 654
+      width: 60
+      height: 68
+    inner:
+      serializedVersion: 2
+      x: 876
+      y: 654
+      width: 60
+      height: 68
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Ribbon
+    outer:
+      serializedVersion: 2
+      x: 315
+      y: 340
+      width: 462
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 315
+      y: 340
+      width: 462
+      height: 69
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Line
+    outer:
+      serializedVersion: 2
+      x: 629
+      y: 646
+      width: 184
+      height: 5
+    inner:
+      serializedVersion: 2
+      x: 629
+      y: 646
+      width: 184
+      height: 5
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ArrowButtonLargeSprite
+    outer:
+      serializedVersion: 2
+      x: 751
+      y: 34
+      width: 68
+      height: 190
+    inner:
+      serializedVersion: 2
+      x: 751
+      y: 34
+      width: 68
+      height: 190
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: border_highlight
+    outer:
+      serializedVersion: 2
+      x: 876
+      y: 723
+      width: 128
+      height: 128
+    inner:
+      serializedVersion: 2
+      x: 884
+      y: 731
+      width: 112
+      height: 112
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ic_play_games_badge_gray
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 33
+      width: 64
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 33
+      width: 64
+      height: 48
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.1875
+    paddingBottom: 0.14583333
+  - name: RibbonSquare
+    outer:
+      serializedVersion: 2
+      x: 315
+      y: 559
+      width: 560
+      height: 80
+    inner:
+      serializedVersion: 2
+      x: 315
+      y: 559
+      width: 560
+      height: 80
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: RibbonSquare-Border
+    outer:
+      serializedVersion: 2
+      x: 315
+      y: 478
+      width: 560
+      height: 80
+    inner:
+      serializedVersion: 2
+      x: 315
+      y: 478
+      width: 560
+      height: 80
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

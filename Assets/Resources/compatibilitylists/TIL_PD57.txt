@@ -1,0 +1,8 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=TIL_PC01
+		<Tile>name=TIL_PC02
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

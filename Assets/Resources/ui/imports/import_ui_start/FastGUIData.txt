@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psd width="1024" height="768">
+<layer type='ANCHOR'> 
+        <name>TitleScreen</name>
+        <path></path>
+        <posX>512</posX>
+        <posY>384</posY>
+        <layerID>34</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>BG</name>
+        <path>TitleScreen</path>
+        <posX>512</posX>
+        <posY>384</posY>
+        <source>TitleScreen_BG.png</source>
+        <layerID>9</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>BGOVERLAY</name>
+        <path>TitleScreen</path>
+        <posX>724</posX>
+        <posY>384</posY>
+        <source>TitleScreen_BGOVERLAY.png</source>
+        <layerID>8</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>ScoreChallenge</name>
+        <path>TitleScreen</path>
+        <posX>228</posX>
+        <posY>663.5</posY>
+        <source>TitleScreen_ScoreChallenge.png</source>
+        <layerID>16</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>TitleScreen</path>
+        <posX>245.5</posX>
+        <posY>634</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>25</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>FRIEND CHALLENGE!</contents>
+        <layerID>50</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>MenuButton</name>
+        <path>TitleScreen</path>
+        <posX>853.5</posX>
+        <posY>664</posY>
+        <source>TitleScreen_MenuButton.png</source>
+        <layerID>32</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>TitleScreen</path>
+        <posX>907</posX>
+        <posY>667</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>MENU</contents>
+        <layerID>24</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>TutorialButton</name>
+        <path>TitleScreen</path>
+        <posX>811.5</posX>
+        <posY>544.5</posY>
+        <source>TitleScreen_TutorialButton.png</source>
+        <layerID>46</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishMashBRK</name>
+        <path>TitleScreen</path>
+        <posX>867</posX>
+        <posY>545</posY>
+        <fontName>MishMashBRK</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>TUTORIAL</contents>
+        <layerID>48</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>PlayButton</name>
+        <path>TitleScreen</path>
+        <posX>769</posX>
+        <posY>424</posY>
+        <source>TitleScreen_PlayButton.png</source>
+        <layerID>42</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>TitleScreen</path>
+        <posX>832</posX>
+        <posY>425</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>PLAY</contents>
+        <layerID>44</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>GAME LOGO LARGE</name>
+        <path>TitleScreen</path>
+        <posX>688</posX>
+        <posY>185.5</posY>
+        <source>TitleScreen_GAME LOGO LARGE.png</source>
+        <layerID>40</layerID>
+</layer> 
+</psd>

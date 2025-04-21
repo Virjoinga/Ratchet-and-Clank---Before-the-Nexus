@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1890512173739449}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1890512173739449
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4878331904808854}
+  - 114: {fileID: 114573819772984989}
+  m_Layer: 0
+  m_Name: ui_atlas_StartMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4878331904808854
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890512173739449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114573819772984989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890512173739449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9f040b2b6bd4bf069e31e0ace12f73, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 74500b04919e51d4da412a69e15f17b4, type: 2}
+  sprites:
+  - name: TitleScreen_GAME-LOGO-LARGE
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 115
+      width: 392
+      height: 212
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 115
+      width: 392
+      height: 212
+    rotated: 0
+    paddingLeft: 0.010204081
+    paddingRight: 0.010204081
+    paddingTop: 0.023584906
+    paddingBottom: 0
+  - name: TitleScreen_GAME-LOGO-LARGE-Bright
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 300
+      width: 392
+      height: 212
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 300
+      width: 392
+      height: 212
+    rotated: 0
+    paddingLeft: 0.010204081
+    paddingRight: 0.010204081
+    paddingTop: 0.023584906
+    paddingBottom: 0
+  - name: TitleScreen_PlayButton_new
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 328
+      width: 520
+      height: 184
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 328
+      width: 520
+      height: 184
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: TitleScreen_ScoreChallenge_new
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 146
+      width: 460
+      height: 153
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 146
+      width: 460
+      height: 153
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: icon_menu_play_d
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 128
+      height: 97
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 128
+      height: 97
+    rotated: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0.13402061
+    paddingBottom: 0.185567
+  - name: icon_menu_d
+    outer:
+      serializedVersion: 2
+      x: 914
+      y: 388
+      width: 108
+      height: 124
+    inner:
+      serializedVersion: 2
+      x: 914
+      y: 388
+      width: 108
+      height: 124
+    rotated: 0
+    paddingLeft: 0.09259259
+    paddingRight: 0.09259259
+    paddingTop: 0.016129032
+    paddingBottom: 0.016129032
+  - name: icon_tutorial_d
+    outer:
+      serializedVersion: 2
+      x: 521
+      y: 26
+      width: 114
+      height: 119
+    inner:
+      serializedVersion: 2
+      x: 521
+      y: 26
+      width: 114
+      height: 119
+    rotated: 0
+    paddingLeft: 0.07017544
+    paddingRight: 0.05263158
+    paddingTop: 0.042016808
+    paddingBottom: 0.033613447
+  - name: icon_PSN
+    outer:
+      serializedVersion: 2
+      x: 393
+      y: 205
+      width: 122
+      height: 122
+    inner:
+      serializedVersion: 2
+      x: 393
+      y: 205
+      width: 122
+      height: 122
+    rotated: 0
+    paddingLeft: 0.032786883
+    paddingRight: 0.016393442
+    paddingTop: 0.040983606
+    paddingBottom: 0.008196721
+  - name: icon_vendor_d
+    outer:
+      serializedVersion: 2
+      x: 393
+      y: 83
+      width: 117
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 393
+      y: 83
+      width: 117
+      height: 121
+    rotated: 0
+    paddingLeft: 0.051282052
+    paddingRight: 0.042735044
+    paddingTop: 0.03305785
+    paddingBottom: 0.024793388
+  - name: icon_tutorial
+    outer:
+      serializedVersion: 2
+      x: 636
+      y: 26
+      width: 114
+      height: 119
+    inner:
+      serializedVersion: 2
+      x: 636
+      y: 26
+      width: 114
+      height: 119
+    rotated: 0
+    paddingLeft: 0.07017544
+    paddingRight: 0.05263158
+    paddingTop: 0.042016808
+    paddingBottom: 0.033613447
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}

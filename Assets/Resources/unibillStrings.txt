@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<strings>
+    <unibillError id="BILLER_NOT_READY">
+        <message>The Biller is initialising. If, and only if, Biller.Ready may you call any other Biller methods.</message>
+    </unibillError>
+    
+    <unibillError id="STOREKIT_BILLING_UNAVAILABLE">
+        <message>Storekit reported In App purchasing as unavailable.</message>
+    </unibillError>
+    <unibillError id="STOREKIT_RETURNED_NO_PRODUCTS">
+        <message>Storekit requestProducts returned no products.</message>
+    </unibillError>
+    <unibillError id="STOREKIT_REQUESTPRODUCTS_MISSING_PRODUCT">
+        <message>Storekit product identifier is invalid for product {0}, iTunes id {1}</message>
+    </unibillError>
+    <unibillError id="STOREKIT_ATTEMPTING_TO_PURCHASE_PRODUCT_NOT_RETURNED_BY_STOREKIT">
+        <message>Attempting to purchase product {0} which was not returned by storekit requestProductData(). Verify the item's status in iTunes Connect.</message>
+    </unibillError>
+    <unibillError id="STOREKIT_FAILED_TO_RETRIEVE_PRODUCT_DATA">
+        <message>Storekit was unable to retrieve product data. You may not have Internet connectivity.</message>
+    </unibillError>
+    
+    <unibillError id="GOOGLEPLAY_BILLING_UNAVAILABLE">
+        <message>Google play reported In App purchasing as unavailable.</message>
+    </unibillError>
+    <unibillError id="GOOGLEPLAY_PUBLICKEY_INVALID">
+        <message>You must configure the correct public key from Google Play. {0} is invalid.</message>
+    </unibillError>
+    <unibillError id="GOOGLEPLAY_PUBLICKEY_NOTCONFIGURED">
+        <message>You must configure your Google Play public key. {0} is a placeholder value.</message>
+    </unibillError>
+    <unibillError id="GOOGLEPLAY_ATTEMPTING_TO_PURCHASE_PRODUCT_NOT_RETURNED_BY_GOOGLEPLAY">
+        <message>You are attempting to purchase product: {0} which was not listed as an available product by Google Play. Verify that you have you created the item in the Google Play publisher console.</message>
+    </unibillError>
+    <unibillError id="GOOGLEPLAY_NO_PRODUCTS_RETURNED">
+        <message>Google Play returned no products as available for purchase. Have you defined your purchasable items in the Google Play publisher console?</message>
+    </unibillError>
+    <unibillError id="GOOGLEPLAY_MISSING_PRODUCT">
+        <message>Google Play returned product {0} as unavailable for purchase. Have you defined it in the Google Play publisher console?</message>
+    </unibillError>
+    
+    <unibillError id="AMAZONAPPSTORE_GETITEMDATAREQUEST_FAILED">
+        <message>An error occured retrieving the product list - GetItemDataRequest failed.</message>
+    </unibillError>
+    <unibillError id="AMAZONAPPSTORE_GETITEMDATAREQUEST_NO_PRODUCTS_RETURNED">
+        <message>GetItemDataRequest returned an empty product list. Have you created your purchases on the Amazon developer portal?</message>
+    </unibillError>
+    <unibillError id="AMAZONAPPSTORE_GETITEMDATAREQUEST_MISSING_PRODUCT">
+        <message>Product: {0} was not returned by GetItemDataRequest. Have you created it on the Amazon developer portal?</message>
+    </unibillError>
+    <unibillError id="AMAZONAPPSTORE_ATTEMPTING_TO_PURCHASE_PRODUCT_NOT_RETURNED_BY_AMAZON">
+        <message>Attempting to purchase product: {0} which was not returned by GetItemDataRequest. Have you created it on the Amazon developer portal?</message>
+    </unibillError>
+    
+    <unibillError id="WP8_NO_PRODUCTS_RETURNED">
+        <message>GetItemDataRequest returned an empty product list. Have you created your purchases on the Microsoft developer portal?</message>
+    </unibillError>
+    <unibillError id="WP8_MISSING_PRODUCT">
+        <message>Product: {0} was not returned by Microsoft. Have you created it on the Microsoft developer portal?</message>
+    </unibillError>
+    <unibillError id="WP8_ATTEMPTING_TO_PURCHASE_PRODUCT_NOT_RETURNED_BY_MICROSOFT">
+        <message>Attempting to purchase product: {0} which was not returned as available by Microsoft. Have you created it on the Microsoft developer portal?</message>
+    </unibillError>
+  <unibillError id="WP8_APP_ID_NOT_KNOWN">
+    <message>Your App ID may be incorrect. Have you set your product ID in your WMAppManifest?</message>
+  </unibillError>
+    
+    <unibillError id="UNIBILL_UNKNOWN_PRODUCTID">
+        <message>Product: {0} is not known to Unibill. Ensure your product IDs are set correctly in your unibill configuration.</message>
+    </unibillError>
+    <unibillError id="UNIBILL_INITIALISE_FAILED_WITH_CRITICAL_ERROR">
+        <message>Unibill initialisation failed with a critical error. Check the Errors property to diagnose the problem.</message>
+    </unibillError>
+    <unibillError id="UNIBILL_NO_PRODUCTS_DEFINED">
+        <message>You have not defined any products to be purchased. Define your products with the inventory editor, found at Unibill/Inventory editor.</message>
+    </unibillError>
+    <unibillError id="UNIBILL_ATTEMPTING_TO_PURCHASE_ALREADY_OWNED_NON_CONSUMABLE">
+        <message>You have attempted to purchase a Non-Consumable product that is already owned by the player. If it is intended that the product be purchasable multiple times, make it Consumable in the inventory editor. Otherwise you should check whether the product is already owned and, if so, prevent the user purchasing it.</message>
+    </unibillError>
+</strings>

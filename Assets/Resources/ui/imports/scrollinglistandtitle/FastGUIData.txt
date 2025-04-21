@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psd width="1024" height="768">
+<layer type='ANCHOR'> 
+        <name>Achievements</name>
+        <path></path>
+        <posX>512.5</posX>
+        <posY>381.5</posY>
+        <layerID>312</layerID>
+</layer> 
+<layer type='ANCHOR'> 
+        <name>SCROLLING LIST</name>
+        <path>Achievements</path>
+        <posX>512.5</posX>
+        <posY>423.5</posY>
+        <layerID>294</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>SCROLLING MASK</name>
+        <path>Achievements/SCROLLING LIST</path>
+        <posX>512.5</posX>
+        <posY>423.5</posY>
+        <source>SCROLLING MASK.png</source>
+        <layerID>277</layerID>
+</layer> 
+<layer type='ANCHOR'> 
+        <name>TitleHeader</name>
+        <path>Achievements</path>
+        <posX>501.5</posX>
+        <posY>63</posY>
+        <layerID>333</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>Layer 1</name>
+        <path>Achievements/TitleHeader</path>
+        <posX>501.5</posX>
+        <posY>63</posY>
+        <source>Layer 1.png</source>
+        <layerID>335</layerID>
+</layer> 
+</psd>

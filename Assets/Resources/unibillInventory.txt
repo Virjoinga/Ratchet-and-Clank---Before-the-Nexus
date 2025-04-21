@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<inventory>
+  <iOSSKU>Ratchet_Nexus_1.0</iOSSKU>
+  <androidBillingPlatform>GooglePlay</androidBillingPlatform>
+  <GooglePlayPublicKey>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn8uCIs3mFjL27zo2rL9KZiinXdUCkRcRgUEW3ScopVolVPtZssHZhpvsu8vo5H5un9jOADVDLyz9dBVfzhZBOcQBNF+BnNXOTabCe5nIwyFB/sKfgZBl/Y8SA3pnm5KZBHrehMMpaRF/3ZKhkf/c4tCEKQ+1sEITRCCweE1Q/bHfJqpfh8eeG+A60cstSHRe0m7Td0WrF/sGtnT7Ew1Ql7XTgvFo3729ZKkQ8/Ki3PYBbxx1UssO2kqS2QuHcVwbu40274dDKEGnZtqkt056sCQonil9HvkywSxOf5Wv6Q3tDYTw4gvCapTAR1VsxbH1bUwKGMDRu0gaRczLx265zQIDAQAB</GooglePlayPublicKey>
+  <useAmazonSandbox>true</useAmazonSandbox>
+  <item id="com.darksidegames.smallbolt" purchaseType="Consumable">
+    <name>Small Crate of Bolts</name>
+    <description>5000</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>1.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <AppleAppStore.Id>com.darksidegames.smallbolt3</AppleAppStore.Id>
+        <appleAppStorePriceTier>2</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore>
+        <MacAppStore.Id>com.outlinegames.100goldcoinsosx</MacAppStore.Id>
+      </MacAppStore>
+    </platforms>
+  </item>
+  <item id="com.darksidegames.medbolt" purchaseType="Consumable">
+    <name>Medium Crate of Bolts</name>
+    <description>13000</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>4.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <AppleAppStore.Id>com.darksidegames.medbolt3</AppleAppStore.Id>
+        <appleAppStorePriceTier>5</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore>
+        <MacAppStore.Id>com.outlinegames.swordosx</MacAppStore.Id>
+      </MacAppStore>
+    </platforms>
+  </item>
+  <item id="com.darksidegames.largebolt" purchaseType="Consumable">
+    <name>Large crate of bolts</name>
+    <description>30000</description>
+    <platforms>
+      <GooglePlay>
+        <priceInLocalCurrency>9.99</priceInLocalCurrency>
+        <defaultLocale>en_US</defaultLocale>
+      </GooglePlay>
+      <AmazonAppstore />
+      <AppleAppStore>
+        <AppleAppStore.Id>com.darksidegames.largebolt3</AppleAppStore.Id>
+        <appleAppStorePriceTier>10</appleAppStorePriceTier>
+      </AppleAppStore>
+      <MacAppStore />
+    </platforms>
+  </item>
+  <currencies />
+</inventory>

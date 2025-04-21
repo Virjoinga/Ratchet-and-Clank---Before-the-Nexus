@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psd width="1024" height="768">
+<layer type='SPRITE'> 
+        <name>HUD</name>
+        <path></path>
+        <posX>498</posX>
+        <posY>157</posY>
+        <source>HUD.png</source>
+        <layerID>397</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>CHALLENGE POP-UP</name>
+        <path>HUD</path>
+        <posX>134.5</posX>
+        <posY>263.5</posY>
+        <source>HUD_CHALLENGE POP-UP.png</source>
+        <layerID>366</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>Group 1</name>
+        <path>HUD</path>
+        <posX>916</posX>
+        <posY>195.5</posY>
+        <source>HUD_Group 1.png</source>
+        <layerID>371</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>RARITANIUM COUNTER</name>
+        <path>HUD</path>
+        <posX>877.5</posX>
+        <posY>125.5</posY>
+        <source>HUD_RARITANIUM COUNTER.png</source>
+        <layerID>376</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>BOLT COUNTER</name>
+        <path>HUD</path>
+        <posX>872.5</posX>
+        <posY>58.5</posY>
+        <source>HUD_BOLT COUNTER.png</source>
+        <layerID>381</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>ODOMETER</name>
+        <path>HUD</path>
+        <posX>156.5</posX>
+        <posY>125.5</posY>
+        <source>HUD_ODOMETER.png</source>
+        <layerID>386</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>SCORE COUNTER</name>
+        <path>HUD</path>
+        <posX>149.5</posX>
+        <posY>58</posY>
+        <source>HUD_SCORE COUNTER.png</source>
+        <layerID>391</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>HUD</path>
+        <posX>142.5</posX>
+        <posY>264.5</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>23</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>SCORE TO BEAT:
+15900pts 4970.2m</contents>
+        <layerID>414</layerID>
+</layer>
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>HUD</path>
+        <posX>891</posX>
+        <posY>196.5</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>25</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>50/50</contents>
+        <layerID>412</layerID>
+</layer>
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>HUD</path>
+        <posX>875</posX>
+        <posY>126.5</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>25</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>230</contents>
+        <layerID>410</layerID>
+</layer>
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>HUD</path>
+        <posX>855</posX>
+        <posY>58</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>38427</contents>
+        <layerID>408</layerID>
+</layer>
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>HUD</path>
+        <posX>190</posX>
+        <posY>126.5</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>25</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>3875.1m</contents>
+        <layerID>406</layerID>
+</layer>
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>HUD</path>
+        <posX>210</posX>
+        <posY>58</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>10200</contents>
+        <layerID>404</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>BUTTON [Pause]</name>
+        <path>HUD</path>
+        <posX>513</posX>
+        <posY>58</posY>
+        <source>HUD_BUTTON [Pause].png</source>
+        <layerID>396</layerID>
+</layer> 
+</psd>

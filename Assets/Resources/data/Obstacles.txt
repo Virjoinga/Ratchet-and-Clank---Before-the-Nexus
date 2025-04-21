@@ -1,0 +1,193 @@
+<Obstacles>
+	<ObstacleSpawnGroup>
+		[distance] 0
+		<ObstacleSpawnData>
+			[name] OBS_MineHazard
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Wall
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectroRing
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectricBaracade
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Burners
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+	</ObstacleSpawnGroup>
+	<ObstacleSpawnGroup>
+		[distance] 500
+		<ObstacleSpawnData>
+			[name] OBS_MineHazard
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Wall
+			[weight] 10
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectroRing
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectricBaracade
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Burners
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+	</ObstacleSpawnGroup>
+	<ObstacleSpawnGroup>
+		[distance] 4000
+		<ObstacleSpawnData>
+			[name] OBS_MineHazard
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Wall
+			[weight] 5
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectroRing
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectricBaracade
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Burners
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+	</ObstacleSpawnGroup>
+		<ObstacleSpawnGroup>
+		[distance] 7000
+		<ObstacleSpawnData>
+			[name] OBS_MineHazard
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Wall
+			[weight] 5
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectroRing
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectricBaracade
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Burners
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+	</ObstacleSpawnGroup>
+	<ObstacleSpawnGroup>
+		[distance] 8500
+		<ObstacleSpawnData>
+			[name] OBS_MineHazard
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_wall
+			[weight] 10
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectroRing
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectricBaracade
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Burners
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+	</ObstacleSpawnGroup>
+	<ObstacleSpawnGroup>
+		[distance] 11000
+		<ObstacleSpawnData>
+			[name] OBS_MineHazard
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_wall
+			[weight] 15
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectroRing
+			[weight] 25
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectricBaracade
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+			<ObstacleSpawnData>
+			[name] OBS_Burners
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+	</ObstacleSpawnGroup>
+	<ObstacleSpawnGroup>
+		[distance] 16000
+		<ObstacleSpawnData>
+			[name] OBS_MineHazard
+			[weight] 33
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_Wall
+			[weight] 20
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectroRing
+			[weight] 33
+			[count] 1
+		</ObstacleSpawnData>
+		<ObstacleSpawnData>
+			[name] OBS_ElectricBaracade
+			[weight] 0
+			[count] 1
+		</ObstacleSpawnData>
+	</ObstacleSpawnGroup>
+</Obstacles>

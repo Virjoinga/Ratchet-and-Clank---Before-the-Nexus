@@ -1,0 +1,13 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=TIL_PC07
+		<Tile>name=TIL_PC08
+		<Tile>name=TIL_PC10
+		<Tile>name=TIL_PC07
+		<Tile>name=TIL_PC08
+		<Tile>name=TIL_PC10
+
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

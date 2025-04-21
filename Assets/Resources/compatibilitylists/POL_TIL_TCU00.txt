@@ -1,0 +1,6 @@
+<Compatibility>
+	<CompatibleTiles>
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

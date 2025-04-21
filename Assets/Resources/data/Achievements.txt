@@ -1,0 +1,302 @@
+<ChallengeFile>
+<Group>
+	<Challenge>
+		[UID]			201
+		[Title] 		Jet
+		[Description]	Use the Jet _PS_ times
+		[LocKeyDesc]	AC_01_Text
+		[LocKeyName]	AC_01_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	jetpackActive
+		[PrimaryInit]	10
+		[SpriteName]	icon_gadget_jetpack
+		[Key]		CgkI_t-7gZceEAIQCg
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			202
+		[Title] 		Moneybags
+		[Description]	Spend _PS_ bolts
+		[LocKeyDesc]	AC_02_Text
+		[LocKeyName]	AC_02_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	boltzSpent
+		[PrimaryInit]	2000
+		[SpriteName]	icon_achv_moneybags
+		[Key]		CgkI_t-7gZceEAIQCw
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			203
+		[Title] 		In-sync
+		[Description]	Sync _PS_ Raritanium
+		[LocKeyDesc]	AC_03_Text
+		[LocKeyName]	AC_03_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	raritaniumDeposited
+		[PrimaryInit]	1
+		[SpriteName]	icon_menu_rarsync
+		[Key]		CgkI_t-7gZceEAIQDA
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			204
+		[Title] 		Protected
+		[Description]	Buy _PS_ armors
+		[LocKeyDesc]	AC_04_Text
+		[LocKeyName]	AC_04_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	armorUpgraded
+		[PrimaryInit]	3
+		[SpriteName]	icon_achv_protected
+		[Key]		CgkI_t-7gZceEAIQDQ
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			205
+		[Title] 		Liberator
+		[Description]	Free all _PS_ Terachnoids
+		[LocKeyDesc]	AC_05_Text
+		[LocKeyName]	AC_05_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	terachnoidsCollected
+		[PrimaryInit]	10
+		[SpriteName]	icon_terachnoid
+		[Key]		CgkI_t-7gZceEAIQDg
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			206
+		[Title] 		Well Traveled
+		[Description]	Travel _PS_ meters
+		[LocKeyDesc]	AC_06_Text
+		[LocKeyName]	AC_06_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	distanceTraveled
+		[PrimaryInit]	25000
+		[SpriteName]	icon_menu_play
+		[Key]		CgkI_t-7gZceEAIQDw
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			207
+		[Title] 		Rainy Day
+		[Description]	Collect _PS_ bolts
+		[LocKeyDesc]	AC_07_Text
+		[LocKeyName]	AC_07_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	boltzCollected
+		[PrimaryInit]	25000
+		[SpriteName]	icon_achv_rainyday
+		[Key]		CgkI_t-7gZceEAIQEA
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			208
+		[Title] 		Not So Rare
+		[Description]	Collect _PS_ Raritanium
+		[LocKeyDesc]	AC_08_Text
+		[LocKeyName]	AC_08_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	raritaniumCollected
+		[PrimaryInit]	20
+		[SpriteName]	icon_raritanium_crate
+		[Key]		CgkI_t-7gZceEAIQEQ
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			209
+		[Title] 		Smasher
+		[Description]	Destroy _PS_ crates
+		[LocKeyDesc]	AC_09_Text
+		[LocKeyName]	AC_09_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	cratesBroken
+		[PrimaryInit]	1000
+		[SpriteName]	icon_weapon_wrench
+		[Key]		CgkI_t-7gZceEAIQEg
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			210
+		[Title] 		So Boss!
+		[Description]	Defeat the Basilisk Leviathan
+		[LocKeyDesc]	AC_10_Text
+		[LocKeyName]	AC_10_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	leviathanKilled
+		[PrimaryInit]	1
+		[SpriteName]	icon_achv_soboss
+		[Key]		CgkI_t-7gZceEAIQEw
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			211
+		[Title] 		Who?
+		[Description]	Watch the credits
+		[LocKeyDesc]	AC_11_Text
+		[LocKeyName]	AC_11_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	creditsWatched
+		[PrimaryInit]	1
+		[SpriteName]	icon_menu_credits
+		[Key]		CgkI_t-7gZceEAIQFA
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			212
+		[Title] 		Groovy
+		[Description]	Use the Groovitron _PS_ times
+		[LocKeyDesc]	AC_12_Text
+		[LocKeyName]	AC_12_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	groovitronUsed
+		[PrimaryInit]	5
+		[SpriteName]	icon_weapon_groovitron
+		[Key]		CgkI_t-7gZceEAIQFQ
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			213
+		[Title] 		Windy
+		[Description]	Use the Tornado Launcher _PS_ times
+		[LocKeyDesc]	AC_13_Text
+		[LocKeyName]	AC_13_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	tornadoLauncherUsed
+		[PrimaryInit]	5
+		[SpriteName]	icon_weapon_tornado
+		[Key]		CgkI_t-7gZceEAIQFg
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			214
+		[Title] 		Space
+		[Description]	Use the Rift Inducer _PS_ times
+		[LocKeyDesc]	AC_14_Text
+		[LocKeyName]	AC_14_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	riftInducerUsed
+		[PrimaryInit]	5
+		[SpriteName]	icon_weapon_rift
+		[Key]		CgkI_t-7gZceEAIQFw
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			215
+		[Title] 		Well Armed
+		[Description]	Upgrade all weapons
+		[LocKeyDesc]	AC_15_Text
+		[LocKeyName]	AC_15_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	weaponsUpgraded
+		[PrimaryInit]	4
+		[SpriteName]	icon_achv_wellarmed
+		[Key]		CgkI_t-7gZceEAIQGA
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			216
+		[Title] 		Air Defense
+		[Description]	Kill _PS_ flying enemies
+		[LocKeyDesc]	AC_16_Text
+		[LocKeyName]	AC_16_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	flyingEnemiesKilled
+		[PrimaryInit]	200
+		[SpriteName]	icon_achv_airdefense
+		[Key]		CgkI_t-7gZceEAIQGQ
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			217
+		[Title] 		Ground Defense
+		[Description]	Kill _PS_ ground enemies
+		[LocKeyDesc]	AC_17_Text
+		[LocKeyName]	AC_17_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	groundEnemiesKilled
+		[PrimaryInit]	200
+		[SpriteName]	icon_achv_grounddefense
+		[Key]		CgkI_t-7gZceEAIQGg
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			218
+		[Title] 		Tech
+		[Description]	Purchase all gadgets
+		[LocKeyDesc]	AC_18_Text
+		[LocKeyName]	AC_18_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	gadgetsBought
+		[PrimaryInit]	7
+		[SpriteName]	icon_achv_tech
+		[Key]		CgkI_t-7gZceEAIQGw
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			220
+		[Title] 		Secret Weapon
+		[Description]	Kill _PS_ enemies with the R.Y.N.O.m
+		[LocKeyDesc]	AC_20_Text
+		[LocKeyName]	AC_20_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	rynoKills
+		[PrimaryInit]	50
+		[SpriteName]	icon_weapon_ryno
+		[Key]		CgkI_t-7gZceEAIQHA
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			221
+		[Title] 		Unlockist
+		[Description]	Upgrade all Gadgets
+		[LocKeyDesc]	AC_21_Text
+		[LocKeyName]	AC_21_Name
+		[Duration]		-1
+		[MaxLevel]		0
+		[PrimaryStat]	gadgetsUpgraded
+		[PrimaryInit]	7
+		[SpriteName]	icon_weapon_ryno
+		[Key]		CgkI_t-7gZceEAIQHQ
+	</Challenge>
+</Group>
+</ChallengeFile>

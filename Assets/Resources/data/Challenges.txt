@@ -1,0 +1,602 @@
+<ChallengeFile>
+<Group>
+	<Challenge>
+		[UID]			1
+</Kill 2 enemies with a single pistol shot>
+		[LocKeyDesc]	SP_W_01
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	oneShotPistolKills
+		[PrimaryInit]	2
+		[Category]		0
+		[WeaponReq]		0
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			2
+</Kill 3 enemies with a single shot gun shot>
+		[LocKeyDesc]	SP_W_02
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	oneShotShotgunKills
+		[PrimaryInit]	3
+		[Category]		0
+		[WeaponReq]		1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			3
+</Kill 5 Thugs with buzzblades>
+		[LocKeyDesc]	SP_W_03
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	buzzbladesThugKills
+		[PrimaryInit]	5
+		[Category]		0
+		[WeaponReq]		2
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			4
+</Kill 3 enemies with a single predator shot>
+		[LocKeyDesc]	SP_W_04
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	oneShotPredatorKills
+		[PrimaryInit]	3
+		[Category]		0
+		[WeaponReq]		3
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			5
+</Reload the pistol 2,3,4 in one run>
+		[LocKeyDesc]	SP_W_05
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	pistolReloads
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		0
+		[WeaponReq]		0
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			6
+</Defeat neftin and vendra with the shotgun>
+		[LocKeyDesc]	SP_W_06
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	shotgunBossKills
+		[PrimaryInit]	1
+		[Category]		0
+		[WeaponReq]		1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			7
+</Defeat neftin and vendra with the predator>
+		[LocKeyDesc]	SP_W_07
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	predatorBossKills
+		[PrimaryInit]	1
+		[Category]		0
+		[WeaponReq]		3
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			8
+</Defeat neftin and vendra with the buzz blades>
+		[LocKeyDesc]	SP_W_08
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	buzzbladesBossKills
+		[PrimaryInit]	1
+		[Category]		0
+		[WeaponReq]		2
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			9
+</Defeat neftin and vendra with the ryno>
+		[LocKeyDesc]	SP_W_09
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	rynoBossKills
+		[PrimaryInit]	1
+		[Category]		0
+		[WeaponReq]		4
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			10
+</Shoot 10 crates >
+		[LocKeyDesc]	SP_W_10
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	cratesBroken
+		[PrimaryInit]	10
+		[Category]		0		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			11
+</Kill 2,3 dancing enemy>
+		[LocKeyDesc]	SP_W_11
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	dancingEnemiesKilled
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		0
+		[WeaponReq]		-1
+		[GadgetReq]		1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			12
+</Kill 2,3 enemy while using Jetpack>
+		[LocKeyDesc]	SP_W_12
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	jetPackCurrentKills
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		0
+		[WeaponReq]		-1
+		[GadgetReq]		5
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			13
+</The Suck Zone: Kill 4 Enemies with a single Tornado Launcher>
+		[LocKeyDesc]	SP_W_13
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	tornadoLauncherCurrentKills
+		[PrimaryInit]	4
+		[Category]		0
+		[WeaponReq]		-1
+		[GadgetReq]		6
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			14
+</Hole in the sky: Kill 4 Enemies with a single Rift Inducer>
+		[LocKeyDesc]	SP_W_14
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	riftInducerCurrentKills
+		[PrimaryInit]	4
+		[Category]		0
+		[WeaponReq]		-1
+		[GadgetReq]		4
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			15
+</Dance of the dead: Kill 4 Enemies with a single groovitron>
+		[LocKeyDesc]	SP_W_15
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	groovitronCurrentKills
+		[PrimaryInit]	4		
+		[Category]		0
+		[WeaponReq]		-1
+		[GadgetReq]		1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			16
+</trigger tornado 2,3,4 in a run>
+		[LocKeyDesc]	SP_G_01
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	tornadoActive
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		6
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			17
+</trigger rift inducer 2,3,4 in a run>
+		[LocKeyDesc]	SP_G_02
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	riftInducerActive
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		4
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			18
+</Trigger groovitron 2,3,4 in a run>
+		[LocKeyDesc]	SP_G_03
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	groovitronActive
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			19
+</Trigger a reflector an do not take a hit>
+		[LocKeyDesc]	SP_G_04
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	reflectorNoHits
+		[PrimaryInit]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		3
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			20
+</Trigger the jetpack 2,3,4 in a run>
+		[LocKeyDesc]	SP_G_05
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	jetpackActive
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		5
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			21
+</Trigger bolt multiplier 2,3,4 in a run>
+		[LocKeyDesc]	SP_G_06
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	multiplierActive
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		2
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			22
+</Trigger reflector 2,3,4 in a run>
+		[LocKeyDesc]	SP_G_07
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	reflectorActive
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		3
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			23
+</Trigger armor magnetizer 2,3,4 in a run>
+		[LocKeyDesc]	SP_G_08
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	magnetizerActive
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		0
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			24
+</smash through 2,3,4 obstacles with a reflector>
+		[LocKeyDesc]	SP_G_09
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	reflectorObstaclesSmashed
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		3
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			25
+</Use reflector to take 2,3,4 hits from enemies>
+		[LocKeyDesc]	SP_G_10
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	reflectorShotsAbsorbed
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		3
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			26
+</Collect 10,15,20 bolts with a tornado>
+		[LocKeyDesc]	SP_G_11
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	tornadoBoltzCollected
+		[PrimaryInit]	10
+		[PrimaryScale]	5
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		6
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			27
+</Collect 150,350,550 bolts with the armor magnetizer>
+		[LocKeyDesc]	SP_G_12
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	magnetizerBoltzCollected
+		[PrimaryInit]	150
+		[PrimaryScale]	200
+		[Category]		1
+		[WeaponReq]		-1
+		[GadgetReq]		0
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			28
+</Change rails 5,10 times in 200m>
+		[LocKeyDesc]	SP_T_01
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	withinDistanceLanesSwitched
+		[PrimaryInit]	5
+		[PrimaryScale]	5
+		[Category]		2
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			29
+</Stay on middle rail for 200,400,600 meters>
+		[LocKeyDesc]	SP_T_02
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	onMiddleRail
+		[PrimaryInit]	200
+		[PrimaryScale]	200
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			30
+</Stay on left rail for 200,400,600 meters>
+		[LocKeyDesc]	SP_T_03
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	onLeftRail
+		[PrimaryInit]	200
+		[PrimaryScale]	200
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			31
+</Stay on right rail for 200,400,600 meters>
+		[LocKeyDesc]	SP_T_04
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	onRightRail
+		[PrimaryInit]	200
+		[PrimaryScale]	200
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			32
+</Go 1000,3000,4000,7000,9000 meters>
+		[LocKeyDesc]	SP_T_05
+		[Duration]		0
+		[MaxLevel]		4
+		[PrimaryStat]	distanceTraveled
+		[PrimaryInit]	1000
+		[PrimaryScale]	2000
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			33
+</Collect 250,500,750,1000,1250 bolts>
+		[LocKeyDesc]	SP_T_06
+		[Duration]		0
+		[MaxLevel]		4
+		[PrimaryStat]	boltzCollected
+		[PrimaryInit]	250
+		[PrimaryScale]	250
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			34
+</Score 15000,30000,45000,60000,75000 points>
+		[LocKeyDesc]	SP_T_07
+		[Duration]		0
+		[MaxLevel]		4
+		[PrimaryStat]	pointsScored
+		[PrimaryInit]	15000
+		[PrimaryScale]	15000
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			35
+</250,350,450 meters collecting no bolts>
+		[LocKeyDesc]	SP_T_08
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	noBoltzDistanceTraveled
+		[PrimaryInit]	250
+		[PrimaryScale]	100
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			36
+</Collect 2,5 gadgets>
+		[LocKeyDesc]	SP_T_09
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	gadgetsCollected
+		[PrimaryInit]	2
+		[PrimaryScale]	3
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			37
+</Use a Hero Bolt 2,3 times in one run>
+		[LocKeyDesc]	SP_T_10
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	heroBoltsUsed
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			38
+</Collect 2,3,4 Raritanium in one run>
+		[LocKeyDesc]	SP_T_11
+		[Duration]		0
+		[MaxLevel]		2
+		[PrimaryStat]	raritaniumCollected
+		[PrimaryInit]	2
+		[PrimaryScale]	1
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			39
+</Run 2000,4000 meters without getting hit>
+		[LocKeyDesc]	SP_T_12
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	noDamageDistanceTraveled
+		[PrimaryInit]	2000
+		[PrimaryScale]	2000
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			40
+</Use the swingshot>
+		[LocKeyDesc]	SP_T_13
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	swingShotUsed
+		[PrimaryInit]	1
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+<Group>
+	<Challenge>
+		[UID]			41
+</Free a Terachnoid>
+		[LocKeyDesc]	SP_T_14
+		[Duration]		0
+		[MaxLevel]		0
+		[PrimaryStat]	terachnoidsCollected
+		[PrimaryInit]	1
+		[Category]		2		
+		[WeaponReq]		-1
+		[GadgetReq]		-1
+	</Challenge>
+</Group>
+</ChallengeFile>

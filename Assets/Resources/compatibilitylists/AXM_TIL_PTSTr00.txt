@@ -1,0 +1,8 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=AXM_TIL_TS04
+
+	</CompatibleTiles>
+	<CompatibleBuildings>
+	</CompatibleBuildings>
+</Compatibility>

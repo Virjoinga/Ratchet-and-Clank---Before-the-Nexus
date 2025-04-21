@@ -1,0 +1,31 @@
+<Compatibility>
+	<CompatibleTiles>
+		<Tile>name=TIL_P_Base
+	</CompatibleTiles>
+	<CompatibleBuildings>
+		<Building>
+			[name] AXM_BLD_TIL_Base01
+		</Building>
+		<Building>
+			[name] AXM_BLD_TIL_Base02
+		</Building>
+		<Building>
+			[name] AXM_BLD_TIL_Base03
+		</Building>
+		<Building>
+			[name] AXM_BLD_TIL_Base04
+		</Building>
+		<Building>
+			[name] AXM_BLD_TIL_Base05
+		</Building>
+		<Building>
+			[name] AXM_BLD_TIL_Base06
+		</Building>
+		<Building>
+			[name] AXM_BLD_TIL_Base07
+		</Building>
+		<Building>
+			[name] AXM_BLD_TIL_Base08
+		</Building>
+	</CompatibleBuildings>
+</Compatibility>

@@ -1,0 +1,2771 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1517539335440885}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1517539335440885
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4058290458112344}
+  - 114: {fileID: 114053072273343990}
+  m_Layer: 0
+  m_Name: AnimationEventDataNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4058290458112344
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517539335440885}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.725168, y: 36.385868, z: -8.740389}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114053072273343990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1517539335440885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce097605887402ca9e5e0c73159ea098, type: 3}
+  m_Name:
+  data:
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -580041302
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.25
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.5
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.75
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1245604687
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.5952185
+      paramType: 2
+      intParam: 0
+      floatParam: 0.4
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1345164401
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.41632316
+      paramType: 2
+      intParam: 0
+      floatParam: 0.4
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1972259005
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.41632316
+      paramType: 2
+      intParam: 0
+      floatParam: 0.4
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 288922328
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.25
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.5
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 328480653
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1527828918
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot_Jump
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.7526793
+      paramType: 2
+      intParam: 0
+      floatParam: 0.4
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -732565300
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Helipack_Loop
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 942472073
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1669721318
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1896429491
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot_Jump
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.6743611
+      paramType: 2
+      intParam: 0
+      floatParam: 0.4
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1514139496
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot_Jump
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.6908491
+      paramType: 2
+      intParam: 0
+      floatParam: 0.4
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 909785533
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -2052988233
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1571193772
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 362590803
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_JetIdle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_swingshot_swoosh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Helipack_Loop
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1015117259
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_JetIdle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Helipack_Loop
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -29662567
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_JetIdle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Helipack_Loop
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Gethit_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1728946570
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_JetIdle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.034624897
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ratchet_Gethit_Obstacle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Helipack_Loop
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ratchet_Gethit_Obstacle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -604752631
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopMusic
+      normalizedTime: 0
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_IntroEngine
+      normalizedTime: 0.02
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: //AE_SetMusicVolume
+      normalizedTime: 0.05
+      paramType: 2
+      intParam: 0
+      floatParam: 0.5
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_LowerEngineVol
+      normalizedTime: 0.22
+      paramType: 2
+      intParam: 0
+      floatParam: 0.7
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.32
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_vendra_laugh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.345
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Leviathan_Charge
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Intro_Stinger
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: //AE_StopMusic
+      normalizedTime: 0.4
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_LowerEngineVol
+      normalizedTime: 0.6
+      paramType: 2
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.60415554
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StartNeftinFireImpact
+      normalizedTime: 0.6084177
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: FX_MineExplosion
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.6389118
+      paramType: 2
+      intParam: 0
+      floatParam: 0.25
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.67767715
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_Land
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.7639851
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8002131
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8433671
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.86627597
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.9754928
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: grind_connect
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_FinishIntro
+      normalizedTime: 0.9755
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlayMusic
+      normalizedTime: 0.9755
+      paramType: 1
+      intParam: 3
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Leviathan_engine_loop
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 2103109571
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Gethit_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Gethit_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1348369548
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Gethit_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Gethit_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1454027499
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0.442195
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_swingshot_swoosh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -770395953
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Death_Electric
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.7837508
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0.7838
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Death_Electric
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.9150886
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -953695621
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.5546732
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.5546732
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.59192085
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1466401029
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Fall_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -186034234
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.73124486
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1416805316
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0.3004795
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ratchet_swingshot_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.45018646
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_swingshot_swoosh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.83431005
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: grind_connect
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -25663639
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4496537
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Wep_Gen_Equip
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1991712231
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.09962706
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Wep_Gen_Equip
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.59926695
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.5993
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: grind_connect
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -946718689
+    events:
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.48062655
+      paramType: 2
+      intParam: 0
+      floatParam: 0.4
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1495051476
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.05009163
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.14722052
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.29993892
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.81733024
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8289554
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1349166663
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.15638363
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.28283444
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.38912645
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4697618
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.5003054
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.73124486
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.79047036
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 773561410
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.112400725
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.18814906
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.31215638
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4019548
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.53940135
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.6389118
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8350641
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1223504392
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.12828344
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.54062307
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.68425393
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8075748
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -661493457
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.26206475
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.34514356
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.45387906
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.47037265
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.6001649
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8283446
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 1100691605
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.03970678
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.23213194
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.34147832
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4434942
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4575443
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.6817807
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8411729
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: 916195331
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.07208308
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.35552844
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.48564446
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.5809407
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.62858886
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.7373244
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.79142624
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1460101728
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Death_Music
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Hoverboot
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.10568112
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Left
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.56872326
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_footstepWalk_Right
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.6029322
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Generic_Death
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_EyeLidDeathAnimation
+      normalizedTime: 0.6059357
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.7690899
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Thud
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1375405526
+    events:
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.14674361
+      paramType: 2
+      intParam: 0
+      floatParam: 0.2
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1627140907
+    events:
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.14674361
+      paramType: 2
+      intParam: 0
+      floatParam: 0.3
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4379
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.43793288
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: grind_connect
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -601724916
+    events:
+    - functionName: AE_ClankBlink
+      normalizedTime: 0.19785656
+      paramType: 2
+      intParam: 0
+      floatParam: 0.3
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2bc3b124b24fa1c4596c5d828411be98, type: 2}
+    layer: 0
+    stateNameHash: -1724479288
+    events:
+    - functionName: AE_StopSound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.10069259
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_swingshot_swoosh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.15
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ratchet_swingshot_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.28076717
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_swingshot_swoosh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.4896111
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_swingshot_swoosh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.72349495
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_swingshot_swoosh
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.8577517
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Jump_Land
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.87107086
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_Land_VO
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.9557805
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: grind_connect
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+    - functionName: AE_PlaySound
+      normalizedTime: 0.999
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Ratchet_GrindBoots
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: e8439d064c3b5a1408b7514574fdea83, type: 2}
+    layer: 0
+    stateNameHash: 1432961145
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ProtoG_hover_idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_StopSound
+      normalizedTime: 1
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ProtoG_hover_idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: e8439d064c3b5a1408b7514574fdea83, type: 2}
+    layer: 0
+    stateNameHash: -1345455885
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ProtoG_charge
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: e8439d064c3b5a1408b7514574fdea83, type: 2}
+    layer: 0
+    stateNameHash: -444897786
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_ProtoG_GetHit
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 0
+  - animatorController: {fileID: 9100000, guid: 878424dfc89c5ff4b971b712a27d735a, type: 2}
+    layer: 0
+    stateNameHash: 1432961145
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_wasp_Wings idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 878424dfc89c5ff4b971b712a27d735a, type: 2}
+    layer: 0
+    stateNameHash: -1345455885
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_wasp_Charge
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 878424dfc89c5ff4b971b712a27d735a, type: 2}
+    layer: 0
+    stateNameHash: -1143916788
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_wasp_Dodgemove
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 878424dfc89c5ff4b971b712a27d735a, type: 2}
+    layer: 0
+    stateNameHash: -2113055513
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_wasp_Dodgemove
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 878424dfc89c5ff4b971b712a27d735a, type: 2}
+    layer: 0
+    stateNameHash: -444897786
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_wasp_get hit
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 2f81d809f2d7baa48aa72389b0fcbacb, type: 2}
+    layer: 0
+    stateNameHash: 1130333774
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: cha_Cswarmer_Attack
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 1f3df287954b66344aa9daa41932de4d, type: 2}
+    layer: 0
+    stateNameHash: -821184433
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: wep_ryno_fire02
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 1f3df287954b66344aa9daa41932de4d, type: 2}
+    layer: 0
+    stateNameHash: -604752631
+    events:
+    - functionName: AE_StartNeftinFire
+      normalizedTime: 0.31268656
+      paramType: 0
+      intParam: 0
+      floatParam: 0
+      stringParam:
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 1f3df287954b66344aa9daa41932de4d, type: 2}
+    layer: 0
+    stateNameHash: 1432961145
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_JetIdle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: 1432961145
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Siren_Idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: -1345455885
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Charge
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: 1130333774
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Attack-BLEND
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0.20032977
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Attack-Discharge-BLEND
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: -444897786
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_getHit
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: 935732456
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Siren_Idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: 1497323511
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Siren_Idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: 544146103
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Siren_Idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 3e1d4cc223378544eae1152901baa060, type: 2}
+    layer: 0
+    stateNameHash: 1201808312
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_TeslaDrone_Siren_Idle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 8150f959a61e3e241ae9c2b413f0df92, type: 2}
+    layer: 0
+    stateNameHash: 1432961145
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thermo_Motor_Idle-BLEND
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thermo_Jet_Idle-BLEND
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 64492557e57a6884bbb7102cd98c7321, type: 2}
+    layer: 0
+    stateNameHash: -444897786
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_Gethit
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 64492557e57a6884bbb7102cd98c7321, type: 2}
+    layer: 0
+    stateNameHash: 1432961145
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0.01
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_JetIdle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  - animatorController: {fileID: 9100000, guid: 64492557e57a6884bbb7102cd98c7321, type: 2}
+    layer: 0
+    stateNameHash: 1502983505
+    events:
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_Jet_Activate
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+    - functionName: AE_PlaySound
+      normalizedTime: 0
+      paramType: 3
+      intParam: 0
+      floatParam: 0
+      stringParam: Cha_Thug_JetIdle
+      boolParam: 0
+      condition:
+        conditions: []
+      critical: 1
+  lastEdit: {fileID: 0}

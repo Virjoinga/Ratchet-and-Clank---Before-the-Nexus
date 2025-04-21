@@ -1,0 +1,377 @@
+<ProfileFile>
+<Group>
+	[GroupTitle]	Objectives
+	[LocKey]	UI_Prof_13
+	<ProfileStat>
+		[LocKey]	UI_Prof_14
+		[Stat]	pointsScored
+		[SpriteName] icon_menu_profile
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_15
+		[Stat]	boltzCollected
+		[SpriteName] icon_achv_rainyday
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_16
+		[Stat]	boltzSpent
+		[SpriteName] icon_achv_rainyday
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_17
+		[Stat]	heroBoltsCollected
+		[SpriteName] icon_bolt_hero
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_18
+		[Stat]	heroBoltsUsed
+		[SpriteName] icon_bolt_hero
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_19
+		[Stat]	raritaniumCollected
+		[SpriteName] icon_raritanium
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_20
+		[Stat]	raritaniumDeposited
+		[SpriteName] icon_menu_rarsync
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_21
+		[Stat]	terachnoidsCollected
+		[SpriteName] icon_terachnoid
+	</ProfileStat>	
+</Group>
+<Group>
+	[GroupTitle]	Movement
+	[LocKey]	UI_Prof_01
+	<ProfileStat>
+		[LocKey]	UI_Prof_02
+		[Stat]	distanceTraveled
+		[SpriteName] icon_menu_play
+		[AppendString]	m
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_03
+		[Stat]	distanceFlown
+		[SpriteName] icon_gadget_jetpack
+		[AppendString]	m
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_04
+		[Stat]	lanesSwitched
+		[SpriteName] icon_menu_play
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_05
+		[Stat]	swingShotUsed
+		[SpriteName] icon_weapon_wrench
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_06
+		[Stat]	timesJumped
+		[SpriteName] icon_menu_play
+	</ProfileStat>
+</Group>
+<Group>
+	[GroupTitle]	Damage
+	[LocKey] UI_Prof_07
+	<ProfileStat>
+		[LocKey]	UI_Prof_08
+		[Stat]	damageTaken
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_09
+		[Stat]	deathTotal
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_10
+		[Stat]	deathByCrash
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_11
+		[Stat]	deathByFall
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_12
+		[Stat]	deathByEnemy
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>		
+</Group>
+<Group>
+	[GroupTitle]	Upgrades
+	[LocKey]	UI_Prof_22
+	<ProfileStat>
+		[LocKey]	UI_Prof_23
+		[Stat]	weaponsUpgraded
+		[SpriteName] icon_weapon_wrench
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_24
+		[Stat]	pistolUpgraded
+		[SpriteName] icon_weapon_pistol
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_25
+		[Stat]	shotgunUpgraded
+		[SpriteName] icon_weapon_shotgun
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_26
+		[Stat]	buzzbladesUpgraded
+		[SpriteName] icon_weapon_buzzblades
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_27
+		[Stat]	predatorUpgraded
+		[SpriteName] icon_weapon_predator
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_29
+		[Stat]	magnetizerUpgraded
+		[SpriteName] icon_gadget_magnetizer
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_30
+		[Stat]	reflectorUpgraded
+		[SpriteName] icon_gadget_reflector
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_31
+		[Stat]	jetpackUpgraded
+		[SpriteName] icon_gadget_jetpack
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_32
+		[Stat]	multiplierUpgraded
+		[SpriteName] icon_bolt_multiplier
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_44
+		[Stat]	groovitronUpgraded
+		[SpriteName] icon_weapon_groovitron
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_46
+		[Stat]	tornadoLauncherUpgraded
+		[SpriteName] icon_weapon_tornado
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_48
+		[Stat]	riftInducerUpgraded
+		[SpriteName] icon_weapon_rift
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_33
+		[Stat]	armorUpgraded
+		[SpriteName] icon_achv_protected
+	</ProfileStat>
+</Group>
+<Group>
+	[GroupTitle]	Pickups
+	[LocKey]	UI_Prof_34
+	<ProfileStat>
+		[LocKey]	UI_Prof_35
+		[Stat]	totalPickupsAcquired
+		[SpriteName] icon_achv_moneybags
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_36
+		[Stat]	cratesBroken
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_37
+		[Stat]	magnetizerPickedup
+		[SpriteName] icon_gadget_magnetizer
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_38
+		[Stat]	reflectorPickedup
+		[SpriteName] icon_gadget_reflector
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_39
+		[Stat]	jetpackPickedup
+		[SpriteName] icon_gadget_jetpack
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_40
+		[Stat]	multiplierPickedup
+		[SpriteName] icon_bolt_multiplier
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_42
+		[Stat]	megaWeaponsUsed
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_43
+		[Stat]	groovitronUsed
+		[SpriteName] icon_weapon_groovitron
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_45
+		[Stat]	tornadoLauncherUsed
+		[SpriteName] icon_weapon_tornado
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_47
+		[Stat]	riftInducerUsed
+		[SpriteName] icon_weapon_rift
+	</ProfileStat>
+</Group>
+<Group>
+	[GroupTitle]	Weapons
+	[LocKey]	UI_Prof_49
+	<ProfileStat>
+		[LocKey]	UI_Prof_50
+		[Stat]	totalShotsFired
+		[SpriteName] icon_ammo
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_51
+		[Stat]	totalShotsHit
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_52
+		[Stat]	pistolShotsFired
+		[SpriteName] icon_weapon_pistol
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_53
+		[Stat]	pistolShotsHit
+		[SpriteName] icon_weapon_pistol
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_54
+		[Stat]	pistolKills
+		[SpriteName] icon_weapon_pistol
+	</ProfileStat>
+	<ProfileStat>
+		[LocKey]	UI_Prof_55
+		[Stat]	shotgunShotsFired
+		[SpriteName] icon_weapon_shotgun
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_56
+		[Stat]	shotgunShotsHit
+		[SpriteName] icon_weapon_shotgun
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_57
+		[Stat]	shotgunKills
+		[SpriteName] icon_weapon_shotgun
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_58
+		[Stat]	buzzbladesShotsFired
+		[SpriteName] icon_weapon_buzzblades
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_59
+		[Stat]	buzzbladesShotsHit
+		[SpriteName] icon_weapon_buzzblades
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_60
+		[Stat]	buzzbladesKills
+		[SpriteName] icon_weapon_buzzblades
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_61
+		[Stat]	predatorShotsFired
+		[SpriteName] icon_weapon_predator
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_62
+		[Stat]	predatorShotsHit
+		[SpriteName] icon_weapon_predator
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_63
+		[Stat]	predatorKills
+		[SpriteName] icon_weapon_predator
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_64
+		[Stat]	rynoShotsFired
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_65
+		[Stat]	rynoShotsHit
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_66
+		[Stat]	rynoKills
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+</Group>
+<Group>
+	[GroupTitle]	Enemies
+	[LocKey]	UI_Prof_67
+	<ProfileStat>
+		[LocKey]	UI_Prof_68
+		[Stat]	totalEnemiesKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_69
+		[Stat]	flyingEnemiesKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_70
+		[Stat]	groundEnemiesKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_71
+		[Stat]	dancingEnemiesKilled
+		[SpriteName] icon_weapon_groovitron
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_73
+		[Stat]	breegusWaspsKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_74
+		[Stat]	thugs4LessKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_75
+		[Stat]	ceruleanSwarmerKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_76
+		[Stat]	securityBotKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_77
+		[Stat]	thermoSplitterKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_78
+		[Stat]	protoGuardKilled
+		[SpriteName] icon_weapon_ryno
+	</ProfileStat>	
+	<ProfileStat>
+		[LocKey]	UI_Prof_79
+		[Stat]	leviathanKilled
+		[SpriteName] icon_achv_soboss
+	</ProfileStat>	
+</Group>	
+</ProfileFile>

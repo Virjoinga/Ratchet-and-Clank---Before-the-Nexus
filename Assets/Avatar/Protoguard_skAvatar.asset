@@ -1,0 +1,452 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!90 &9000000
+Avatar:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Protoguard_skAvatar
+  m_AvatarSize: 992
+  m_Avatar:
+    m_Skeleton:
+      data:
+        m_Node:
+        - m_ParentId: -1
+          m_AxesId: -1
+        - m_ParentId: 0
+          m_AxesId: -1
+        - m_ParentId: 0
+          m_AxesId: -1
+        - m_ParentId: 2
+          m_AxesId: -1
+        - m_ParentId: 3
+          m_AxesId: -1
+        - m_ParentId: 4
+          m_AxesId: -1
+        - m_ParentId: 5
+          m_AxesId: -1
+        - m_ParentId: 3
+          m_AxesId: -1
+        - m_ParentId: 7
+          m_AxesId: -1
+        - m_ParentId: 3
+          m_AxesId: -1
+        - m_ParentId: 9
+          m_AxesId: -1
+        - m_ParentId: 10
+          m_AxesId: -1
+        - m_ParentId: 3
+          m_AxesId: -1
+        - m_ParentId: 12
+          m_AxesId: -1
+        m_ID:
+        - 1489618355
+        - 2907851068
+        - 3066451557
+        - 2073732236
+        - 3951233754
+        - 2985589856
+        - 3061183340
+        - 392266736
+        - 101577729
+        - 1806956327
+        - 1243277130
+        - 1979272496
+        - 1971262097
+        - 2252147196
+        m_AxesArray: []
+    m_SkeletonPose:
+      data:
+        m_X:
+        - t:
+            x: 0
+            y: 0
+            z: 0
+            w: 0
+          q:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: 0
+            y: 0
+            z: 0
+            w: 0
+          q:
+            x: -0.7071068
+            y: 0
+            z: -0
+            w: 0.7071068
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: 3.3680195E-08
+            y: 0
+            z: 0
+            w: 0
+          q:
+            x: -5.9624403E-09
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0
+            y: 1.4707054
+            z: 0
+            w: 0
+          q:
+            x: -8.742278E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: 0.00012447238
+            y: 0.055032652
+            z: -0.8099592
+            w: 0
+          q:
+            x: -8.7422784E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0
+            y: -0.89430875
+            z: -1.3386786
+            w: 0
+          q:
+            x: -8.742279E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0
+            y: -0.35862723
+            z: -1.1452105
+            w: 0
+          q:
+            x: -8.742279E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0
+            y: -0.48667923
+            z: -0.1680467
+            w: 0
+          q:
+            x: -8.7422784E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0
+            y: -0.42304835
+            z: -0.69327116
+            w: 0
+          q:
+            x: -8.742279E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: 0.0001244724
+            y: 0.055032194
+            z: 0.80995923
+            w: 0
+          q:
+            x: -8.7422784E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0.0001244724
+            y: -0.88918376
+            z: 1.3415664
+            w: 0
+          q:
+            x: -8.742279E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0
+            y: -0.3693115
+            z: 1.1475189
+            w: 0
+          q:
+            x: -8.742279E-08
+            y: 0
+            z: -0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: -0
+            y: -0.48667923
+            z: 0.16860902
+            w: 0
+          q:
+            x: -4.371139E-08
+            y: 1
+            z: 1.6292068E-07
+            w: -7.12149E-15
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        - t:
+            x: 3.6826894E-08
+            y: -0.42125046
+            z: -0.69373983
+            w: 0
+          q:
+            x: -8.742277E-08
+            y: -7.549791E-08
+            z: -6.600236E-15
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+    m_Human:
+      data:
+        m_RootX:
+          t:
+            x: 0
+            y: 0
+            z: 0
+            w: 0
+          q:
+            x: 0
+            y: 0
+            z: 0
+            w: 1
+          s:
+            x: 1
+            y: 1
+            z: 1
+            w: 1
+        m_Skeleton:
+          data:
+            m_Node: []
+            m_ID: []
+            m_AxesArray: []
+        m_SkeletonPose:
+          data:
+            m_X: []
+        m_LeftHand:
+          data:
+            m_HandBoneIndex:
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+        m_RightHand:
+          data:
+            m_HandBoneIndex:
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+            - -1
+        m_Handles: []
+        m_ColliderArray: []
+        m_HumanBoneIndex:
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        m_HumanBoneMass:
+        - 0.14545456
+        - 0.12121213
+        - 0.12121213
+        - 0.048484854
+        - 0.048484854
+        - 0.009696971
+        - 0.009696971
+        - 0.030303033
+        - 0.2909091
+        - 0.012121214
+        - 0.048484854
+        - 0.006060607
+        - 0.006060607
+        - 0.024242427
+        - 0.024242427
+        - 0.01818182
+        - 0.01818182
+        - 0.006060607
+        - 0.006060607
+        - 0.0024242427
+        - 0.0024242427
+        - 0
+        - 0
+        - 0
+        m_ColliderIndex:
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        m_Scale: 1
+        m_ArmTwist: 0.5
+        m_ForeArmTwist: 0.5
+        m_UpperLegTwist: 0.5
+        m_LegTwist: 0.5
+        m_ArmStretch: 0.05
+        m_LegStretch: 0.05
+        m_FeetSpacing: 0
+        m_HasLeftHand: 0
+        m_HasRightHand: 0
+    m_HumanSkeletonIndexArray: []
+    m_RootMotionBoneIndex: -1
+    m_RootMotionBoneX:
+      t:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      q:
+        x: 0
+        y: 0
+        z: 0
+        w: 1
+      s:
+        x: 1
+        y: 1
+        z: 1
+        w: 1
+  m_TOS:
+  - 101577729: LeftLeg
+  - 392266736: LeftUpLeg
+  - 1243277130: RightForearm
+  - 1489618355: Protoguard_sk
+  - 1806956327: RightArm
+  - 1971262097: RightUpLeg
+  - 1979272496: RightHand
+  - 2073732236: Body
+  - 2252147196: RightLeg
+  - 2907851068: CHA_Protoguard
+  - 2985589856: LeftForearm
+  - 3061183340: LeftHand
+  - 3066451557: Root
+  - 3951233754: LeftArm

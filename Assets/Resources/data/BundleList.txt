@@ -1,0 +1,17 @@
+<Bundles>
+	<Bundle>
+		[id]	1
+		[url]	first.unity3d
+		[version]	2
+	</Bundle>
+	<Bundle>
+		[id]	2
+		[url]	second.unity3d
+		[version]	2
+	</Bundle>	
+	<Bundle>
+		[id]	3
+		[url]	third.unity3d
+		[version]	2
+	</Bundle>	
+</Bundles>

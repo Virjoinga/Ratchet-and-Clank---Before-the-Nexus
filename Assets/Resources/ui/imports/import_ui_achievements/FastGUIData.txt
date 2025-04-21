@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psd width="1024" height="768">
+<layer type='ANCHOR'> 
+        <name>Achievements</name>
+        <path></path>
+        <posX>512</posX>
+        <posY>384</posY>
+        <layerID>312</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>BG</name>
+        <path>Achievements</path>
+        <posX>512</posX>
+        <posY>384</posY>
+        <source>Achievements_BG.png</source>
+        <layerID>273</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>SCROLLING LIST</name>
+        <path>Achievements</path>
+        <posX>512.5</posX>
+        <posY>382</posY>
+        <source>Achievements_SCROLLING LIST.png</source>
+        <layerID>294</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>Achievements</path>
+        <posX>497.5</posX>
+        <posY>331.5</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>43</fontSize>
+        <fontColor>25.0027514621615;143.998501896858;229.997235238552</fontColor>
+        <contents>?????
+-LOCKED-</contents>
+        <layerID>325</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>AchievementImageLocked</name>
+        <path>Achievements</path>
+        <posX>192.5</posX>
+        <posY>452</posY>
+        <source>Achievements_AchievementImageLocked.png</source>
+        <layerID>331</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>AchievementImage</name>
+        <path>Achievements</path>
+        <posX>194</posX>
+        <posY>208</posY>
+        <source>Achievements_AchievementImage.png</source>
+        <layerID>329</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>ClankImage</name>
+        <path>Achievements</path>
+        <posX>885.5</posX>
+        <posY>554.5</posY>
+        <source>Achievements_ClankImage.png</source>
+        <layerID>327</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>Achievements</path>
+        <posX>512</posX>
+        <posY>64.5</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>43</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>ACHIEVEMENTS</contents>
+        <layerID>323</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>SCROLLBAR</name>
+        <path>Achievements</path>
+        <posX>89.5</posX>
+        <posY>423.5</posY>
+        <source>Achievements_SCROLLBAR.png</source>
+        <layerID>301</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>ScrollBarThumb</name>
+        <path>Achievements</path>
+        <posX>89.5</posX>
+        <posY>181</posY>
+        <source>Achievements_ScrollBarThumb.png</source>
+        <layerID>321</layerID>
+</layer> 
+<layer type='SPRITE'> 
+        <name>ACHIEVEMENT COUNTER</name>
+        <path>Achievements</path>
+        <posX>904.5</posX>
+        <posY>58.5</posY>
+        <source>Achievements_ACHIEVEMENT COUNTER.png</source>
+        <layerID>306</layerID>
+</layer> 
+<layer type='TEXT_LABEL'> 
+        <name>txt_MishmashBRK</name>
+        <path>Achievements</path>
+        <posX>877.5</posX>
+        <posY>58</posY>
+        <fontName>MishmashBRK</fontName>
+        <fontSize>36</fontSize>
+        <fontColor>255;255;255</fontColor>
+        <contents>11/20</contents>
+        <layerID>319</layerID>
+</layer>
+<layer type='SPRITE'> 
+        <name>btn_Back_Button</name>
+        <path>Achievements</path>
+        <posX>55</posX>
+        <posY>53</posY>
+        <source>Achievements_btn_Back_Button.png</source>
+        <layerID>310</layerID>
+</layer> 
+</psd>

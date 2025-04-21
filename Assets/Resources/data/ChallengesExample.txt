@@ -1,0 +1,67 @@
+<ChallengeFile>
+</Comments should start with </, on their own line>
+</This is a valid challenge file>
+<Group>
+	[Name]Group1
+	<Challenge>
+		[Title] 		Distance Runner
+</Using "%%%" as the replacement string for the primary stat>
+</So this will appear in-game as "Run 5000 meters">
+		[Description]	Run %%% meters
+</Duration of -1 means "as long as it takes, multiple play throughs">
+		[Duration]		-1
+		[MaxLevel]		3
+</We will have to make a list of all the stats tracked, and what the code is for each>
+</We'll probably be tracking most things that can be done, but let us know if there's another stat you need tracked>
+		[PrimaryStat]	totalDistance
+		[PrimaryInit]	5000
+		[PrimaryScale]	2500
+	</Challenge>
+</Since this challenge is in the same group, it won't be unlocked until the first challenge is fully completed>
+	<Challenge>
+		[Title] 		Marathon Runner
+		[Description]	Run %%% meters
+		[Duration]		-1
+		[MaxLevel]		3
+		[PrimaryStat]	totalDistance
+		[PrimaryInit]	10000
+		[PrimaryScale]	5000
+	</Challenge>
+</Group>
+<Group>
+	[Name]Group2
+	<Challenge>
+		[Title] 		Bolt Dodger
+		[Description]	Run %%% meters without collecting any Boltz
+</Duration of 0 means "one run">		
+		[Duration]		0
+		[MaxLevel]		1
+		[PrimaryStat]	totalDistance
+		[PrimaryInit]	500
+</If an entry is not being used, just leave it out>
+		[SecondaryStat]	boltzCollected
+</Zero SecondaryMod means no change in secondary stat>		
+		[SecondaryMod]	0
+	</Challenge>
+</Group>
+<Group>
+	[Name]Group3
+	<Challenge>
+		[Title] 		Quick Draw
+</"&&&" is for the duration stat and "###" for the secondary stat>
+		[Description]	Kill %%% enemies in &&& seconds using less than ### shots
+</Duration of any positive integer means that many seconds>		
+		[Duration]		20
+		[DurationScale]	-1
+		[MaxLevel]		3
+		[PrimaryStat]	enemiesKilled
+		[PrimaryInit]	5
+		[PrimaryScale]	3
+		[SecondaryStat]	shotsFired
+		[SecondaryInit] 20
+</Negative SecondaryMod means less than the number specified>
+</Positive SecondaryMod means greater than the number specified>		
+		[SecondaryMod]	-20
+		[SecondaryScale]5
+	</Challenge>
+</Group>
